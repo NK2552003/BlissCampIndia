@@ -1613,3 +1613,6 @@ main .video {
 .social-div {
   padding: 20px 36px;
 }
+.price-badge {
+  z-index: 100;
+}

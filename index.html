@@ -13,74 +13,70 @@
     <script src='https://github.hubspot.com/odometer/odometer.js'></script>
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <section class="hero-section">
-        <div class="overlay">
-          <nav class="nav-bar">
-            <div class="logo">
-                BlissCampIndia
-            </div>
-            
-            <!-- Hamburger Icon for Mobile -->
-            <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            
-            <!-- Navigation Links -->
-            <div class="nav-links">
-              <a href="#">Home</a>
-              <a href="#">About Us</a>
-              <a href="#">Our Treks</a>
-              <a href="#">Destinations</a>
-              <a href="#">Blog</a>
-              <a href="#">Contact Us</a>
-            </div>
-            
-            <!-- <div class="actions">
-              <a href="#" class="login">Log In</a>
-              <a href="#" class="signup">Sign Up</a>
-            </div> -->
-          </nav>
-          
-          <!-- Hero Content -->
-          <div class="hero-content">
-            <h1>Discover Your Next Great Adventure</h1>
-            <p>Immerse yourself in the extraordinary with us, uncovering the world's hidden gems.</p>
-          </div>
-          
-          <!-- Search Bar -->
-          <div class="search-bar">
-            <div class="input-group">
-              <label for="location">Location</label>
-              <input type="text" id="location" placeholder="Tour Name, Destination">
-            </div>
-            <div class="input-group">
-              <label for="tour_type">Tour Type</label>
-              <select id="tour_type">
-                <option value="" disabled selected>Select Tour Type</option>
-                <option value="summer">Summer</option>
-                <option value="monsoon">Monsoon</option>
-                <option value="winter">Winter</option>
-              </select>
-            </div>
-            <div class="input-group">
-              <label for="destination">Destination</label>
-              <select id="destination">
-                <option value="" disabled selected>Select Your Destination</option>
-                <option value="himachal">Himachal</option>
-                <option value="kashmir">Kashmir</option>
-                <option value="ladakh">Ladakh</option>
-                <option value="nepal">Nepal</option>
-                <option value="uttrakhand">Uttrakhand</option>
-              </select>
-            </div>
-            <button class="search-btn">Search →</button>
-          </div>
+  <section class="hero-section">
+    <div class="overlay">
+      <nav class="nav-bar">
+        <div class="logo" id="logo">
+          BlissCampIndia
         </div>
-      </section>
+        
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="nav-links" id="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Our Treks</a>
+          <a href="#">Destinations</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </nav>
+      
+      <!-- Hero Content -->
+      <div class="hero-content" id="hero-content">
+        <h1>Discover Your Next Great Adventure</h1>
+        <p>Immerse yourself in the extraordinary with us, uncovering the world's hidden gems.</p>
+      </div>
+      
+      <!-- Search Bar -->
+      <div class="search-bar" id="search-bar">
+        <div class="input-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" placeholder="Tour Name, Destination">
+        </div>
+        <div class="input-group">
+          <label for="tour_type">Tour Type</label>
+          <select id="tour_type">
+            <option value="" disabled selected>Select Tour Type</option>
+            <option value="summer">Summer</option>
+            <option value="monsoon">Monsoon</option>
+            <option value="winter">Winter</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="destination">Destination</label>
+          <select id="destination">
+            <option value="" disabled selected>Select Your Destination</option>
+            <option value="himachal">Himachal</option>
+            <option value="kashmir">Kashmir</option>
+            <option value="ladakh">Ladakh</option>
+            <option value="nepal">Nepal</option>
+            <option value="uttrakhand">Uttrakhand</option>
+          </select>
+        </div>
+        <button class="search-btn">Search →</button>
+      </div>
+    </div>
+  </section>
       <section class="dest-container">
         <!-- Background Shapes -->
         <div class="background-shape shape-1"></div>
@@ -610,6 +606,287 @@
       // Observe the achievements section
       const achievementsSection = document.querySelector('.achievements-section');
       observer.observe(achievementsSection);
+
+    </script>
+    <script>
+      // Initialize ScrollReveal
+      ScrollReveal().reveal('#logo', {
+        origin: 'top',
+        distance: '50px',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out',
+        opacity: 0
+      });
+    
+      ScrollReveal().reveal('#hamburger a', {
+        origin: 'center',
+        distance: '50px',
+        duration: 800,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+      });
+    
+      ScrollReveal().reveal('#nav-links', {
+        origin: 'right',
+        distance: '50px',
+        duration: 800,
+        delay: 400,
+        easing: 'ease-in-out',
+        opacity: 0
+      });
+    
+      ScrollReveal().reveal('#hero-content', {
+        origin: 'bottom',
+        distance: '70px',
+        duration: 1000,
+        delay: 500,
+        easing: 'ease-in-out',
+        opacity: 0
+      });
+    
+      ScrollReveal().reveal('#search-bar', {
+        origin: 'bottom',
+        distance: '100px',
+        duration: 1200,
+        delay: 600,
+        easing: 'ease-in-out',
+        opacity: 0
+      });
+
+
+      // Reveal Content Container
+      ScrollReveal().reveal('.content-container', {
+        origin: 'bottom',
+        distance: '30px',
+        duration: 1000,
+        delay: 300,
+        opacity: 0,
+        easing: 'ease-in-out'
+      });
+
+      // Reveal Each Card in the Container
+      ScrollReveal().reveal('.container .card', {
+        origin: 'center',
+        distance: '50px',
+        duration: 800,
+        interval: 200, // Stagger animation for each card
+        opacity: 0,
+        easing: 'ease-in-out'
+      });
+
+      // Reveal Tags in Cards
+      // ScrollReveal().reveal('.card .tag', {
+      //   origin: 'bottom',
+      //   distance: '10px',
+      //   duration: 600,
+      //   delay: 500,
+      //   opacity: 0,
+      //   easing: 'ease-in-out'
+      // });
+
+      // Reveal "Why Choose Us?" Section
+      ScrollReveal().reveal('.unique-why-choose-us', {
+        origin: 'left',
+        distance: '50px',
+        duration: 1000,
+        delay: 400,
+        opacity: 0,
+        easing: 'ease-in-out'
+      });
+
+      // Reveal Individual Cards in "Why Choose Us?"
+      ScrollReveal().reveal('.unique-card', {
+        origin: 'left',
+        distance: '30px',
+        duration: 800,
+        interval: 200, // Stagger the animation for each card
+        opacity: 0,
+        easing: 'ease-in-out'
+      });
+      // Reveal Deals Section Title
+      ScrollReveal().reveal('.deals-title', {
+        origin: 'top',
+        distance: '30px',
+        duration: 800,
+        delay: 200,
+        opacity: 0,
+        easing: 'ease-in-out'
+      });
+
+      // Reveal Each Deal Card with Staggered Animations
+      ScrollReveal().reveal('.deal-card', {
+        origin: 'left',
+        distance: '40px',
+        duration: 800,
+        interval: 200, // Stagger the animation for each card
+        opacity: 0,
+        easing: 'ease-in-out'
+      });
+
+      // Reveal Deal Details (Title, Duration, Description, Price)
+      ScrollReveal().reveal('.deal-details', {
+        origin: 'right',
+        distance: '20px',
+        duration: 800,
+        delay: 300,
+        opacity: 0,
+        easing: 'ease-in-out'
+      });
+
+      // Reveal the Promo Banner Section
+      ScrollReveal().reveal('.promo-banner', {
+        origin: 'left',
+        distance: '50px',
+        duration: 1000,
+        delay: 400,
+        opacity: 0,
+        easing: 'ease-in-out'
+      });
+
+      // Reveal the Promo Title and Discount Info
+      ScrollReveal().reveal('.promo-title, .promo-info', {
+        origin: 'left',
+        distance: '30px',
+        duration: 800,
+        delay: 500,
+        opacity: 0,
+        easing: 'ease-in-out'
+      });
+
+      // Reveal the Promo Button
+      ScrollReveal().reveal('.promo-btn', {
+        origin: 'right',
+        distance: '30px',
+        duration: 800,
+        delay: 700,
+        opacity: 0,
+        easing: 'ease-in-out'
+      });
+
+      // Reveal Section Titles (Winter, Summer, Monsoon)
+        ScrollReveal().reveal('.section-title', {
+          origin: 'top',
+          distance: '30px',
+          duration: 800,
+          delay: 200,
+          opacity: 0,
+          easing: 'ease-in-out'
+        });
+
+        // Reveal the Trek Cards
+        ScrollReveal().reveal('.trek-card', {
+          origin: 'bottom',
+          distance: '40px',
+          duration: 800,
+          interval: 200, // Stagger the animation for each card
+          opacity: 0,
+          easing: 'ease-in-out'
+        });
+
+        // Reveal Price Badge, Image, and Trek Details
+        ScrollReveal().reveal('.trek-image, .trek-details', {
+          origin: 'bottom',
+          distance: '20px',
+          duration: 800,
+          delay: 300,
+          opacity: 0,
+          easing: 'ease-in-out'
+        });
+
+        // Reveal Trek Footer (Rating & Button)
+        ScrollReveal().reveal('.trek-footer', {
+          origin: 'bottom',
+          distance: '20px',
+          duration: 800,
+          delay: 500,
+          opacity: 0,
+          easing: 'ease-in-out'
+        });
+
+        // Reveal Title Underline
+        ScrollReveal().reveal('.title-underline', {
+          origin: 'left',
+          distance: '30px',
+          duration: 600,
+          delay: 100,
+          opacity: 0,
+          easing: 'ease-in-out'
+        });
+        // Reveal Section Header (Testimonials Title)
+        ScrollReveal().reveal('.header h1', {
+          origin: 'top',
+          distance: '30px',
+          duration: 800,
+          opacity: 0,
+          easing: 'ease-in-out'
+        });
+
+        // Reveal Title Underline
+        ScrollReveal().reveal('.title-underline', {
+          origin: 'left',
+          distance: '30px',
+          duration: 600,
+          delay: 100,
+          opacity: 0,
+          easing: 'ease-in-out'
+        });
+
+        // Reveal Image and Stats (First Image and Stat)
+        ScrollReveal().reveal('.imgPcomm .image-area', {
+          origin: 'left',
+          distance: '50px',
+          duration: 800,
+          opacity: 0,
+          easing: 'ease-in-out'
+        });
+        ScrollReveal().reveal('.imgPcomm .stat', {
+          origin: 'right',
+          distance: '50px',
+          duration: 800,
+          opacity: 0,
+          delay: 200,
+          easing: 'ease-in-out'
+        });
+
+        // Reveal Testimonial Cards
+        ScrollReveal().reveal('.testimonial-card', {
+          origin: 'bottom',
+          distance: '30px',
+          duration: 800,
+          interval: 200,  // Stagger the reveal of each card
+          opacity: 0,
+          easing: 'ease-in-out'
+        });
+
+        // Reveal Footer Elements (Contact Us, Social Links, and Bottom)
+        ScrollReveal().reveal('.travel-footer-top .col12', {
+          origin: 'bottom',
+          distance: '40px',
+          duration: 800,
+          opacity: 0,
+          easing: 'ease-in-out'
+        });
+
+        ScrollReveal().reveal('.travel-footer-social-links', {
+          origin: 'bottom',
+          distance: '40px',
+          duration: 800,
+          opacity: 0,
+          delay: 300,
+          easing: 'ease-in-out'
+        });
+
+        // Reveal Footer Bottom Text
+        ScrollReveal().reveal('.travel-footer-bottom p', {
+          origin: 'bottom',
+          distance: '30px',
+          duration: 800,
+          delay: 500,
+          opacity: 0,
+          easing: 'ease-in-out'
+        });
 
     </script>
     
