@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive BlissCamp</title>
+    <title>BlissCampIndia</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="./images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -33,7 +33,7 @@
         <!-- Navigation Links -->
         <div class="nav-links" id="nav-links">
           <a href="#">Home</a>
-          <a href="#">About Us</a>
+          <a href="./About_Us/about_us.html">About Us</a>
           <a href="#">Our Treks</a>
           <a href="#">Destinations</a>
           <a href="#">Blog</a>
@@ -341,6 +341,7 @@
             </div>
           </div>
         </div>
+        <button class="book-now-button viewBtn">View More</button>
       </section>
       <section class="winter-treks summer-treks">
         <h2 class="section-title">Explore Summer Treks</h2>
@@ -395,6 +396,7 @@
             </div>
           </div>
         </div>
+        <button class="book-now-button viewBtn">View More</button>
       </section>
       <section class="winter-treks monsoon-treks">
         <h2 class="section-title">Explore Monsoon Treks</h2>
@@ -449,6 +451,7 @@
             </div>
           </div>
         </div>
+        <button class="book-now-button viewBtn">View More</button>
       </section>
       <section class="testimonials-section">
         <div class="header">
@@ -833,7 +836,7 @@
         });
 
         // Reveal Testimonial Cards
-        ScrollReveal().reveal('.testimonial-card', {
+        ScrollReveal().reveal('.testimonial-card, .viewBtn', {
           origin: 'bottom',
           distance: '30px',
           duration: 800,
