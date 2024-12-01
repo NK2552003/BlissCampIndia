@@ -1614,5 +1614,14 @@ main .video {
   padding: 20px 36px;
 }
 .price-badge {
-  z-index: 100;
+    background: #ff6200;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 100;
 }
