@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive BlissCamp</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://github.hubspot.com/odometer/themes/odometer-theme-minimal.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://github.hubspot.com/odometer/odometer.js'></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <section class="hero-section">
+        <div class="overlay">
+          <nav class="nav-bar">
+            <div class="logo">
+                BlissCampIndia
+            </div>
+            
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="nav-links">
+              <a href="#">Home</a>
+              <a href="#">About Us</a>
+              <a href="#">Our Treks</a>
+              <a href="#">Destinations</a>
+              <a href="#">Blog</a>
+              <a href="#">Contact Us</a>
+            </div>
+            
+            <!-- <div class="actions">
+              <a href="#" class="login">Log In</a>
+              <a href="#" class="signup">Sign Up</a>
+            </div> -->
+          </nav>
+          
+          <!-- Hero Content -->
+          <div class="hero-content">
+            <h1>Discover Your Next Great Adventure</h1>
+            <p>Immerse yourself in the extraordinary with us, uncovering the world's hidden gems.</p>
+          </div>
+          
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <div class="input-group">
+              <label for="location">Location</label>
+              <input type="text" id="location" placeholder="Tour Name, Destination">
+            </div>
+            <div class="input-group">
+              <label for="tour_type">Tour Type</label>
+              <select id="tour_type">
+                <option value="" disabled selected>Select Tour Type</option>
+                <option value="summer">Summer</option>
+                <option value="monsoon">Monsoon</option>
+                <option value="winter">Winter</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="destination">Destination</label>
+              <select id="destination">
+                <option value="" disabled selected>Select Your Destination</option>
+                <option value="himachal">Himachal</option>
+                <option value="kashmir">Kashmir</option>
+                <option value="ladakh">Ladakh</option>
+                <option value="nepal">Nepal</option>
+                <option value="uttrakhand">Uttrakhand</option>
+              </select>
+            </div>
+            <button class="search-btn">Search →</button>
+          </div>
+        </div>
+      </section>
+      <section class="dest-container">
+        <!-- Background Shapes -->
+        <div class="background-shape shape-1"></div>
+        <div class="background-shape shape-2"></div>
+      
+        <!-- Content Container -->
+        <div class="content-container">
+          <h2>Some Of Our Destinations</h2>
+          <p>
+            Discover the serene hills of Himachal, the spiritual calm of Uttarakhand, and the majestic peaks of Kashmir and Ladakh. Adventure, peace, and natural beauty await in India's mountains.
+          </p>
+          <div class="divider"></div>
+        </div>
+        <main>
+          <div class="container">
+            <div class="card">
+              <div class="card-inner">
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="./images/himachal.jpg" alt="Awesome views">
+                  </div>
+                  <div class="more">
+                    <ul>
+                      <li><img src="https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                      <li><img src="https://images.unsplash.com/photo-1600298882283-40b4dcb8b211?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                      <li><img src="https://plus.unsplash.com/premium_photo-1667987781458-c45c1ad5dfe1?q=80&w=2051&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+                      <li><img src="https://images.unsplash.com/photo-1600298882698-312a4137fd33?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""><span>50+</span></li>
+                    </ul>
+                  </div>
+                  <div class="tag">
+                    <a href="#">#Uttrakhand</a>
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+            <div class="card video">
+              <div class="card-inner">
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="./images/kashmir.webp" alt="Awesome views">
+                  </div>
+        
+                  <div class="tag">
+                    <a href="#">#Kashmir</a>
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <p class="moreT"><a href="#">More about tours</a> </p>
+              <div class="card-inner">
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="./images/hiking.jpg" alt="Hiking">
+                  </div>
+        
+                  <div class="more">
+                    <a href="#" class="arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg></a>
+        
+                  </div>
+                  <div class="tag">
+                    <a href="#">#Hiking</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <section class="unique-why-choose-us">
+          <div class="background-shape shape-2"></div>
+          <h2 class="unique-heading">Why Choose Us?</h2>
+          <div class="unique-container">
+            <div class="unique-card" id="card-1">
+              <img src="./images/map.png" alt="Accommodation" class="unique-icon">
+              <h3 class="unique-title">Accommodation</h3>
+              <p class="unique-description">
+                Experience the Best of Adventure – Premium meals, luxury stays, top-notch trekking equipment, and more.
+              </p>
+            </div>
+            <div class="unique-card" id="card-2">
+              <img src="./images/earth.png" alt="World Class Service" class="unique-icon">
+              <h3 class="unique-title">World Class Service</h3>
+              <p class="unique-description">
+                Unleash the World-Class Experience – Discover unparalleled service and a level of excellence.
+              </p>
+            </div>
+            <div class="unique-card" id="card-3">
+              <img src="./images/ballon.png" alt="Best Price Guarantee" class="unique-icon">
+              <h3 class="unique-title">Best Price Guarantee</h3>
+              <p class="unique-description">
+                Unlock the Best Price Guarantee – Enjoy luxury and affordability with our unbeatable deals.
+              </p>
+            </div>
+          </div>
+        </section>      
+      </section>
+      <section class="Asection">
+        <div class="achievements-section">
+          <div class="achievements-title">Our Achievements</div>
+          <div class="achievement-container">
+            <div class="achievement-box">
+              <div class="achievement-icon"><img src="./images/customer.png" alt="" class="ach-png"></div>
+              <div class="odometer odometer-customers"></div>
+              <div class="achievement-label">Customers</div>
+            </div>
+            <div class="achievement-box">
+              <div class="achievement-icon"><img src="./images/palm.png" alt="" class="ach-png"></div>
+              <div class="odometer odometer-destinations"></div>
+              <div class="achievement-label">Destinations</div>
+            </div>
+            <div class="achievement-box">
+              <div class="achievement-icon"><img src="./images/destination.png" alt="" class="ach-png"></div>
+              <div class="odometer odometer-treks"></div>
+              <div class="achievement-label">Treks</div>
+            </div>
+            <div class="achievement-box">
+              <div class="achievement-icon"><img src="./images/bus.png" alt="" class="ach-png"></div>
+              <div class="odometer odometer-distance"></div>
+              <div class="achievement-label">Distance Covered</div>
+            </div>
+          </div>
+          <button class="book-now-button">Book Now</button>
+        </div>
+      </section>
+      <section>
+        <div class="deals-section">
+          <h2 class="deals-title">Deals and Discounts</h2>
+          <div class="deals-container">
+            <!-- Card 1 -->
+            <div class="deal-card">
+              <div class="deal-badge sale">Sale!</div>
+              <img src="./images/kedarnath.jpg" alt="Kedarkantha Trek" class="deal-image" />
+              <div class="deal-details">
+                <h3 class="deal-title">Kedarkantha Trek</h3>
+                <p class="deal-duration">6 DAYS - 5 NIGHTS</p>
+                <p class="deal-description">
+                  Experience Kedarkantha Trek for ₹7500 only. Book now for a thrilling Himalayan adventure. Limited offer, don’t miss out!
+                </p>
+                <div class="deal-price">
+                  <span class="old-price">₹10,000.00</span>
+                  <span class="current-price">₹7,500.00</span>
+                </div>
+                <button class="deal-btn">Read More</button>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="deal-card">
+              <div class="deal-badge new">New!</div>
+              <img src="./images/manali.jpg" alt="Manali Adventure" class="deal-image" />
+              <div class="deal-details">
+                <h3 class="deal-title">Manali Adventure</h3>
+                <p class="deal-duration">5 DAYS - 4 NIGHTS</p>
+                <p class="deal-description">
+                  Embark on a mesmerizing Manali Adventure starting at just ₹6,500. Explore lush valleys and serene mountains. Book today!
+                </p>
+                <div class="deal-price">
+                  <span class="old-price">₹8,500.00</span>
+                  <span class="current-price">₹6,500.00</span>
+                </div>
+                <button class="deal-btn">Read More</button>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="deal-card">
+              <div class="deal-badge hot">Hot!</div>
+              <img src="./images/goa-beach.jpg" alt="Goa Beach Escape" class="deal-image" />
+              <div class="deal-details">
+                <h3 class="deal-title">Goa Beach Escape</h3>
+                <p class="deal-duration">4 DAYS - 3 NIGHTS</p>
+                <p class="deal-description">
+                  Unwind at Goa’s stunning beaches for ₹5,000 only. Enjoy sunsets, nightlife, and more! Limited spots available, book now!
+                </p>
+                <div class="deal-price">
+                  <span class="old-price">₹7,000.00</span>
+                  <span class="current-price">₹5,000.00</span>
+                </div>
+                <button class="deal-btn">Read More</button>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="deal-card">
+              <div class="deal-badge exclusive">Exclusive</div>
+              <img src="./images/leh.jpg" alt="Leh Ladakh Road Trip" class="deal-image" />
+              <div class="deal-details">
+                <h3 class="deal-title">Leh Ladakh Road Trip</h3>
+                <p class="deal-duration">7 DAYS - 6 NIGHTS</p>
+                <p class="deal-description">
+                  Join an exclusive Leh Ladakh road trip for ₹12,000. Adventure, breathtaking views, and lifetime memories await you!
+                </p>
+                <div class="deal-price">
+                  <span class="old-price">₹15,000.00</span>
+                  <span class="current-price">₹12,000.00</span>
+                </div>
+                <button class="deal-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="promo-banner">
+          <h2 class="promo-title">
+            Special Tour in July, August & September<br>Discover Kashmir Treks with
+          </h2>
+          <p class="promo-discount">Discount 30%</p>
+          <p class="promo-info">It’s limited seating! Hurry up</p>
+          <button class="promo-btn">Book Now</button>
+        </div>
+      </section>
+      <section class="winter-treks">
+        <h2 class="section-title">Explore Winter Treks</h2>
+        <div class="title-underline"></div>
+        <div class="treks-container">
+          <!-- Trek Card 1 -->
+          <div class="trek-card">
+            <div class="price-badge">₹9,500.00</div>
+            <img src="./images/har-ki-dun.jpg" alt="Har Ki Dun Trek" class="trek-image" />
+            <div class="trek-details">
+              <h3 class="trek-title">Har ki Dun Trek</h3>
+              <p class="trek-duration">5 DAYS - 4 NIGHTS</p>
+              <p class="trek-description">
+                Discover the captivating beauty of the Har Ki Dun trek, nestled snugly in the embrace of the Garhwal Himalayas.
+              </p>
+              <div class="trek-footer">
+                <div class="trek-rating">⭐⭐⭐⭐⭐</div>
+                <button class="trek-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- Trek Card 2 -->
+          <div class="trek-card">
+            <div class="price-badge">₹15,999.00</div>
+            <img src="./images/gaumukh-tapovan.jpg" alt="Gaumukh Tapovan Trek" class="trek-image" />
+            <div class="trek-details">
+              <h3 class="trek-title">Gaumukh Tapovan Trek</h3>
+              <p class="trek-duration">5 DAYS - 4 NIGHTS</p>
+              <p class="trek-description">
+                For both spiritual seekers and adventure seekers, the Gaumukh Tapovan Trek is a pilgrimage of enormous significance.
+              </p>
+              <div class="trek-footer">
+                <div class="trek-rating">⭐⭐⭐⭐⭐</div>
+                <button class="trek-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- Trek Card 3 -->
+          <div class="trek-card">
+            <div class="price-badge">₹8,500.00</div>
+            <img src="./images/phulara-ridge.jpg" alt="Phulara Ridge Trek" class="trek-image" />
+            <div class="trek-details">
+              <h3 class="trek-title">Phulara Ridge Trek</h3>
+              <p class="trek-duration">5 DAYS - 4 NIGHTS</p>
+              <p class="trek-description">
+                The Phulara Ridge Trek is a captivating choice for several reasons. Ridge treks are a rarity in our country.
+              </p>
+              <div class="trek-footer">
+                <div class="trek-rating">⭐⭐⭐⭐⭐</div>
+                <button class="trek-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="winter-treks summer-treks">
+        <h2 class="section-title">Explore Summer Treks</h2>
+        <div class="title-underline"></div>
+        <div class="treks-container">
+          <!-- Trek Card 1 -->
+          <div class="trek-card">
+            <div class="price-badge">₹10,000.00</div>
+            <img src="./images/Hampta-Pass-Trek.jpg" alt="Hampta Pass Trek" class="trek-image" />
+            <div class="trek-details">
+              <h3 class="trek-title">Hampta Pass Trek</h3>
+              <p class="trek-duration">6 DAYS - 5 NIGHTS</p>
+              <p class="trek-description">
+                Experience the stunning transition from lush green valleys of Kullu to the barren landscapes of Spiti on the Hampta Pass Trek.
+              </p>
+              <div class="trek-footer">
+                <div class="trek-rating">⭐⭐⭐⭐⭐</div>
+                <button class="trek-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- Trek Card 2 -->
+          <div class="trek-card">
+            <div class="price-badge">₹12,500.00</div>
+            <img src="./images/Roopkund-Trek.jpg" alt="Roopkund Trek" class="trek-image" />
+            <div class="trek-details">
+              <h3 class="trek-title">Roopkund Trek</h3>
+              <p class="trek-duration">8 DAYS - 7 NIGHTS</p>
+              <p class="trek-description">
+                Discover the mystery of the skeleton lake and the awe-inspiring beauty of the Roopkund trek, perfect for thrill-seekers.
+              </p>
+              <div class="trek-footer">
+                <div class="trek-rating">⭐⭐⭐⭐⭐</div>
+                <button class="trek-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- Trek Card 3 -->
+          <div class="trek-card">
+            <div class="price-badge">₹9,000.00</div>
+            <img src="./images/Beas-Kund-Trek.jpg" alt="Beas Kund Trek" class="trek-image" />
+            <div class="trek-details">
+              <h3 class="trek-title">Beas Kund Trek</h3>
+              <p class="trek-duration">4 DAYS - 3 NIGHTS</p>
+              <p class="trek-description">
+                Walk along the trails surrounded by majestic peaks to reach the pristine Beas Kund, a trek for nature lovers.
+              </p>
+              <div class="trek-footer">
+                <div class="trek-rating">⭐⭐⭐⭐⭐</div>
+                <button class="trek-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="winter-treks monsoon-treks">
+        <h2 class="section-title">Explore Monsoon Treks</h2>
+        <div class="title-underline"></div>
+        <div class="treks-container">
+          <!-- Trek Card 1 -->
+          <div class="trek-card">
+            <div class="price-badge">₹7,500.00</div>
+            <img src="./images/Valley-of-Flowers-Trek.jpeg" alt="Valley of Flowers Trek" class="trek-image" />
+            <div class="trek-details">
+              <h3 class="trek-title">Valley of Flowers Trek</h3>
+              <p class="trek-duration">6 DAYS - 5 NIGHTS</p>
+              <p class="trek-description">
+                Witness a vibrant splash of colors in the Valley of Flowers, a UNESCO World Heritage Site and a paradise for nature lovers.
+              </p>
+              <div class="trek-footer">
+                <div class="trek-rating">⭐⭐⭐⭐⭐</div>
+                <button class="trek-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- Trek Card 2 -->
+          <div class="trek-card">
+            <div class="price-badge">₹6,999.00</div>
+            <img src="./images/Rajmachi-Trek.jpg" alt="Rajmachi Trek" class="trek-image" />
+            <div class="trek-details">
+              <h3 class="trek-title">Rajmachi Trek</h3>
+              <p class="trek-duration">2 DAYS - 1 NIGHT</p>
+              <p class="trek-description">
+                Enjoy the lush greenery, waterfalls, and misty landscapes on the Rajmachi Trek, a perfect monsoon escape.
+              </p>
+              <div class="trek-footer">
+                <div class="trek-rating">⭐⭐⭐⭐⭐</div>
+                <button class="trek-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- Trek Card 3 -->
+          <div class="trek-card">
+            <div class="price-badge">₹8,200.00</div>
+            <img src="./images/Kudremukh-Trek.png" alt="Kudremukh Trek" class="trek-image" />
+            <div class="trek-details">
+              <h3 class="trek-title">Kudremukh Trek</h3>
+              <p class="trek-duration">3 DAYS - 2 NIGHTS</p>
+              <p class="trek-description">
+                Explore the breathtaking landscapes of Kudremukh, complete with rolling hills, waterfalls, and rich biodiversity.
+              </p>
+              <div class="trek-footer">
+                <div class="trek-rating">⭐⭐⭐⭐⭐</div>
+                <button class="trek-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials-section">
+        <div class="header">
+          <h1>Hear From Our Happy Travelers ❤️</h1>
+        </div>
+        <div class="title-underline"></div>
+        <div class="content">
+          <div class="imgPcomm">
+            <div class="image-area">
+              <img src="./images/2.jpg" alt="Mountain landscape in India">
+              <p class="stat">10.9K+</p>
+            </div>
+            <div class="testimonial-card">
+              <p class="quote">"Basically to say, I was very astonished after seeing the work of the team that we hired and they were very friendly, asked people about what they need and provided it."</p>
+              <div class="author">
+                <img src="./images/aditya.png" alt="">
+                <div>
+                  <p class="name">Aditya Sharma</p>
+                  <p class="title">Solo Traveler</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials">
+            <div class="testimonial-card">
+              <p class="quote">"Exploring the serene mountains of Himachal Pradesh with this travel agency was a life-changing experience. From picturesque views to seamless planning, it was perfect!"</p>
+              <div class="author">
+                <img src="./images/gaureesh.png" alt="">
+                <div>
+                  <p class="name">Gaureesh B. Tomar</p>
+                  <p class="title">Traveler, Adventure Seeker</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="quote">"Our trip to the majestic valleys of Ladakh was beyond words. The team ensured we had safe yet thrilling adventures amidst breathtaking landscapes."</p>
+              <div class="author">
+                <img src="./images/nitish.png" alt="">
+                <div>
+                  <p class="name">Nitish</p>
+                  <p class="title">Photographer,Developer, Nature Lover</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="quote">"Discovering the unexplored trails in Uttarakhand was a dream come true. Every moment was magical, thanks to their expert guides and top-notch services."</p>
+              <div class="author">
+                <img src="./images/nitin.png" alt="">
+                <div>
+                  <p class="name">Nitin Kumar</p>
+                  <p class="title">Solo Traveler</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="travel-website-footer">
+        <div class="travel-footer-container">
+            <div class="travel-footer-top">
+                <div class="row">
+                   <div class="col12">
+                     <!-- Contact Information -->
+                     <div class="col-lg-4 col-md-6 mb-4 leftF">
+                        <h4 class="travel-footer-heading">Contact Us</h4>
+                        <ul class="travel-footer-contact-info">
+                          <li>
+                              <i class="fas fa-phone" style="color: #ff5e14; margin-right: 10px;"></i>
+                              +91 96254 65408 (Ansul)
+                          </li>
+                          <li>
+                              <i class="fab fa-whatsapp" style="color: #25D366; margin-right: 10px;"></i>
+                              <a href="https://wa.me/9625465408" target="_blank" style="color: inherit; text-decoration: none;">+91 96254 65408 (Ansul)</a>
+                          </li>
+                          <li>
+                              <i class="fas fa-envelope" style="color: #0072C6; margin-right: 10px;"></i>
+                              <a href="mailto:info@blisscampusindia.com" style="color: inherit; text-decoration: none;">info@blisscampusindia.com</a>
+                          </li>
+                          <li>
+                              <i class="fas fa-map-marker-alt" style="color: #E63946; margin-right: 10px;"></i>
+                              Dhoolkot, Dehradun, Uttrakhand, India
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="social-div">
+                        <h4 class="travel-footer-heading">Connect with Us</h4>
+                        <div class="travel-footer-social-links">
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+              <div class="travel-footer-bottom text-center">
+                  <p>&copy; 2024 BlissCampIndia. Designed with ❤️ for travel enthusiasts by Haryanvi Londa</p>
+              </div>
+        </div>
+    </footer>
+    
+    <script src="./scripts.js"></script>
+    <script>
+      // Initialize odometers
+      const customersOdometer = new Odometer({
+        el: document.querySelector('.odometer-customers'),
+        value: 0,
+        theme: 'minimal',
+        duration: 2000,
+      });
+
+      const destinationsOdometer = new Odometer({
+        el: document.querySelector('.odometer-destinations'),
+        value: 0,
+        theme: 'minimal',
+        duration: 2000,
+      });
+
+      const treksOdometer = new Odometer({
+        el: document.querySelector('.odometer-treks'),
+        value: 0,
+        theme: 'minimal',
+        duration: 2000,
+      });
+
+      const distanceOdometer = new Odometer({
+        el: document.querySelector('.odometer-distance'),
+        value: 0,
+        theme: 'minimal',
+        duration: 2000,
+      });
+
+      // Function to update odometer values
+      function updateOdometers() {
+        customersOdometer.update(1000);
+        destinationsOdometer.update(50);
+        treksOdometer.update(60);
+        distanceOdometer.update(4350);
+      }
+
+      // Intersection Observer to detect visibility
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            updateOdometers(); // Trigger odometer update
+            observer.unobserve(entry.target); // Stop observing after the update
+          }
+        });
+      }, {
+        threshold: 0.5, // Trigger when 50% of the section is visible
+      });
+
+      // Observe the achievements section
+      const achievementsSection = document.querySelector('.achievements-section');
+      observer.observe(achievementsSection);
+
+    </script>
+    
+</body>
+</html>
