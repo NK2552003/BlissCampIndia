@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlissCampIndia - Tours</title>
+  <link rel="stylesheet" href="./treks_style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Search Tour</h2>
+      <p>Find your dream tour today!</p>
+      <form id="searchForm">
+        <input type="text" id="searchKeyword" placeholder="Search Tour" />
+        <select id="tourType">
+          <option value="">All Type</option>
+          <option value="Trek">Trek</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Relaxation">Relaxation</option>
+        </select>
+        <select id="seasonFilter">
+            <option value="">All Seasons</option>
+            <option value="Summer">Summer</option>
+            <option value="Winter">Winter</option>
+            <option value="Monsoon">Monsoon</option>
+            <option value="Autumn">Autumn</option>
+          </select>
+        <select id="destinationFilter">
+          <option value="">All Destinations</option>
+          <option value="Manali">Manali</option>
+          <option value="Ladakh">Ladakh</option>
+          <option value="Goa">Goa</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="Himachal Pradesh">Himanchal Pradesh</option>
+          <option value="Spiti">Spiti</option>
+          <option value="Rishikesh">Rishikesh</option>
+          <option value="Kashmir">Kashmir</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Jaisalmer">Jaisalmer</option>
+          <option value="Shimla">Shimla</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Darjeeling">Darjeeling</option>
+          <option value="Leh">Leh</option>
+          <option value="Hampi">Hampi</option>
+          <option value="Rishikesh">Rishikesh</option>
+        </select>
+        <select id="monthFilter">
+          <option value="">All Months</option>
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+      </form>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="tour-section">
+      <div class="tour-header">
+        <span>Showing <span id="resultsCount">0</span> of 37 tours</span>
+        <select id="sortOptions" onchange="sortTours()">
+          <option value="default">Default sorting</option>
+          <option value="priceLow">Price: Low to High</option>
+          <option value="priceHigh">Price: High to Low</option>
+        </select>
+      </div>
+      <div class="tour-grid" id="tourGrid">
+        <!-- Dynamic tour cards will be appended here -->
+      </div>
+    </main>
+  </div>
+
+  <script src="./trick_script.js"></script>
+</body>
+</html>

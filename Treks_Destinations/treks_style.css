@@ -1,0 +1,238 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 450px;
+  width: 100%;
+  max-width: 300px;
+  background: linear-gradient(135deg, #0095ff, #006aff);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.sidebar p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.sidebar form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 320px; /* Fixed height */
+  justify-content: space-between;
+}
+
+.sidebar input,
+.sidebar select,
+.sidebar button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.sidebar input {
+  font-size: 0.9rem;
+}
+
+.sidebar select {
+  font-size: 0.9rem;
+}
+
+.sidebar button {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar button:hover {
+  background: #0056b3;
+}
+
+/* Main Content */
+.tour-section {
+  flex: 1;
+  overflow: hidden;
+}
+
+.tour-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tour-header select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.tour-grid {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  overflow-y: auto; /* Enable scrolling */
+  max-height: 660px; /* Restrict rows to 2 at a time */
+  padding-right: 10px; /* For smooth scrolling */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    max-width: 100%;
+  }
+
+  .tour-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar h2 {
+    font-size: 1.5rem;
+  }
+
+  .sidebar button {
+    font-size: 0.8rem;
+  }
+}
+
+.trek-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #0095ff;
+}
+
+.trek-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.price-badge {
+  text-align: center;
+  background: #0095ff;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 10px;
+  /* width: 70px; */
+  width: 94%;
+  border-radius: 12px;
+}
+.trek-image {
+  /* position: relative;
+  top: -50px; */
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 1px solid #0095ff; /* Bottom border for the image */
+}
+
+.trek-details {
+  padding: 15px; /* Padding inside the details section */
+}
+
+.trek-title {
+  font-size: 1.5em; /* Title font size */
+  color: #333; /* Dark text color */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.trek-duration,
+.trek-description,
+.trek-destination,
+.trek-month,
+.trek-season {
+  font-size: 0.9em; /* Smaller font size for details */
+  color: #666; /* Lighter text color */
+  margin: 5px 0; /* Margin around the text */
+}
+.trek-duration {
+  margin-bottom: 10px;
+}
+.trek-description {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.trek-footer {
+  display: flex; /* Flexbox for footer layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  margin-top: 15px; /* Margin above the footer */
+}
+.Sea {
+  width: 100%;
+  padding: 0px 20px;
+}
+.DestMonth {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.trek-rating {
+  font-size: 1.2em; /* Font size for rating */
+  color: #ff9800; /* Color for the stars */
+}
+
+.trek-btn {
+  background-color: #0095ff; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none; /* No border */
+  border-radius: 12px; /* Rounded corners */
+  padding: 10px 15px; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.trek-btn:hover {
+  background-color: #194ce6; /* Darker shade on hover */
+}
