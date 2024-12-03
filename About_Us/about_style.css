@@ -1,0 +1,451 @@
+/* Global Styling */
+@import url("https://fonts.googleapis.com/css2?family=Moderustic&family=SUSE:wght@600&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Moderustic", "Poppins", sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.culture-section {
+  padding: 50px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Back to Homepage Button */
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1em;
+  text-decoration: none;
+  color: #38b6ff;
+  background: transparent;
+  border: 2px solid #38b6ff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #38b6ff;
+  color: #fff;
+}
+
+/* Background Text for BlissCampIndia */
+.background-blisscamp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem; /* Scales according to viewport */
+  font-weight: 700;
+  color: rgba(200, 200, 200, 0.05); /* Subtle appearance */
+  z-index: -1; /* Behind all content */
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Header Content */
+.content {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+.content .highlight {
+  color: #38b6ff;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.content .btn {
+  padding: 12px 25px;
+  background-color: #38b6ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.content .btn:hover {
+  background-color: #007acc;
+}
+
+/* Marquee */
+.marquee {
+  margin: 30px 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee p {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+  font-size: 1em;
+  color: #999;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Flex Container for Cards and Image */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Cards Section */
+.culture-cards {
+  display: grid;
+  grid-template-columns: 1fr; /* Default single column */
+  gap: 20px;
+  flex: 1;
+  max-width: 50%;
+}
+
+@media (min-width: 1024px) {
+  .culture-cards {
+    grid-template-columns: 1fr 1fr; /* Two columns on large screens */
+  }
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card .icon {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #38b6ff;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+/* Image Section */
+.image-container {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+}
+
+.image-container .main-image {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #999;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .culture-cards,
+  .image-container {
+    max-width: 100%;
+  }
+
+  .content h1 {
+    font-size: 2.2em;
+  }
+}
+
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  padding-top: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.intro-content {
+  flex: 1 1 45%;
+  margin-bottom: 20px;
+  padding-right: 50px;
+  z-index: 100;
+}
+
+.intro-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.intro-description {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.intro-image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.intro-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-content,
+  .intro-image {
+    flex: 1 1 100%;
+  }
+  .intro-content {
+    padding-right: 0px;
+  }
+}
+
+.travel-website-footer {
+  background-color: #222;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 0;
+}
+
+.travel-footer-heading {
+  font-size: 18px;
+  color: rgb(0, 102, 255);
+  margin-bottom: 15px;
+}
+
+.travel-footer-container a {
+  color: #ff5e14;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.travel-footer-container a:hover {
+  color: #fff;
+}
+
+.travel-footer-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.travel-footer-contact-info li,
+.travel-footer-quick-links li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.travel-footer-contact-info li i,
+.travel-footer-quick-links li a:hover {
+  color: #ff5e14;
+  font-size: 18px;
+}
+
+.travel-footer-quick-links a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.travel-footer-quick-links a:hover {
+  color: #ff5e14;
+}
+
+/* Social Links */
+.travel-footer-social-links {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.travel-footer-social-links a {
+  background: #333;
+  color: #fff;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.travel-footer-social-links a:hover {
+  background: #1476ff;
+  transform: scale(1.1);
+}
+
+/* Subscribe Form */
+.travel-footer-subscribe-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.travel-footer-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background: #333;
+  color: #fff;
+}
+
+.travel-footer-button {
+  padding: 10px 20px;
+  background: #14a1ff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.travel-footer-button:hover {
+  background: #1261e0;
+}
+
+/* Footer Bottom */
+.travel-footer-bottom {
+  margin-top: 20px;
+  padding-top: 20px;
+  /* border-top: 1px solid #444; */
+}
+
+.travel-footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.col12 {
+  display: flex;
+}
+.col-lg-4 {
+  padding: 0px 40px;
+  width: 50%;
+}
+.leftF {
+  width: 70%;
+}
+.travel-footer-contact-info,
+.travel-footer-quick-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.travel-footer-contact-info li,
+.travel-footer-quick-links li {
+  list-style: circle;
+  padding: 2px 1px;
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  border: none;
+  transform: translateY(0px);
+  transition: 0.2s ease-in-out;
+  color: black;
+}
+.travel-footer-contact-info li::before,
+.travel-footer-quick-links li::before {
+  background-color: transparent;
+}
+.travel-website-footer {
+  background-color: rgb(234, 243, 247);
+  color: black;
+}
+.text-center {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .col12 {
+    flex-direction: column;
+  }
+}
+.travel-footer-social-links {
+  padding: 10px;
+}
+.social-div {
+  padding: 20px 36px;
+}
+.price-badge {
+  background: #ff6200;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 5px;
+  position: absolute;
+  border-radius: 5px;
+  z-index: 100;
+}
+.viewBtn {
+  margin-top: 40px;
+}

@@ -1628,3 +1628,6 @@ main .video {
 .viewBtn {
   margin-top: 40px;
 }
+.nav-links.mobile-hidden {
+  z-index: 100;
+}

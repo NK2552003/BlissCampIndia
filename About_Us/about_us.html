@@ -1,12 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlissCampIndia</title>
-    <link rel="stylesheet" href="./about_style.css">
-    <link rel="icon" href="../images/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlissCampIndia</title>
+  <link rel="stylesheet" href="about_style.css">
+  <link rel="icon" href="../images/logo.png" type="image/png">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+  <!-- Back to Homepage Button -->
+
+  <a href="../index.html" class="back-btn">← Back to Homepage</a>
+
+    <!-- Background Text -->
+
+  <div class="background-blisscamp">BlissCampIndia</div>
+
+  <!-- About US Section -->
+  <section class="intro-section">
+    <div class="intro-content">
+      <h2 class="intro-title">About Us</h2>
+      <p class="intro-description">
+        Welcome to BlissCamp India! We create personalized adventures for every traveler—mountain escapes, cultural experiences, or thrilling journeys. Let us turn your travel dreams into unforgettable memories. Your adventure starts here!
+      </p>
+    </div>
+    <div class="intro-image">
+      <img src="../images/4.jpg" alt="Beautiful landscape" class="intro-img">
+    </div>
+  </section>
+
+  <!-- Main Section -->
+  <section class="culture-section">
+    <!-- Header -->
+    <div class="content">
+      <h1>Discover India with <span class="highlight">BlissCampIndia</span>.</h1>
+      <p class="subtitle">Your perfect gateway to adventure, relaxation, and cultural wonders awaits.</p>
+      <a href="#" class="btn">Start Your Journey</a>
+    </div>
+
+    <!-- Marquee -->
+    <div class="marquee">
+      <p>Himalayan Adventures · Scenic Getaways · Rich Culture · Memorable Experiences · Spiritual Retreats · </p>
+    </div>
+    
+    <!-- Flex Container for Cards and Image -->
+    <div class="flex-container">
+      <!-- Cards Section -->
+      <div class="culture-cards">
+        <div class="card">
+          <div class="icon">🏔️</div>
+          <h2>Himalayan Adventures</h2>
+          <p>Explore trekking trails, camp under the stars, and experience the serenity of the majestic Himalayan ranges.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🌄</div>
+          <h2>Scenic Getaways</h2>
+          <p>Visit stunning hill stations like Shimla, Manali, and Dalhousie, surrounded by breathtaking landscapes.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🎨</div>
+          <h2>Rich Culture</h2>
+          <p>Immerse yourself in local traditions, vibrant festivals, and authentic Indian cuisine.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🛕</div>
+          <h2>Spiritual Retreats</h2>
+          <p>Find peace in Rishikesh or Dharamshala, famous for their yoga retreats and spiritual energy.</p>
+        </div>
+      </div>
+
+      <!-- Image Section -->
+      <div class="image-container">
+        <img src="../images/3.jpg" alt="Northern India" class="main-image">
+        <p class="caption">Breathtaking views of India's landscapes.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="travel-website-footer">
+    <div class="travel-footer-container">
+        <div class="travel-footer-top">
+            <div class="row">
+               <div class="col12">
+                 <!-- Contact Information -->
+                 <div class="col-lg-4 col-md-6 mb-4 leftF">
+                    <h4 class="travel-footer-heading">Contact Us</h4>
+                    <ul class="travel-footer-contact-info">
+                      <li>
+                          <i class="fas fa-phone" style="color: #ff5e14; margin-right: 10px;"></i>
+                          +91 96254 65408 (Ansul)
+                      </li>
+                      <li>
+                          <i class="fab fa-whatsapp" style="color: #25D366; margin-right: 10px;"></i>
+                          <a href="https://wa.me/9625465408" target="_blank" style="color: inherit; text-decoration: none;">+91 96254 65408 (Ansul)</a>
+                      </li>
+                      <li>
+                          <i class="fas fa-envelope" style="color: #0072C6; margin-right: 10px;"></i>
+                          <a href="mailto:info@blisscampusindia.com" style="color: inherit; text-decoration: none;">info@blisscampusindia.com</a>
+                      </li>
+                      <li>
+                          <i class="fas fa-map-marker-alt" style="color: #E63946; margin-right: 10px;"></i>
+                          Dhoolkot, Dehradun, Uttrakhand, India
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="social-div">
+                    <h4 class="travel-footer-heading">Connect with Us</h4>
+                    <div class="travel-footer-social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+          <div class="travel-footer-bottom text-center">
+              <p>&copy; 2024 BlissCampIndia. Designed with ❤️ for travel enthusiasts by Haryanvi Londa</p>
+          </div>
+    </div>
+</footer>
+
+  <script>
+    // Scroll Reveal Animations
+    ScrollReveal().reveal('.content', { duration: 1000, origin: 'bottom', distance: '50px', delay: 200 });
+    ScrollReveal().reveal('.card', { duration: 800, origin: 'left', distance: '50px', interval: 200 });
+    ScrollReveal().reveal('.image-container ,.intro-image', { duration: 1000, origin: 'right', distance: '50px', delay: 300 });
+    ScrollReveal().reveal('.intro-content',{duration:1000,origin:'left',distance:'50px',delay:300});
+  </script>
+  <script src="./script.js"></script>
 </body>
 </html>
