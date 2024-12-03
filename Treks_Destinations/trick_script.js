@@ -3,41 +3,54 @@ let tours = []; // Declare a global variable to hold the tours data
 function populateTours(data) {
   const tourGrid = document.getElementById("tourGrid");
   tourGrid.innerHTML = ""; // Clear previous content
+
+  if (data.length === 0) {
+    // Show a message when no results are found
+    tourGrid.innerHTML = `
+        <div class="no-results">
+          <p>No tours found matching your search criteria. Please try different filters or keywords.</p>
+        </div>`;
+    document.getElementById("resultsCount").textContent = 0; // Update results count
+    return; // Exit the function early
+  }
+
   data.forEach((tour) => {
     const card = `
-            <div class="trek-card">
-              <img src="${tour.image}" alt="${tour.title}" class="trek-image" />
-                 <div class="price-badge">₹${tour.price.toLocaleString()}</div>
-              <div class="trek-details">
-                <h3 class="trek-title">${tour.title}</h3>
-                <p class="trek-duration">${tour.duration.days} DAYS - ${
+              <div class="trek-card">
+                <img src="${tour.image}" alt="${
+      tour.title
+    }" class="trek-image" />
+                <div class="price-badge">₹${tour.price.toLocaleString()}</div>
+                <div class="trek-details">
+                  <h3 class="trek-title">${tour.title}</h3>
+                  <p class="trek-duration">${tour.duration.days} DAYS - ${
       tour.duration.nights
     } NIGHTS</p>
-                <p class="trek-description">
-                  ${tour.description}
-                </p>
-                <div class="DestMonth">
-                    <p class="trek-destination">
-                        <i class="fas fa-map-marker-alt"></i>&emsp;${
-                          tour.destination
-                        }
-                    </p>
-                    <p class="trek-month">
-                        <i class="fas fa-calendar-alt"></i>&emsp;${tour.month}
-                    </p>
-                </div>
-                <div class="Sea">
-                    <p class="trek-season">
-                        <i class="fas fa-cloud-sun"></i>&ensp;${tour.season}
-                    </p>
-                </div>
-                <div class="trek-footer">
-                  <div class="trek-rating">${"⭐".repeat(tour.rating)}</div>
-                  <button class="trek-btn">Read More</button>
+                  <p class="trek-description">
+                    ${tour.description}
+                  </p>
+                  <div class="DestMonth">
+                      <p class="trek-destination">
+                          <i class="fas fa-map-marker-alt"></i>&emsp;${
+                            tour.destination
+                          }
+                      </p>
+                      <p class="trek-month">
+                          <i class="fas fa-calendar-alt"></i>&emsp;${tour.month}
+                      </p>
+                  </div>
+                  <div class="Sea">
+                      <p class="trek-season">
+                          <i class="fas fa-cloud-sun"></i>&ensp;${tour.season}
+                      </p>
+                  </div>
+                  <div class="trek-footer">
+                    <div class="trek-rating">${"⭐".repeat(tour.rating)}</div>
+                    <button class="trek-btn">Read More</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          `;
+            `;
     tourGrid.innerHTML += card; // Append new card to the grid
   });
   document.getElementById("resultsCount").textContent = data.length; // Update results count

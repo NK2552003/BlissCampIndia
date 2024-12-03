@@ -1,22 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Moderustic&family=SUSE:wght@600&display=swap");
+
 /* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
 }
 
 body {
   background-color: #f4f7fa;
+  font-family: "Moderustic", "Poppins", sans-serif;
   color: #333;
 }
 
 /* Container */
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Prevent wrapping on desktop */
   gap: 20px;
   padding: 20px;
+  justify-content: flex-start;
+  align-items: flex-start; /* Default alignment */
 }
 
 /* Sidebar */
@@ -235,4 +239,29 @@ body {
 
 .trek-btn:hover {
   background-color: #194ce6; /* Darker shade on hover */
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+.no-results p {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  color: #ff5733;
+}
+@media (min-width: 769px) {
+  .container {
+    align-items: center; /* Vertically center the sidebar */
+  }
+
+  .sidebar {
+    height: auto; /* Ensure it doesn't stretch */
+    align-self: center; /* Center the sidebar in its column */
+  }
 }
