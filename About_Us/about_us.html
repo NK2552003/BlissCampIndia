@@ -27,7 +27,7 @@
       </p>
     </div>
     <div class="intro-image">
-      <img src="../images/4.jpg" alt="Beautiful landscape" class="intro-img">
+      <img src="../images/logo.png" alt="Beautiful landscape" class="intro-img">
     </div>
   </section>
 
@@ -44,6 +44,33 @@
     <div class="marquee">
       <p>Himalayan Adventures · Scenic Getaways · Rich Culture · Memorable Experiences · Spiritual Retreats · </p>
     </div>
+    <section class="mission-vision-section">
+      <div class="container">
+        <div class="mission" data-reveal>
+          <div class="text">
+            <h2>Mission</h2>
+            <p>
+              Our mission is to create extraordinary travel experiences that connect people with nature and culture, leaving lasting memories. 
+            </p>
+            <p><strong>Making travel accessible and unforgettable.</strong></p>
+          </div>
+          <div class="image">
+            <img src="../images/4.jpg" alt="Mission">
+          </div>
+        </div>
+        <div class="vision" data-reveal>
+          <div class="image">
+            <img src="../images/front.jpeg" alt="Vision" style="height:300px;" class="hidImg">
+          </div>
+          <div class="text">
+            <h2>Vision</h2>
+            <p>
+              Our vision is to be India's leading travel company, inspiring and empowering travelers to explore the unexplored with sustainable tourism.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <!-- Flex Container for Cards and Image -->
     <div class="flex-container">
@@ -130,6 +157,14 @@
     ScrollReveal().reveal('.card', { duration: 800, origin: 'left', distance: '50px', interval: 200 });
     ScrollReveal().reveal('.image-container ,.intro-image', { duration: 1000, origin: 'right', distance: '50px', delay: 300 });
     ScrollReveal().reveal('.intro-content',{duration:1000,origin:'left',distance:'50px',delay:300});
+    ScrollReveal().reveal('[data-reveal]', {
+    duration: 1000,
+    distance: '50px',
+    origin: 'bottom',
+    interval: 200,
+    reset: true, // Animation will repeat on scrolling back
+  });
+
   </script>
   <script src="./script.js"></script>
 </body>
