@@ -1,0 +1,253 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.UttDest {
+  max-width: 100%;
+  height: 700px;
+  display: flex;
+}
+/* .UttDest div {
+  border: 1px solid black;
+} */
+.leftSection {
+  width: 36.5%;
+  display: flex;
+}
+.rightSection {
+  width: 64.5%;
+  display: flex;
+}
+.leftImg {
+  width: 40%;
+  display: flex;
+}
+.rightImg {
+  width: 60%;
+}
+.One {
+  padding-top: 300px;
+  padding-left: 5px;
+  width: 80%;
+  height: 240px;
+}
+.Two {
+  width: 100%;
+  padding-top: 50px;
+  height: 440px;
+}
+.contentDest {
+  width: 40%;
+  /* border: 1px solid green; */
+}
+.imageDestSec {
+  width: 60%;
+  /* border: 1px solid green; */
+  display: flex;
+}
+.imgRLeft {
+  width: 40%;
+}
+.imgRRight {
+  width: 60%;
+}
+.Three {
+  width: 90%;
+  padding-top: 180px;
+  height: 300px;
+}
+.Three img {
+  height: 500px;
+}
+.Four {
+  padding-bottom: 20px;
+  height: 300px;
+}
+.Five {
+  height: 30%;
+}
+
+.Six {
+  height: 20%;
+  /* display: flex; */
+  align-items: center;
+}
+.Four img {
+  padding-top: 30px;
+  width: 98%;
+  z-index: -1;
+}
+.Five img {
+  width: 70%;
+  height: 100%;
+}
+/* .Six img {
+  height: 70%;
+} */
+.Six a {
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  /* letter-spacing: 3px; */
+}
+.Six p {
+  padding-top: 20px;
+}
+.heading {
+  width: 200%;
+  z-index: 100;
+  height: 25%;
+  padding: 10px;
+  font-size: 9rem;
+}
+.heading p {
+  z-index: 100;
+  position: absolute;
+  color: rgb(86, 161, 241);
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: rgb(86, 161, 241); /* Inner color */
+}
+.line {
+  margin-left: 30px;
+  border-radius: 8px;
+  width: 35%;
+  display: block;
+  height: 3px;
+  background-color: rgb(86, 161, 241);
+}
+.contentP {
+  padding: 40px;
+  letter-spacing: 3px;
+}
+/* img {
+  border-radius: 12px;
+} */
+@media (min-width: 769px) {
+  .UttDest {
+    /* background-color: whitesmoke; */
+    /* justify-content: center;
+    align-items: center; */
+  }
+}
+/* Media query for devices with a max-width of 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+  .UttDest {
+    padding-top: 20px;
+    flex-direction: column; /* Stack columns */
+    height: 620px;
+  }
+
+  .heading {
+    font-size: 3rem; /* Smaller heading font size on mobile */
+  }
+  .contentDest,
+  .imageDestSec,
+  .imgRLeft,
+  .imgRRight {
+    width: 100%; /* Make these sections take full width */
+  }
+
+  .One {
+    padding-top: 100px; /* Reduced padding for mobile */
+  }
+
+  .Two {
+    padding-top: 30px;
+  }
+
+  .Four img,
+  .Five img {
+    width: 100%; /* Images take full width on mobile */
+    height: auto;
+  }
+
+  /* .Six {
+    padding: 20px;
+  } */
+
+  .Six a {
+    font-size: 1rem; /* Adjust link font size for mobile */
+    background-color: rgba(37, 146, 182, 0.925);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0 0 5px;
+  }
+
+  .Six p {
+    padding-top: 50px; /* Reduced padding for mobile */
+  }
+  .leftSection {
+    display: none;
+  }
+  .heading {
+    height: 18%;
+    width: 100%;
+    color: rgba(37, 146, 182, 0.642);
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: rgba(37, 146, 182, 0.642);
+  }
+  .imageDestSec {
+    position: absolute;
+    z-index: -1;
+  }
+  .contentP {
+    color: white;
+    background-color: rgb(37, 146, 182);
+    border: 1px solid white;
+    border-radius: 12px;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  /* .line {
+    display: none;
+  } */
+  .imgRRight {
+    position: relative;
+  }
+  .Four img {
+    width: 200px;
+    height: 300px;
+  }
+  .Five img {
+    position: relative;
+    z-index: -1;
+    margin-top: 120px;
+    height: 150px;
+  }
+  /* .Six {
+    margin-top: 60px;
+  } */
+}
+
+.Four img {
+  position: relative;
+  padding-top: 30px;
+  width: 90%;
+  height: 80%;
+  z-index: -1;
+}
+img {
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.UttDest [data-sr-id] {
+  visibility: hidden;
+}
+.Dest1 {
+  background-color: whitesmoke;
+}
+.Four img {
+  position: relative;
+  z-index: 1;
+}
+
+section:nth-child(odd) {
+  background-color: whitesmoke;
+}
+@media (max-width: 768px) {
+  section:nth-child(odd) {
+    background-color: transparent;
+  }
+}

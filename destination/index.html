@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+    </head>
+<body>
+    <div class="container" id="destinations-container">
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    ScrollReveal().reveal('.UttDest .heading p', {
+        origin: 'top',
+        distance: '50px',
+        duration: 1000,
+        delay: 200,
+        opacity: 0,
+        easing: 'ease-in-out',
+        reset: true, // Enables re-triggering on revisit
+    });
+
+    ScrollReveal().reveal('.UttDest .line', {
+        origin: 'left',
+        distance: '50px',
+        duration: 1000,
+        delay: 400,
+        opacity: 0,
+        easing: 'ease-in-out',
+        reset: true,
+    });
+
+    ScrollReveal().reveal('.UttDest .contentP', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1200,
+        delay: 600,
+        opacity: 0,
+        easing: 'ease-in-out',
+        reset: true,
+    });
+
+    ScrollReveal().reveal('.UttDest .leftImg img', {
+        origin: 'left',
+        distance: '100px',
+        duration: 1500,
+        delay: 400,
+        opacity: 0,
+        easing: 'ease-in-out',
+        reset: true,
+    });
+
+    ScrollReveal().reveal('.UttDest .rightImg img', {
+        origin: 'right',
+        distance: '100px',
+        duration: 1500,
+        delay: 600,
+        opacity: 0,
+        easing: 'ease-in-out',
+        reset: true,
+    });
+
+    ScrollReveal().reveal('.UttDest .imgRLeft img', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1500,
+        delay: 800,
+        opacity: 0,
+        easing: 'ease-in-out',
+        reset: true,
+    });
+
+    ScrollReveal().reveal('.UttDest .imgRRight img', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1500,
+        delay: 1000,
+        opacity: 0,
+        easing: 'ease-in-out',
+        reset: true,
+    });
+
+    ScrollReveal().reveal('.UttDest .Six', {
+        scale: 0.85,
+        duration: 1500,
+        delay: 1200,
+        opacity: 0,
+        easing: 'ease-in-out',
+        reset: true,
+    });
+});
+
+    </script>
+</body>
+</html>
