@@ -260,7 +260,7 @@ function createDestinationHTML(destination) {
                       <p>${destination.name}</p>
                   </div>
                   <div class="line"></div>
-                  <p class="contentP">${destination.content}</p>
+                  <div class="glass"> <p class="contentP">${destination.content}</p></div>
               </div>
               <div class="imageDestSec">
                   <div class="imgRLeft">
