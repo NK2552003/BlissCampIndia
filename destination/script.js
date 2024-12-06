@@ -10,8 +10,7 @@ const destinations = [
     },
     content: `Uttarakhand, often referred to as the 'Land of Gods,' is a paradise for nature lovers and adventure seekers alike. 
                 Discover the beauty of the Valley of Flowers, explore the ancient pilgrimage route to Kedarnath, or bask in the 
-                tranquility of Nainital's pristine lakes. Uttarakhand is a destination that promises unforgettable memories and 
-                boundless adventures.`,
+                tranquility of Nainital's pristine lakes.`,
     linkText: "EXPLORE NOW",
   },
   {

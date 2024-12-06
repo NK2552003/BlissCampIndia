@@ -9,6 +9,21 @@
 
     </head>
 <body>
+    <div class="overlay">
+        <nav class="nav-bar">
+          <a href="../index.html" class="back-btn">←</a>
+          <div class="logo" id="logo">
+            BlissCampIndia
+          </div>
+        </nav>
+      </div>
+      <div class="background-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+      </div>
     <div class="container" id="destinations-container">
     </div>
 
@@ -17,9 +32,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     ScrollReveal().reveal('.UttDest .heading p', {
         origin: 'top',
-        distance: '50px',
-        duration: 1000,
-        delay: 200,
+        distance: '30px', // Reduced distance for quicker effect
+        duration: 600, // Reduced duration
+        delay: 100, // Reduced delay
         opacity: 0,
         easing: 'ease-in-out',
         reset: true, // Enables re-triggering on revisit
@@ -27,9 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ScrollReveal().reveal('.UttDest .line', {
         origin: 'left',
-        distance: '50px',
-        duration: 1000,
-        delay: 400,
+        distance: '30px',
+        duration: 600,
+        delay: 200,
         opacity: 0,
         easing: 'ease-in-out',
         reset: true,
@@ -37,9 +52,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ScrollReveal().reveal('.UttDest .contentP', {
         origin: 'bottom',
-        distance: '50px',
-        duration: 1200,
-        delay: 600,
+        distance: '30px',
+        duration: 700,
+        delay: 300,
         opacity: 0,
         easing: 'ease-in-out',
         reset: true,
@@ -47,9 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ScrollReveal().reveal('.UttDest .leftImg img', {
         origin: 'left',
-        distance: '100px',
-        duration: 1500,
-        delay: 400,
+        distance: '50px',
+        duration: 800,
+        delay: 200,
         opacity: 0,
         easing: 'ease-in-out',
         reset: true,
@@ -57,9 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ScrollReveal().reveal('.UttDest .rightImg img', {
         origin: 'right',
-        distance: '100px',
-        duration: 1500,
-        delay: 600,
+        distance: '50px',
+        duration: 800,
+        delay: 300,
         opacity: 0,
         easing: 'ease-in-out',
         reset: true,
@@ -67,9 +82,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ScrollReveal().reveal('.UttDest .imgRLeft img', {
         origin: 'bottom',
-        distance: '50px',
-        duration: 1500,
-        delay: 800,
+        distance: '30px',
+        duration: 700,
+        delay: 400,
         opacity: 0,
         easing: 'ease-in-out',
         reset: true,
@@ -77,18 +92,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ScrollReveal().reveal('.UttDest .imgRRight img', {
         origin: 'bottom',
-        distance: '50px',
-        duration: 1500,
-        delay: 1000,
+        distance: '30px',
+        duration: 700,
+        delay: 500,
         opacity: 0,
         easing: 'ease-in-out',
         reset: true,
     });
 
     ScrollReveal().reveal('.UttDest .Six', {
-        scale: 0.85,
-        duration: 1500,
-        delay: 1200,
+        scale: 0.9, // Slightly faster scaling
+        duration: 800,
+        delay: 600,
         opacity: 0,
         easing: 'ease-in-out',
         reset: true,
