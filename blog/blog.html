@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BlissCampIndia-Destinations</title>
-        <link rel="stylesheet" href="./styles.css">
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <link rel="icon" href="../images/logo.png" type="image/png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlissCampIndia-Blogs</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="./blog_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 <body>
     <div class="overlay">
         <nav class="nav-bar">
@@ -18,14 +17,21 @@
           </div>
         </nav>
       </div>
-      <div class="background-shapes">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-      </div>
-    <div class="container" id="destinations-container">
+    <div class="main-container">
+        <div id="postsContainer"></div>
+        <div class="create-post-container">
+            <div class="create-post">
+                <h3>Create a New Post</h3>
+                <div class="profile-photo">
+                    <img id="profilePhotoPreview" src="https://via.placeholder.com/80" alt="Profile Photo">
+                    <input type="file" id="profilePhotoInput" accept="image/*" onchange="previewProfilePhoto()">
+                </div>
+                <input type="text" id="postTitle" placeholder="Post Title" required>
+                <textarea id="postContent" placeholder="Share your travel story..." rows="3"></textarea>
+                <input type="file" id="postImages" multiple accept="image/*">
+                <button onclick="addPost()">Submit Post</button>
+            </div>
+        </div>
     </div>
     <footer class="travel-website-footer">
         <div class="travel-footer-container">
@@ -73,89 +79,6 @@
         </div>
     </footer>
     
-    <script src="./script.js"></script>
-    <script>
-document.addEventListener("DOMContentLoaded", () => {
-    ScrollReveal().reveal('.UttDest .heading p', {
-        origin: 'top',
-        distance: '30px', // Reduced distance for quicker effect
-        duration: 600, // Reduced duration
-        delay: 100, // Reduced delay
-        opacity: 0,
-        easing: 'ease-in-out',
-        reset: true, // Enables re-triggering on revisit
-    });
-
-    ScrollReveal().reveal('.UttDest .line', {
-        origin: 'left',
-        distance: '30px',
-        duration: 600,
-        delay: 200,
-        opacity: 0,
-        easing: 'ease-in-out',
-        reset: true,
-    });
-
-    ScrollReveal().reveal('.UttDest .contentP ,.glass', {
-        origin: 'bottom',
-        distance: '30px',
-        duration: 700,
-        delay: 300,
-        opacity: 0,
-        easing: 'ease-in-out',
-        reset: true,
-    });
-
-    ScrollReveal().reveal('.UttDest .leftImg img', {
-        origin: 'left',
-        distance: '50px',
-        duration: 800,
-        delay: 200,
-        opacity: 0,
-        easing: 'ease-in-out',
-        reset: true,
-    });
-
-    ScrollReveal().reveal('.UttDest .rightImg img', {
-        origin: 'right',
-        distance: '50px',
-        duration: 800,
-        delay: 300,
-        opacity: 0,
-        easing: 'ease-in-out',
-        reset: true,
-    });
-
-    ScrollReveal().reveal('.UttDest .imgRLeft img', {
-        origin: 'bottom',
-        distance: '30px',
-        duration: 700,
-        delay: 400,
-        opacity: 0,
-        easing: 'ease-in-out',
-        reset: true,
-    });
-
-    ScrollReveal().reveal('.UttDest .imgRRight img', {
-        origin: 'bottom',
-        distance: '30px',
-        duration: 700,
-        delay: 500,
-        opacity: 0,
-        easing: 'ease-in-out',
-        reset: true,
-    });
-
-    ScrollReveal().reveal('.UttDest .Six', {
-        scale: 0.9, // Slightly faster scaling
-        duration: 800,
-        delay: 600,
-        opacity: 0,
-        easing: 'ease-in-out',
-        reset: true,
-    });
-});
-
-    </script>
+    <script src="./blog_script.js"></script>
 </body>
 </html>

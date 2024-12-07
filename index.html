@@ -36,7 +36,7 @@
           <a href="./About_Us/about_us.html">About Us</a>
           <a href="./Treks_Destinations/treks.html">Our Treks</a>
           <a href="./destination/index.html">Destinations</a>
-          <a href="#">Blog</a>
+          <a href="./blog/blog.html">Blog</a>
           <a href="#">Contact Us</a>
         </div>
       </nav>
@@ -627,266 +627,247 @@
 
     </script>
     <script>
-      // Initialize ScrollReveal
-      ScrollReveal().reveal('#logo', {
-        origin: 'top',
-        distance: '50px',
-        duration: 800,
-        delay: 200,
-        easing: 'ease-in-out',
-        opacity: 0
-      });
-    
-      ScrollReveal().reveal('#hero-content', {
-        origin: 'bottom',
-        distance: '70px',
-        duration: 1000,
-        delay: 500,
-        easing: 'ease-in-out',
-        opacity: 0
-      });
-    
-      ScrollReveal().reveal('#search-bar', {
-        origin: 'bottom',
-        distance: '100px',
-        duration: 1200,
-        delay: 600,
-        easing: 'ease-in-out',
-        opacity: 0
-      });
+// Initialize ScrollReveal
+ScrollReveal().reveal('#logo', {
+  origin: 'top',
+  distance: '50px',
+  duration: 600,
+  delay: 200,
+  easing: 'ease-in-out',
+  opacity: 0
+});
 
+ScrollReveal().reveal('#hero-content', {
+  origin: 'bottom',
+  distance: '70px',
+  duration: 800,
+  delay: 400,
+  easing: 'ease-in-out',
+  opacity: 0
+});
 
-      // Reveal Content Container
-      ScrollReveal().reveal('.content-container', {
-        origin: 'bottom',
-        distance: '30px',
-        duration: 1000,
-        delay: 300,
-        opacity: 0,
-        easing: 'ease-in-out'
-      });
+ScrollReveal().reveal('#search-bar', {
+  origin: 'bottom',
+  distance: '100px',
+  duration: 1000,
+  delay: 500,
+  easing: 'ease-in-out',
+  opacity: 0
+});
 
-      // Reveal Each Card in the Container
-      ScrollReveal().reveal('.container .card', {
-        origin: 'center',
-        distance: '50px',
-        duration: 800,
-        interval: 200, // Stagger animation for each card
-        opacity: 0,
-        easing: 'ease-in-out'
-      });
+// Reveal Content Container
+ScrollReveal().reveal('.content-container', {
+  origin: 'bottom',
+  distance: '30px',
+  duration: 800,
+  delay: 200,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-      // Reveal Tags in Cards
-      // ScrollReveal().reveal('.card .tag', {
-      //   origin: 'bottom',
-      //   distance: '10px',
-      //   duration: 600,
-      //   delay: 500,
-      //   opacity: 0,
-      //   easing: 'ease-in-out'
-      // });
+// Reveal Each Card in the Container
+ScrollReveal().reveal('.container .card', {
+  origin: 'center',
+  distance: '50px',
+  duration: 600,
+  interval: 150, // Faster interval between cards
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-      // Reveal "Why Choose Us?" Section
-      ScrollReveal().reveal('.unique-why-choose-us', {
-        origin: 'left',
-        distance: '50px',
-        duration: 1000,
-        delay: 400,
-        opacity: 0,
-        easing: 'ease-in-out'
-      });
+// Reveal "Why Choose Us?" Section
+ScrollReveal().reveal('.unique-why-choose-us', {
+  origin: 'left',
+  distance: '50px',
+  duration: 800,
+  delay: 300,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-      // Reveal Individual Cards in "Why Choose Us?"
-      ScrollReveal().reveal('.unique-card', {
-        origin: 'left',
-        distance: '30px',
-        duration: 800,
-        interval: 200, // Stagger the animation for each card
-        opacity: 0,
-        easing: 'ease-in-out'
-      });
-      // Reveal Deals Section Title
-      ScrollReveal().reveal('.deals-title', {
-        origin: 'top',
-        distance: '30px',
-        duration: 800,
-        delay: 200,
-        opacity: 0,
-        easing: 'ease-in-out'
-      });
+// Reveal Individual Cards in "Why Choose Us?"
+ScrollReveal().reveal('.unique-card', {
+  origin: 'left',
+  distance: '30px',
+  duration: 600,
+  interval: 150, // Faster interval between cards
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-      // Reveal Each Deal Card with Staggered Animations
-      ScrollReveal().reveal('.deal-card', {
-        origin: 'left',
-        distance: '40px',
-        duration: 800,
-        interval: 200, // Stagger the animation for each card
-        opacity: 0,
-        easing: 'ease-in-out'
-      });
+// Reveal Deals Section Title
+ScrollReveal().reveal('.deals-title', {
+  origin: 'top',
+  distance: '30px',
+  duration: 600,
+  delay: 200,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-      // Reveal Deal Details (Title, Duration, Description, Price)
-      ScrollReveal().reveal('.deal-details', {
-        origin: 'right',
-        distance: '20px',
-        duration: 800,
-        delay: 300,
-        opacity: 0,
-        easing: 'ease-in-out'
-      });
+// Reveal Each Deal Card with Staggered Animations
+ScrollReveal().reveal('.deal-card', {
+  origin: 'left',
+  distance: '40px',
+  duration: 600,
+  interval: 150, // Faster interval between cards
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-      // Reveal the Promo Banner Section
-      ScrollReveal().reveal('.promo-banner', {
-        origin: 'left',
-        distance: '50px',
-        duration: 1000,
-        delay: 400,
-        opacity: 0,
-        easing: 'ease-in-out'
-      });
+// Reveal Deal Details (Title, Duration, Description, Price)
+ScrollReveal().reveal('.deal-details', {
+  origin: 'right',
+  distance: '20px',
+  duration: 600,
+  delay: 200,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-      // Reveal the Promo Title and Discount Info
-      ScrollReveal().reveal('.promo-title, .promo-info', {
-        origin: 'left',
-        distance: '30px',
-        duration: 800,
-        delay: 500,
-        opacity: 0,
-        easing: 'ease-in-out'
-      });
+// Reveal the Promo Banner Section
+ScrollReveal().reveal('.promo-banner', {
+  origin: 'left',
+  distance: '50px',
+  duration: 800,
+  delay: 300,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-      // Reveal the Promo Button
-      ScrollReveal().reveal('.promo-btn', {
-        origin: 'right',
-        distance: '30px',
-        duration: 800,
-        delay: 700,
-        opacity: 0,
-        easing: 'ease-in-out'
-      });
+// Reveal the Promo Title and Discount Info
+ScrollReveal().reveal('.promo-title, .promo-info', {
+  origin: 'left',
+  distance: '30px',
+  duration: 600,
+  delay: 400,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-      // Reveal Section Titles (Winter, Summer, Monsoon)
-        ScrollReveal().reveal('.section-title', {
-          origin: 'top',
-          distance: '30px',
-          duration: 800,
-          delay: 200,
-          opacity: 0,
-          easing: 'ease-in-out'
-        });
+// Reveal the Promo Button
+ScrollReveal().reveal('.promo-btn', {
+  origin: 'right',
+  distance: '30px',
+  duration: 600,
+  delay: 600,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-        // Reveal the Trek Cards
-        ScrollReveal().reveal('.trek-card', {
-          origin: 'bottom',
-          distance: '40px',
-          duration: 800,
-          interval: 200, // Stagger the animation for each card
-          opacity: 0,
-          easing: 'ease-in-out'
-        });
+// Reveal Section Titles (Winter, Summer, Monsoon)
+ScrollReveal().reveal('.section-title', {
+  origin: 'top',
+  distance: '30px',
+  duration: 600,
+  delay: 200,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-        // Reveal Price Badge, Image, and Trek Details
-        ScrollReveal().reveal('.trek-image, .trek-details', {
-          origin: 'bottom',
-          distance: '20px',
-          duration: 800,
-          delay: 300,
-          opacity: 0,
-          easing: 'ease-in-out'
-        });
+// Reveal the Trek Cards
+ScrollReveal().reveal('.trek-card', {
+  origin: 'bottom',
+  distance: '40px',
+  duration: 600,
+  interval: 150, // Faster interval between cards
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-        // Reveal Trek Footer (Rating & Button)
-        ScrollReveal().reveal('.trek-footer', {
-          origin: 'bottom',
-          distance: '20px',
-          duration: 800,
-          delay: 500,
-          opacity: 0,
-          easing: 'ease-in-out'
-        });
+// Reveal Price Badge, Image, and Trek Details
+ScrollReveal().reveal('.trek-image, .trek-details', {
+  origin: 'bottom',
+  distance: '20px',
+  duration: 600,
+  delay: 200,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-        // Reveal Title Underline
-        ScrollReveal().reveal('.title-underline', {
-          origin: 'left',
-          distance: '30px',
-          duration: 600,
-          delay: 100,
-          opacity: 0,
-          easing: 'ease-in-out'
-        });
-        // Reveal Section Header (Testimonials Title)
-        ScrollReveal().reveal('.header h1', {
-          origin: 'top',
-          distance: '30px',
-          duration: 800,
-          opacity: 0,
-          easing: 'ease-in-out'
-        });
+// Reveal Trek Footer (Rating & Button)
+ScrollReveal().reveal('.trek-footer', {
+  origin: 'bottom',
+  distance: '20px',
+  duration: 600,
+  delay: 400,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-        // Reveal Title Underline
-        ScrollReveal().reveal('.title-underline', {
-          origin: 'left',
-          distance: '30px',
-          duration: 600,
-          delay: 100,
-          opacity: 0,
-          easing: 'ease-in-out'
-        });
+// Reveal Title Underline
+ScrollReveal().reveal('.title-underline', {
+  origin: 'left',
+  distance: '30px',
+  duration: 500,
+  delay: 100,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-        // Reveal Image and Stats (First Image and Stat)
-        ScrollReveal().reveal('.imgPcomm .image-area', {
-          origin: 'left',
-          distance: '50px',
-          duration: 800,
-          opacity: 0,
-          easing: 'ease-in-out'
-        });
-        ScrollReveal().reveal('.imgPcomm .stat', {
-          origin: 'right',
-          distance: '50px',
-          duration: 800,
-          opacity: 0,
-          delay: 200,
-          easing: 'ease-in-out'
-        });
+// Reveal Section Header (Testimonials Title)
+ScrollReveal().reveal('.header h1', {
+  origin: 'top',
+  distance: '30px',
+  duration: 600,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-        // Reveal Testimonial Cards
-        ScrollReveal().reveal('.testimonial-card, .viewBtn', {
-          origin: 'bottom',
-          distance: '30px',
-          duration: 800,
-          interval: 200,  // Stagger the reveal of each card
-          opacity: 0,
-          easing: 'ease-in-out'
-        });
+// Reveal Image and Stats (First Image and Stat)
+ScrollReveal().reveal('.imgPcomm .image-area', {
+  origin: 'left',
+  distance: '50px',
+  duration: 600,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
+ScrollReveal().reveal('.imgPcomm .stat', {
+  origin: 'right',
+  distance: '50px',
+  duration: 600,
+  opacity: 0,
+  delay: 200,
+  easing: 'ease-in-out'
+});
 
-        // Reveal Footer Elements (Contact Us, Social Links, and Bottom)
-        ScrollReveal().reveal('.travel-footer-top .col12', {
-          origin: 'bottom',
-          distance: '40px',
-          duration: 800,
-          opacity: 0,
-          easing: 'ease-in-out'
-        });
+// Reveal Testimonial Cards
+ScrollReveal().reveal('.testimonial-card, .viewBtn', {
+  origin: 'bottom',
+  distance: '30px',
+  duration: 600,
+  interval: 150,  // Faster interval between cards
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-        ScrollReveal().reveal('.travel-footer-social-links', {
-          origin: 'bottom',
-          distance: '40px',
-          duration: 800,
-          opacity: 0,
-          delay: 300,
-          easing: 'ease-in-out'
-        });
+// Reveal Footer Elements (Contact Us, Social Links, and Bottom)
+ScrollReveal().reveal('.travel-footer-top .col12', {
+  origin: 'bottom',
+  distance: '40px',
+  duration: 600,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
-        // Reveal Footer Bottom Text
-        ScrollReveal().reveal('.travel-footer-bottom p', {
-          origin: 'bottom',
-          distance: '30px',
-          duration: 800,
-          delay: 500,
-          opacity: 0,
-          easing: 'ease-in-out'
-        });
+ScrollReveal().reveal('.travel-footer-social-links', {
+  origin: 'bottom',
+  distance: '40px',
+  duration: 600,
+  opacity: 0,
+  delay: 200,
+  easing: 'ease-in-out'
+});
+
+// Reveal Footer Bottom Text
+ScrollReveal().reveal('.travel-footer-bottom p', {
+  origin: 'bottom',
+  distance: '30px',
+  duration: 600,
+  delay: 300,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 
     </script>
     
