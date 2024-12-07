@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, #f4f4f4 50%, #e9f7fe);
+  background-color: #f0f5ff;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -525,7 +525,7 @@ body {
   background-color: transparent;
 }
 .travel-website-footer {
-  background-color: rgb(234, 243, 247);
+  background-color: #f0f5ff;
   color: black;
 }
 .text-center {

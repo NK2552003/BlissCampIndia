@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BlisscampIndia</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="./contact_style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="overlay">
+        <nav class="nav-bar">
+          <a href="../index.html" class="back-btn">←</a>
+          <div class="logo" id="logo">
+            BlissCampIndia
+          </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h1>Contact Us</h1>
+                <p>Email, call, or complete the form to learn how BlisscampIndia can help you plan your perfect adventure.</p>
+               <div class="info-d">
+                <p>info@blisscampindia.com</p>
+                <p>+91 98765-43210</p>
+                <a href="#">Customer Support</a>
+               </div>
+
+                <div class="support-sections">
+                    <div>
+                        <h3>Adventure Planning</h3>
+                        <p>Our expert team is ready to assist you in planning your dream trek, tour, or site visit across India.</p>
+                    </div>
+                    <div>
+                        <h3>Customized Experiences</h3>
+                        <p>We value your preferences and can tailor unique experiences to match your interests and skill level.</p>
+                    </div>
+                </div>
+                <div class="support-section-t">
+                    <h3>Travel Inquiries</h3>
+                    <p>For any questions about our destinations, accommodations, or travel logistics, please reach out to us at travel@blisscampindia.com.</p>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <h2>Get in Touch</h2>
+                <p>Start planning your adventure today!</p>
+                <form id="contact-form">
+                    <div class="form-group name-group">
+                        <div>
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div>
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group phone-group">
+                        <div>
+                            <label for="country-code">Code</label>
+                            <select id="country-code" name="country-code">
+                                <option value="+91">+91</option>
+                                <option value="+1">+1</option>
+                                <option value="+44">+44</option>
+                            </select>
+                        </div>
+                        <div style="flex-grow: 1;">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="adventure-type">Type of Adventure</label>
+                        <select id="adventure-type" name="adventure-type" required>
+                            <option value="">Select an option</option>
+                            <option value="trek">Trek</option>
+                            <option value="tour">Tour</option>
+                            <option value="site-visit">Site Visit</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell us about your dream adventure</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <p class="terms">
+                    By contacting us, you agree to our <a href="#">Terms of service</a> and <a href="#">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./contact_script.js">
+    </script>
+</body>
+</html>
