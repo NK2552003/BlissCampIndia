@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Details</title>
+    <link rel="stylesheet" href="./treks_style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        .tour-details {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .tour-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .tour-title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .tour-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .tour-description {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0095ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="tour-details" id="tourDetails">
+        <!-- Tour details will be populated here -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const tourDetails = document.getElementById('tourDetails');
+
+            // Create HTML content for tour details
+            const detailsHTML = `
+                <img src="${params.get('image')}" alt="${params.get('title')}" class="tour-image">
+                <h1 class="tour-title">${params.get('title')}</h1>
+                <div class="tour-info">
+                    <p><i class="fas fa-map-marker-alt"></i> ${params.get('destination')}</p>
+                    <p><i class="fas fa-calendar-alt"></i> ${params.get('month')}</p>
+                    <p><i class="fas fa-cloud-sun"></i> ${params.get('season')}</p>
+                    <p><i class="fas fa-star"></i> ${params.get('rating')}</p>
+                </div>
+                <p class="tour-description">${params.get('description')}</p>
+                <p><strong>Duration:</strong> ${params.get('days')} days, ${params.get('nights')} nights</p>
+                <p><strong>Price:</strong> ₹${parseInt(params.get('price')).toLocaleString()}</p>
+                <a href="index.html" class="back-button">Back to Tours</a>
+            `;
+
+            tourDetails.innerHTML = detailsHTML;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details</title>
+    <style>
+        .rgf-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .rgf-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .rgf-title-section {
+            flex-grow: 1;
+        }
+
+        .rgf-title {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+
+        .rgf-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #666;
+        }
+
+        .rgf-rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .rgf-star {
+            color: #FFB800;
+        }
+
+        .rgf-reviews {
+            color: #666;
+        }
+
+        .rgf-location {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .rgf-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .rgf-action-btn {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+        }
+
+        .rgf-action-btn:hover {
+            background-color: #f5f5f5;
+        }
+
+        .rgf-gallery {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 8px;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 400px;
+        }
+
+        .rgf-main-image {
+            grid-row: span 2;
+            height: 100%;
+        }
+
+        .rgf-gallery-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 8px;
+        }
+
+        .rgf-image-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rgf-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .rgf-image:hover {
+            transform: scale(1.05);
+        }
+
+        .rgf-more-photos {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .rgf-gallery {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+
+            .rgf-gallery-right {
+                display: none;
+            }
+
+            .rgf-header {
+                flex-direction: column;
+            }
+
+            .rgf-actions {
+                margin-top: 15px;
+            }
+        }
+        .dst-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .dst-nav {
+            grid-column: 1 / -1;
+            border-bottom: 1px solid #e5e7eb;
+            margin-bottom: 30px;
+        }
+
+        .dst-nav-list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 32px;
+        }
+
+        .dst-nav-item {
+            padding: 12px 0;
+            color: #6b7280;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .dst-nav-item.active {
+            color: #111827;
+        }
+
+        .dst-nav-item.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #111827;
+        }
+
+        .dst-content {
+            padding-right: 40px;
+        }
+
+        .dst-heading {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #111827;
+        }
+
+        .dst-description {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+
+        .dst-read-more {
+            color: #111827;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .dst-facilities {
+            margin-top: 40px;
+        }
+
+        .dst-facilities-heading {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #111827;
+        }
+
+        .dst-facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .dst-facility {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background-color: #f9fafb;
+            border-radius: 8px;
+        }
+
+        .dst-facility-icon {
+            width: 24px;
+            height: 24px;
+            color: #6b7280;
+        }
+
+        .dst-booking {
+            background-color: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            height: fit-content;
+            position: sticky;
+            top: 24px;
+        }
+
+        .dst-price {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .dst-price-unit {
+            font-size: 16px;
+            color: #6b7280;
+        }
+
+        .dst-date-picker {
+            margin: 24px 0;
+        }
+
+        .dst-date-label {
+            display: block;
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 8px;
+        }
+
+        .dst-date-select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            cursor: pointer;
+        }
+
+        .dst-guest-select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            margin-bottom: 24px;
+            cursor: pointer;
+        }
+
+        .dst-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .dst-total-label {
+            font-size: 16px;
+            color: #6b7280;
+        }
+
+        .dst-total-amount {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .dst-book-button {
+            width: 100%;
+            padding: 14px;
+            background-color: #111827;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .dst-book-button:hover {
+            background-color: #1f2937;
+        }
+
+        .dst-ask-manager {
+            display: block;
+            text-align: center;
+            margin-top: 16px;
+            color: #111827;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .dst-container {
+                grid-template-columns: 1fr;
+            }
+
+            .dst-nav-list {
+                overflow-x: auto;
+                padding-bottom: 8px;
+            }
+
+            .dst-content {
+                padding-right: 0;
+            }
+
+            .dst-facilities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .loc-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .loc-heading {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #111827;
+        }
+
+        .loc-map-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        .loc-map {
+            width: 100%;
+            height: 100%;
+        }
+
+        .loc-loading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: #6b7280;
+        }
+
+        .loc-error {
+            padding: 20px;
+            background-color: #fee2e2;
+            border-radius: 8px;
+            color: #991b1b;
+            margin-top: 16px;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .loc-map-container {
+                height: 300px;
+            }
+        }
+
+        .pkg-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .pkg-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .pkg-title {
+            font-size: 48px;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .pkg-title-highlight {
+            color: #6b7280;
+            font-weight: normal;
+        }
+
+        .pkg-subtitle {
+            color: #6b7280;
+            font-size: 18px;
+            line-height: 1.6;
+            align-self: center;
+        }
+
+        .pkg-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .pkg-card {
+            border-radius: 16px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            transition: transform 0.2s;
+        }
+
+        .pkg-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .pkg-image-wrapper {
+            position: relative;
+            padding-top: 66.67%;
+            overflow: hidden;
+        }
+
+        .pkg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .pkg-card:hover .pkg-image {
+            transform: scale(1.05);
+        }
+
+        .pkg-content {
+            padding: 24px;
+        }
+
+        .pkg-destination {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0 0 12px 0;
+            color: #111827;
+        }
+
+        .pkg-description {
+            font-size: 16px;
+            color: #6b7280;
+            margin: 0 0 16px 0;
+            line-height: 1.5;
+        }
+
+        .pkg-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .pkg-tag {
+            padding: 6px 12px;
+            background-color: #f3f4f6;
+            border-radius: 9999px;
+            font-size: 14px;
+            color: #4b5563;
+            transition: background-color 0.2s;
+        }
+
+        .pkg-tag:hover {
+            background-color: #e5e7eb;
+        }
+
+        @media (max-width: 1024px) {
+            .pkg-header {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .pkg-title {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .pkg-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rgf-container">
+        <div class="rgf-header">
+            <div class="rgf-title-section">
+                <h1 class="rgf-title">Reijnders Musy Super Green Field</h1>
+                <div class="rgf-meta">
+                    <div class="rgf-rating">
+                        <span class="rgf-star">★</span>
+                        <span>4.7</span>
+                        <span class="rgf-reviews">(234 Reviews)</span>
+                    </div>
+                    <div class="rgf-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Jl. Inspeksi Cidurian, Cileunyi, Bandung, Cileunyi, Bandung</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rgf-actions">
+                <button class="rgf-action-btn" aria-label="Bookmark">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </button>
+                <button class="rgf-action-btn" aria-label="Share">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="18" cy="5" r="3"/>
+                        <circle cx="6" cy="12" r="3"/>
+                        <circle cx="18" cy="19" r="3"/>
+                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="rgf-gallery">
+            <div class="rgf-image-wrapper rgf-main-image">
+                <img src="https://source.unsplash.com/1200x800/?harbor,mountain" alt="Harbor view with mountains" class="rgf-image">
+            </div>
+            <div class="rgf-gallery-right">
+                <div class="rgf-image-wrapper">
+                    <img src="https://source.unsplash.com/400x300/?mountain,snow" alt="Mountain peak" class="rgf-image">
+                </div>
+                <div class="rgf-image-wrapper">
+                    <img src="https://source.unsplash.com/400x300/?mountain,sign" alt="Mountain marker" class="rgf-image">
+                </div>
+                <div class="rgf-image-wrapper">
+                    <img src="https://source.unsplash.com/400x300/?mountain,lake" alt="Mountain view" class="rgf-image">
+                </div>
+                <div class="rgf-image-wrapper">
+                    <img src="https://source.unsplash.com/400x300/?mountain,sunset" alt="Mountain landscape" class="rgf-image">
+                    <div class="rgf-more-photos">+12</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dst-container">
+        <nav class="dst-nav">
+            <ul class="dst-nav-list">
+                <li class="dst-nav-item active">Overview</li>
+                <li class="dst-nav-item">Amenities</li>
+                <li class="dst-nav-item">Policies</li>
+                <li class="dst-nav-item">Location</li>
+                <li class="dst-nav-item">What's included</li>
+                <li class="dst-nav-item">Reviews</li>
+                <li class="dst-nav-item">Avaibility</li>
+                <li class="dst-nav-item">FAQs</li>
+            </ul>
+        </nav>
+
+        <div class="dst-content">
+            <h1 class="dst-heading">About The Destination</h1>
+            <p class="dst-description">
+                A Historic American Prairie-Style Mansion In Toorak On One Of The Suburb's Most Prestigious Roads Is Up For Sale For The First Time In 70 Years. While The Listing Agent Refused To Comment On Who The Seller Was, While The Listing Agent Refused To Comment On Who The Seller Was Industry Sources Revealed Grace Davey-Milne Owns The Property, Who Is The Widow Of The Late Vintage...
+                <a href="#" class="dst-read-more">Read More</a>
+            </p>
+
+            <div class="dst-facilities">
+                <h2 class="dst-facilities-heading">Our Best Facilities</h2>
+                <div class="dst-facilities-grid">
+                    <div class="dst-facility">
+                        <svg class="dst-facility-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                            <circle cx="12" cy="20" r="0.5"/>
+                        </svg>
+                        <span>Wifi</span>
+                    </div>
+                    <div class="dst-facility">
+                        <svg class="dst-facility-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 18L5 18L5 5L19 5L19 18L16 18"/>
+                            <path d="M12 18V13"/>
+                            <path d="M12 21L17 16L7 16L12 21Z"/>
+                        </svg>
+                        <span>Backyard</span>
+                    </div>
+                    <div class="dst-facility">
+                        <svg class="dst-facility-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 12h20"/>
+                            <path d="M2 20h20"/>
+                            <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+                        </svg>
+                        <span>Swimmingpool</span>
+                    </div>
+                    <div class="dst-facility">
+                        <svg class="dst-facility-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 8v4l2 2"/>
+                        </svg>
+                        <span>Free Parking</span>
+                    </div>
+                    <div class="dst-facility">
+                        <svg class="dst-facility-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <path d="M22 4L12 14.01l-3-3"/>
+                        </svg>
+                        <span>Air Conditioner</span>
+                    </div>
+                    <div class="dst-facility">
+                        <svg class="dst-facility-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                            <circle cx="12" cy="20" r="0.5"/>
+                        </svg>
+                        <span>Wifi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dst-booking">
+            <div class="dst-price">
+                $750.00 <span class="dst-price-unit">per night</span>
+            </div>
+
+            <div class="dst-date-picker">
+                <label class="dst-date-label">Check In</label>
+                <select class="dst-date-select">
+                    <option>August 2, 2024</option>
+                </select>
+
+                <label class="dst-date-label">Check Out</label>
+                <select class="dst-date-select">
+                    <option>August 5, 2024</option>
+                </select>
+
+                <label class="dst-date-label">Guest</label>
+                <select class="dst-guest-select">
+                    <option>Add Guest</option>
+                </select>
+            </div>
+
+            <div class="dst-total">
+                <span class="dst-total-label">Total</span>
+                <span class="dst-total-amount">$2,250.00</span>
+            </div>
+
+            <button class="dst-book-button">Book Now</button>
+            <a href="#" class="dst-ask-manager">Ask manager a Question</a>
+        </div>
+    </div>
+
+
+    <div class="loc-container">
+        <h2 class="loc-heading">Location</h2>
+        <div class="loc-map-container">
+            <div id="loc-map" class="loc-map"></div>
+            <div id="loc-loading" class="loc-loading">Loading map...</div>
+        </div>
+        <div id="loc-error" class="loc-error">
+            Unable to load the map. Please try again later.
+        </div>
+    </div>
+
+
+
+    <div class="pkg-container">
+        <div class="pkg-header">
+            <h2 class="pkg-title">
+                <span class="pkg-title-highlight">Choose</span> out range of expertly crafted packages
+            </h2>
+            <p class="pkg-subtitle">
+                Get ready to embark on the adventure of a lifetime! Our curated list of top travel destinations promises breathtaking landscapes, vibrant cultures.
+            </p>
+        </div>
+
+        <div class="pkg-grid">
+            <article class="pkg-card">
+                <div class="pkg-image-wrapper">
+                    <img 
+                        src="https://source.unsplash.com/800x600/?maldives,mountains" 
+                        alt="Sun Siyam Iru Fushi" 
+                        class="pkg-image"
+                    >
+                </div>
+                <div class="pkg-content">
+                    <h3 class="pkg-destination">Sun Siyam Iru Fushi, Maldives</h3>
+                    <p class="pkg-description">Get ready to embark on the adventure of a lifetime...</p>
+                    <div class="pkg-tags">
+                        <span class="pkg-tag">Waterfall</span>
+                        <span class="pkg-tag">Nature</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="pkg-card">
+                <div class="pkg-image-wrapper">
+                    <img 
+                        src="https://source.unsplash.com/800x600/?papua,mountain" 
+                        alt="Pianemo, Raja Ampat Papua" 
+                        class="pkg-image"
+                    >
+                </div>
+                <div class="pkg-content">
+                    <h3 class="pkg-destination">Pianemo, Raja Ampat Papua</h3>
+                    <p class="pkg-description">Get ready to embark on the adventure of a lifetime...</p>
+                    <div class="pkg-tags">
+                        <span class="pkg-tag">Mountain</span>
+                        <span class="pkg-tag">Adventure</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="pkg-card">
+                <div class="pkg-image-wrapper">
+                    <img 
+                        src="https://source.unsplash.com/800x600/?bali,beach" 
+                        alt="Kelingking Beach, Nusa Dua Bali" 
+                        class="pkg-image"
+                    >
+                </div>
+                <div class="pkg-content">
+                    <h3 class="pkg-destination">Kelingking Beach, Nusa Dua Bali</h3>
+                    <p class="pkg-description">Get ready to embark on the adventure of a lifetime...</p>
+                    <div class="pkg-tags">
+                        <span class="pkg-tag">Beach</span>
+                        <span class="pkg-tag">Sea</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <script>
+        let map;
+        const mapStyles = [
+            {
+                "featureType": "all",
+                "elementType": "labels.text.fill",
+                "stylers": [{"saturation": 36}, {"color": "#333333"}, {"lightness": 40}]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.text.stroke",
+                "stylers": [{"visibility": "on"}, {"color": "#ffffff"}, {"lightness": 16}]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.icon",
+                "stylers": [{"visibility": "off"}]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry.fill",
+                "stylers": [{"color": "#fefefe"}, {"lightness": 20}]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry.stroke",
+                "stylers": [{"color": "#fefefe"}, {"lightness": 17}, {"weight": 1.2}]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [{"color": "#f5f5f5"}, {"lightness": 20}]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [{"color": "#f5f5f5"}, {"lightness": 21}]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [{"color": "#ffffff"}, {"lightness": 17}]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [{"color": "#ffffff"}, {"lightness": 29}, {"weight": 0.2}]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "geometry",
+                "stylers": [{"color": "#ffffff"}, {"lightness": 18}]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "geometry",
+                "stylers": [{"color": "#ffffff"}, {"lightness": 16}]
+            },
+            {
+                "featureType": "transit",
+                "elementType": "geometry",
+                "stylers": [{"color": "#f2f2f2"}, {"lightness": 19}]
+            },
+            {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [{"color": "#e9e9e9"}, {"lightness": 17}]
+            }
+        ];
+
+        function initMap() {
+            const location = { lat: -34.397, lng: 150.644 }; // Replace with your actual coordinates
+            
+            try {
+                map = new google.maps.Map(document.getElementById('loc-map'), {
+                    center: location,
+                    zoom: 15,
+                    styles: mapStyles,
+                    disableDefaultUI: true,
+                    gestureHandling: 'cooperative'
+                });
+
+                const marker = new google.maps.Marker({
+                    position: location,
+                    map: map,
+                    icon: {
+                        path: google.maps.SymbolPath.CIRCLE,
+                        scale: 10,
+                        fillColor: '#000000',
+                        fillOpacity: 1,
+                        strokeWeight: 0
+                    }
+                });
+
+                document.getElementById('loc-loading').style.display = 'none';
+            } catch (error) {
+                console.error('Error initializing map:', error);
+                document.getElementById('loc-error').style.display = 'block';
+                document.getElementById('loc-loading').style.display = 'none';
+            }
+        }
+
+        // Function to load Google Maps API
+        function loadGoogleMapsAPI() {
+            const script = document.createElement('script');
+            script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
+            script.async = true;
+            script.defer = true;
+            script.onerror = () => {
+                document.getElementById('loc-error').style.display = 'block';
+                document.getElementById('loc-loading').style.display = 'none';
+            };
+            document.head.appendChild(script);
+        }
+
+        // Load the Google Maps API
+        loadGoogleMapsAPI();
+    </script>
+    
+</body>
+</html>

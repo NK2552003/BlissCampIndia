@@ -46,7 +46,9 @@ function populateTours(data) {
                   </div>
                   <div class="trek-footer">
                     <div class="trek-rating">${"⭐".repeat(tour.rating)}</div>
-                    <button class="trek-btn">Read More</button>
+                    <button class="trek-btn" data-tour-id="${
+                      tour.id
+                    }">Read More</button>
                   </div>
                 </div>
               </div>
@@ -54,6 +56,30 @@ function populateTours(data) {
     tourGrid.innerHTML += card; // Append new card to the grid
   });
   document.getElementById("resultsCount").textContent = data.length; // Update results count
+
+  // Add event listeners to all "Read More" buttons
+  document.querySelectorAll(".trek-btn").forEach((button) => {
+    button.addEventListener("click", function () {
+      const tourId = this.getAttribute("data-tour-id");
+      const tour = tours.find((t) => t.id == tourId);
+      if (tour) {
+        const params = new URLSearchParams({
+          id: tour.id,
+          title: tour.title,
+          price: tour.price,
+          description: tour.description,
+          destination: tour.destination,
+          month: tour.month,
+          season: tour.season,
+          rating: tour.rating,
+          image: tour.image,
+          days: tour.duration.days,
+          nights: tour.duration.nights,
+        });
+        window.location.href = `details.html?${params.toString()}`;
+      }
+    });
+  });
 }
 
 function filterTours() {
