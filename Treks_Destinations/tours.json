@@ -4,480 +4,1267 @@
         "title": "Bali Pass Trek",
         "type": "Trek",
         "destination": "Manali",
-        "month": "April",
-        "price": 18500,
-        "duration": { "days": 6, "nights": 5 },
+        "location": {
+          "latitude": 32.2432,
+          "longitude": 77.1892
+        },
         "description": "A thrilling trek through the scenic landscapes of the Himalayas, perfect for adventure seekers.",
-        "image": "https://via.placeholder.com/300x200?text=Bali+Pass+Trek",
+        "month": "April",
+        "price": 24500,
+        "duration": { "days": 6, "nights": 5 },
+        "brief_description": "Experience the adventure of a lifetime with our Bali Pass Trek in Manali. This trek offers an unparalleled journey through some of the most breathtaking landscapes in the region. As you ascend through lush forests and alpine meadows, you'll be treated to panoramic views of the majestic Himalayan peaks. The Bali Pass, situated at an altitude of 16,207 feet, presents a thrilling challenge for seasoned trekkers and adventure enthusiasts. Along the way, you'll encounter pristine mountain streams, diverse flora and fauna, and the unique culture of remote Himalayan villages. Our expert guides will ensure your safety and share insights about the local ecology and traditions. You'll camp under star-studded skies and wake up to misty mountain mornings. This trek not only tests your physical endurance but also offers a deep connection with nature and a sense of accomplishment as you conquer high passes and rugged terrain. Whether you're an experienced trekker or a passionate beginner looking for a challenge, the Bali Pass Trek promises an unforgettable adventure in the heart of the Himalayas. Join us for this transformative journey that combines breathtaking natural beauty, physical challenge, and cultural exploration in one of India's most stunning trekking destinations.",
+        "image": "https://example.com/images/bali-pass-trek.jpg",
         "season": "Summer",
-        "rating": 5
-    },
-    {
+        "rating": 5,
+        "pros": [
+          "Breathtaking Himalayan views",
+          "Challenging high-altitude trek",
+          "Rich biodiversity and unique flora"
+        ],
+        "cons": [
+          "Physically demanding",
+          "Requires acclimatization",
+          "Unpredictable weather conditions"
+        ],
+        "inclusions": [
+          "Experienced trekking guides",
+          "Camping equipment",
+          "Meals during the trek",
+          "First aid kit and oxygen cylinders",
+          "Transportation from Manali to base camp"
+        ]
+      },
+      {
         "id": 2,
         "title": "Buran Ghati Trek",
         "type": "Trek",
-        "destination": "Ladakh",
+        "destination": "Himachal Pradesh",
+        "location": {
+          "latitude": 31.3530,
+          "longitude": 77.8790
+        },
         "month": "May",
-        "price": 20000,
-        "duration": { "days": 7, "nights": 6 },
         "description": "Experience the stunning beauty of the Buran Ghati with breathtaking views and rich flora.",
-        "image": "https://via.placeholder.com/300x200?text=Buran+Ghati+Trek",
+        "price": 26000,
+        "duration": { "days": 7, "nights": 6 },
+        "brief_description": "Embark on an extraordinary journey with our Buran Ghati Trek in Himachal Pradesh. This trek offers a perfect blend of challenging terrain and breathtaking beauty, taking you through some of the most picturesque landscapes in the Himalayas. As you traverse through dense pine forests, lush meadows, and snow-covered passes, you'll be treated to panoramic views of towering peaks and pristine valleys. The Buran Pass, standing at an impressive altitude of 15,000 feet, is the crown jewel of this trek, offering a thrilling crossing and unforgettable vistas. Along the way, you'll encounter charming Himalayan villages, where you can immerse yourself in the local culture and traditions. Our expert guides will share fascinating insights about the region's flora, fauna, and geology, enriching your trekking experience. You'll camp in stunning locations, including beside crystal-clear mountain lakes and in flower-filled meadows. This trek is known for its diverse landscapes, from verdant forests to barren high-altitude terrain, providing a new visual treat at every turn. The descent from Buran Pass offers an exhilarating snow slide, adding an element of adventure to your journey. Whether you're captivated by the call of the mountains or seeking a challenge that pushes your limits, the Buran Ghati Trek promises an unforgettable adventure in the heart of the Himalayas.",
+        "image": "https://example.com/images/buran-ghati-trek.jpg",
         "season": "Summer",
-        "rating": 4
-    },
-    {
+        "rating": 4,
+        "pros": [
+          "Diverse landscapes from forests to snow-capped peaks",
+          "Less crowded than popular treks",
+          "Thrilling snow slide descent"
+        ],
+        "cons": [
+          "Challenging terrain in some sections",
+          "Limited facilities in remote areas",
+          "Requires good physical fitness"
+        ],
+        "inclusions": [
+          "Professional trekking guide",
+          "Camping and trekking gear",
+          "Nutritious meals throughout the trek",
+          "Transportation from Shimla",
+          "Permits and forest fees"
+        ]
+      },
+      {
         "id": 3,
         "title": "Gomukh Tapovan Trek",
         "type": "Trek",
         "destination": "Uttarakhand",
-        "month": "June",
-        "price": 15999,
-        "duration": { "days": 8, "nights": 7 },
         "description": "A mesmerizing trek leading to the source of the Ganges, surrounded by majestic mountains.",
-        "image": "https://via.placeholder.com/300x200?text=Gomukh+Tapovan+Trek",
+        "location": {
+          "latitude": 30.9258,
+          "longitude": 79.0830
+        },
+        "month": "June",
+        "price": 17999,
+        "duration": { "days": 8, "nights": 7 },
+        "brief_description": "Embark on a spiritual and adventurous journey with our Gomukh Tapovan Trek in Uttarakhand. This iconic trek takes you to the source of the holy Ganges River, known as Gomukh, and the beautiful Tapovan meadow, offering a perfect blend of natural beauty and religious significance. As you trek through the rugged terrain of the Garhwal Himalayas, you'll be surrounded by some of the most majestic peaks in India, including Shivling and the Bhagirathi group. The journey begins in the pilgrimage town of Gangotri, where you'll acclimatize and soak in the spiritual atmosphere. As you ascend, the landscape transforms from lush forests to rocky moraines and finally to the Gangotri Glacier, where you'll witness the birth of the Ganges at Gomukh. The trek to Tapovan takes you to a high-altitude meadow that offers stunning views of surrounding peaks and is known for its vibrant wildflowers during the summer months. Throughout the trek, you'll camp at scenic locations, each offering a unique perspective of the Himalayan wilderness. Our experienced guides will share insights about the local ecology, geology, and the cultural significance of these sacred places. This trek not only challenges you physically but also provides a profound connection with nature and an opportunity for inner reflection. Whether you're drawn by the allure of the mountains, the call of adventure, or the spiritual significance of the region, the Gomukh Tapovan Trek promises an unforgettable experience in one of the most revered parts of the Himalayas.",
+        "image": "https://example.com/images/gomukh-tapovan-trek.jpg",
         "season": "Summer",
-        "rating": 4
-    },
-    {
+        "rating": 4,
+        "pros": [
+          "Visit the source of the holy Ganges river",
+          "Stunning views of Shivling and Bhagirathi peaks",
+          "Spiritual and adventurous experience"
+        ],
+        "cons": [
+          "High altitude trek, risk of altitude sickness",
+          "Challenging weather conditions possible",
+          "Requires good physical fitness"
+        ],
+        "inclusions": [
+          "Experienced high-altitude guides",
+          "Quality camping equipment",
+          "Nutritious vegetarian meals",
+          "Permits and forest fees",
+          "First aid and oxygen support"
+        ]
+      },
+      {
         "id": 4,
+        "title": "Hampta Pass Trek",
+        "type": "Trek",
+        "destination": "Himachal Pradesh",
+        "location": {
+          "latitude": 32.2497,
+          "longitude": 77.1774
+        },
+        "month": "July",
+        "price": 15500,
+        "duration": { "days": 5, "nights": 4 },
+        "brief_description": "Embark on an unforgettable adventure with our Hampta Pass Trek in Himachal Pradesh. This moderate-difficulty trek offers a diverse range of landscapes, taking you from the lush green valleys of Kullu to the barren, moon-like terrain of Lahaul. The Hampta Pass, situated at an altitude of 14,100 feet, serves as a gateway between these two starkly different worlds. As you begin your journey from Manali, you'll traverse through dense pine forests, cross gushing rivers, and ascend through beautiful meadows adorned with wildflowers. The trek offers breathtaking views of the Dhauladhar and Pir Panjal ranges, with snow-capped peaks dominating the horizon. One of the highlights of this trek is camping beside the pristine Chandratal Lake, also known as the Moon Lake, which reflects the surrounding mountains like a mirror. Throughout the journey, you'll experience rapid changes in landscape, flora, and climate, making it a photographer's paradise and a nature lover's delight. Our experienced guides will share insights about the local ecology, mountain lore, and survival techniques. You'll also get a chance to interact with local shepherds and experience their unique way of life. The Hampta Pass Trek is known for its perfect balance of challenge and accessibility, making it ideal for both beginners and experienced trekkers. Whether you're seeking adventure, natural beauty, or a test of your limits, this trek promises an enriching experience that will leave you with memories to cherish for a lifetime.",
+        "image": "https://example.com/images/hampta-pass-trek.jpg",
+        "season": "Summer",
+        "description": "A stunning trek that connects the lush green valleys of Kullu and Lahaul.",
+        "rating": 4,
+        "pros": [
+          "Diverse landscapes from green valleys to barren mountains",
+          "Moderate difficulty, suitable for beginners",
+          "Opportunity to camp at Chandratal Lake"
+        ],
+        "cons": [
+          "Unpredictable weather at high altitudes",
+          "River crossings can be challenging",
+          "Limited network connectivity"
+        ],
+        "inclusions": [
+          "Expert trekking guides",
+          "Quality camping gear",
+          "Nutritious meals during the trek",
+          "Transportation from Manali",
+          "Permits and environmental fees"
+        ]
+      },
+      {
+        "id": 5,
         "title": "Kedarkantha Trek",
         "type": "Trek",
         "destination": "Uttarakhand",
-        "month": "December",
-        "price": 13500,
-        "duration": { "days": 6, "nights": 5 },
         "description": "A popular winter trek that offers stunning views of snow-capped peaks and charming villages.",
-        "image": "https://via.placeholder.com/300x200?text=Kedarkantha+Trek",
+        "location": {
+          "latitude": 31.0298,
+          "longitude": 78.2432
+        },
+        "month": "December",
+        "price": 8999,
+        "duration": { "days": 6, "nights": 5 },
+        "brief_description": "Experience the magic of a winter wonderland with our Kedarkantha Trek in Uttarakhand. This popular trek offers a perfect blend of adventure and scenic beauty, making it an ideal choice for both beginners and experienced trekkers. Situated in the Govind Wildlife Sanctuary, Kedarkantha peak stands at an elevation of 12,500 feet, offering panoramic views of some of the most prominent Himalayan peaks. The journey begins in the charming village of Sankri, where you'll get a glimpse of the traditional Garhwali lifestyle. As you ascend through dense pine and oak forests, you'll be treated to the sight of snow-covered trails and frozen streams. The trek is particularly famous for its beautiful campsites, each offering a unique perspective of the surrounding snow-clad mountains. The highlight of the trek is the summit climb, which rewards you with a 360-degree view of majestic peaks like Swargarohini, Bandarpoonch, and Kalanag. During winter, the entire landscape is transformed into a white paradise, with snow-covered meadows and forests creating a magical atmosphere. Our experienced guides will ensure your safety and comfort, sharing interesting facts about the local flora, fauna, and mountain ecology. You'll also have the opportunity to experience the warm hospitality of the local villagers and taste traditional Garhwali cuisine. The Kedarkantha Trek is known for its gradual ascent, making it accessible to fitness enthusiasts of all levels. Whether you're looking for a thrilling snow trek, breathtaking views, or a peaceful escape into nature, the Kedarkantha Trek promises an unforgettable adventure in the heart of the Himalayas.",
+        "image": "https://example.com/images/kedarkantha-trek.jpg",
         "season": "Winter",
-        "rating": 5
-    },
-    {
-        "id": 5,
-        "title": "Roopkund Trek",
-        "type": "Trek",
-        "destination": "Himachal Pradesh",
-        "month": "October",
-        "price": 9500,
-        "duration": { "days": 8, "nights": 7 },
-        "description": "Famous for its mysterious lake, this trek offers a unique blend of adventure and history.",
-        "image": "https://via.placeholder.com/300x200?text=Roopkund+Trek",
-        "season": "Autumn",
-        "rating": 5
-    },
-    {
+        "rating": 5,
+        "pros": [
+          "Spectacular snow-covered landscapes",
+          "Suitable for beginners and families",
+          "Beautiful campsites with panoramic views"
+        ],
+        "cons": [
+          "Very cold temperatures in winter",
+          "Requires proper winter gear",
+          "Possible altitude sickness for some"
+        ],
+        "inclusions": [
+          "Experienced winter trek guides",
+          "Warm camping equipment",
+          "Hot nutritious meals",
+          "Transportation from Dehradun",
+          "Forest permits and fees"
+        ]
+      },
+      {
         "id": 6,
-        "title": "Hampta Pass Trek",
-        "type": "Trek",
-        "destination": "Manali",
-        "month": "July",
-        "price": 12500,
-        "duration": { "days": 5, "nights": 4 },
-        "description": "A stunning trek that connects the lush green valleys of Kullu and Lahaul.",
-        "image": "https://via.placeholder.com/300x200?text=Hampta+Pass+Trek",
-        "season": "Monsoon",
-        "rating": 5
-    },
-    {
-        "id": 7,
-        "title": "Spiti Valley Road Trip",
-        "type": "Adventure",
-        "destination": "Spiti",
-        "month": "June",
-        "price": 22000,
-        "duration": { "days": 10, "nights": 9 },
-        "description": "An adventurous road trip through the rugged terrains of Spiti Valley, filled with culture and beauty.",
-        "image": "https://via.placeholder.com/300x200?text=Spiti+Valley+Trip",
-        "season": "Summer",
-        "rating":4
-    },
-    {
-        "id": 8,
-        "title": "Ladakh Bike Expedition",
-        "type": "Adventure",
-        "destination": "Ladakh",
-        "month": "August",
-        "price": 28000,
-        "duration": { "days": 8, "nights": 7 },
-        "description": "An exhilarating bike expedition through the breathtaking landscapes of Ladakh.",
-        "image": "https://via.placeholder.com/300x200?text=Ladakh+Bike+Trip",
-        "season": "Monsoon",
-        "rating": 4
-    },
-    {
-        "id": 9,
-        "title": "Valley of Flowers Trek",
-        "type": "Trek",
-        "destination": "Uttarakhand",
-        "month": "August",
-        "price": 15000,
-        "duration": { "days": 7, "nights": 6 },
-        "description": "A UNESCO World Heritage site, known for its meadows of endemic alpine flowers.",
-        "image": "https://via.placeholder.com/300x200?text=Valley+of+Flowers",
-        "season": "Monsoon",
-        "rating": 5
-    },
-    {
-        "id": 10,
-        "title": "Rishikesh Adventure Camp",
-        "type": "Relaxation",
-        "destination": "Rishikesh",
-        "month": "March",
-        "price": 7500,
-        "duration": { "days": 3, "nights": 2 },
-        "description": "A perfect getaway for relaxation and adventure, featuring yoga, rafting, and nature walks.",
-        "image": "https://via.placeholder.com/300x200?text=Rishikesh+Camp",
-        "season": "Spring",
-        "rating": 4
-    },
-    {
-        "id": 11,
-        "title": "Tarsar Marsar Trek",
-        "type": "Trek",
-        "destination": "Kashmir",
-        "month": "July",
-        "price": 15500,
-        "duration": { "days": 8, "nights": 7 },
-        "description": "A beautiful trek through the stunning landscapes of Kashmir, with pristine lakes and lush meadows.",
-        "image": "https://via.placeholder.com/300x200?text=Tarsar+Marsar+Trek",
-        "season": "Monsoon",
-        "rating": 5
-    },
-    {
-        "id": 12,
-        "title": "Manali Honeymoon Retreat",
-        "type": "Relaxation",
-        "destination": "Manali",
-        "month": "February",
-        "price": 18000,
-        "duration": { "days": 5, "nights": 4 },
-        "description": "A romantic retreat in the serene hills of Manali, perfect for couples looking to unwind.",
-        "image": "https://via.placeholder.com/300x200?text=Manali+Honeymoon",
-        "season": "Winter",
-        "rating": 4
-    },
-    {
-        "id": 13,
-        "title": "Kashmir Great Lakes Trek",
-        "type": "Trek",
-        "destination": "Kashmir",
-        "month": "September",
-        "price": 16500,
-        "duration": { "days": 9, "nights": 8 },
-        "description": "A breathtaking trek that takes you through the stunning alpine lakes of Kashmir.",
-        "image": "https://via.placeholder.com/300x200?text=Kashmir+Great+Lakes",
-        "season": "Autumn",
-        "rating": 4
-    },
-    {
-        "id": 14,
         "title": "Chadar Trek",
         "type": "Trek",
         "destination": "Ladakh",
-        "month": "January",
-        "price": 24000,
-        "duration": { "days": 9, "nights": 8 },
         "description": "An adventurous trek on the frozen Zanskar River, offering a unique winter experience.",
-        "image": "https://via.placeholder.com/300x200?text=Chadar+Trek",
+        "location": {
+          "latitude": 34.1526,
+          "longitude": 77.5770
+        },
+        "month": "January",
+        "price": 21999,
+        "duration": { "days": 9, "nights": 8 },
+        "brief_description": "Embark on one of the most unique and challenging winter treks in the world with our Chadar Trek in Ladakh. This extraordinary journey takes you along the frozen Zanskar River, where you'll walk on a sheet of ice surrounded by towering gorges and snow-capped peaks. The Chadar, meaning 'blanket' in the local language, refers to the thick layer of ice that forms over the river during the harsh winter months. This trek is not just an adventure; it's a step back in time, following an ancient trade route used by the Zanskari people for centuries. Starting from Leh, you'll acclimatize to the high altitude before beginning your trek from Chilling. As you progress along the frozen river, you'll witness ever-changing ice formations, from smooth sheets to rough, broken patches. The trek offers breathtaking views of frozen waterfalls, deep gorges, and the stark beauty of the Ladakhi winter landscape. You'll camp on the banks of the frozen river, experiencing the serene isolation of this remote region. Our expert guides, well-versed in the challenges of this unique terrain, will ensure your safety and share insights about the local culture, geology, and survival techniques in this extreme environment. Along the way, you may encounter local Zanskari people making their winter journey and get a glimpse into their resilient way of life. The Chadar Trek is not just a physical challenge; it's a test of mental strength and adaptability. It offers a rare opportunity to disconnect from the modern world and experience nature in its rawest form. Whether you're an adventure enthusiast seeking an extreme challenge or a nature lover looking for unparalleled beauty, the Chadar Trek promises an unforgettable journey that will push your limits and leave you with a profound appreciation for the power and beauty of nature.",
+        "image": "https://example.com/images/chadar-trek.jpg",
         "season": "Winter",
-        "rating": 4
-    },
-    {
-        "id": 15,
-        "title": "Goa Beach Party",
-        "type": "Relaxation",
-        "destination": "Goa",
-        "month": "November",
-        "price": 22000,
-        "duration": { "days": 4, "nights": 3 },
-        "description": "Enjoy the vibrant nightlife and beautiful beaches of Goa in this fun-filled beach party.",
-        "image": "https://via.placeholder.com/300x200?text=Goa+Beach+Party",
-        "season": "Autumn",
-        "rating": 4
-    },
-    {
-        "id": 16,
-        "title": "Meghalaya Monsoon Retreat",
-        "type": "Relaxation",
-        "destination": "Meghalaya",
-        "month": "July",
-        "price": 19500,
+        "rating": 5,
+        "pros": [
+          "Unique experience of walking on a frozen river",
+          "Stunning winter landscapes and frozen waterfalls",
+          "Insight into the ancient culture of Zanskar"
+        ],
+        "cons": [
+          "Extremely cold temperatures",
+          "Physically and mentally challenging",
+          "Unpredictable ice conditions"
+        ],
+        "inclusions": [
+          "Specialized Chadar trek guides",
+          "Extreme cold weather camping gear",
+          "Nutritious high-energy meals",
+          "Safety equipment including crampons",
+          "Inner line permits and wildlife fees"
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Valley of Flowers Trek",
+        "type": "Trek",
+        "destination": "Uttarakhand",
+        "location": {
+          "latitude": 30.7283,
+          "longitude": 79.6058
+        },
+        "month": "August",
+        "description": "A UNESCO World Heritage site, known for its meadows of endemic alpine flowers.",
+        "price": 12500,
         "duration": { "days": 6, "nights": 5 },
-        "description": "Experience the lush greenery and stunning waterfalls of Meghalaya during the monsoon.",
-        "image": "https://via.placeholder.com/300x200?text=Meghalaya+Retreat",
+        "brief_description": "Embark on a mesmerizing journey through nature's own paradise with our Valley of Flowers Trek in Uttarakhand. This enchanting trek takes you through a UNESCO World Heritage Site, famous for its vibrant alpine meadows filled with hundreds of species of wildflowers. The valley, nestled high in the West Himalayan region, comes alive with a riot of colors during the monsoon season, creating a spectacle that seems almost surreal. As you trek through this floral wonderland, you'll be surrounded by towering snow-capped peaks, cascading waterfalls, and pristine streams. The journey begins in the pilgrimage town of Govindghat, from where you'll trek to the quaint village of Ghangaria, your base camp for exploring the valley. Each day brings new discoveries as you wander through meadows carpeted with primulas, poppies, daisies, and many rare and endangered species. The trek also includes a visit to the holy Hemkund Sahib, a revered Sikh shrine set against the backdrop of stunning mountain scenery. Our expert guides will share insights about the unique ecosystem, the medicinal properties of various plants, and the efforts to preserve this fragile environment. You'll camp in scenic locations, allowing you to fully immerse yourself in the tranquil beauty of the Himalayas. This moderate trek is suitable for nature lovers, photographers, and anyone seeking a peaceful retreat in the mountains. Whether you're captivated by the botanical diversity, the spiritual atmosphere, or simply the breathtaking landscapes, the Valley of Flowers Trek offers a truly magical experience that will leave you with memories to cherish for a lifetime.",
+        "image": "https://example.com/images/valley-of-flowers-trek.jpg",
         "season": "Monsoon",
-        "rating": 4
-    },
-    {
-        "id": 17,
-        "title": "Snow Leopard Expedition",
-        "type": "Adventure",
-        "destination": "Ladakh",
-        "month": "February",
-        "price": 35000,
-        "duration": { "days": 10, "nights": 9 },
-        "description": "A thrilling expedition to spot the elusive snow leopard in its natural habitat.",
-        "image": "https://via.placeholder.com/300x200?text=Snow+Leopard+Trip",
-        "season": "Winter",
-        "rating": 4
-    },
-    {
-        "id": 18,
-        "title": "Kanha Jungle Safari",
-        "type": "Adventure",
-        "destination": "Madhya Pradesh",
-        "month": "November",
-        "price": 12000,
-        "duration": { "days": 4, "nights": 3 },
-        "description": "Explore the rich wildlife of Kanha National Park on this exciting jungle safari.",
-        "image": "https://via.placeholder.com/300x200?text=Kanha+Safari",
+        "rating": 4,
+        "pros": [
+          "Stunning floral diversity",
+          "UNESCO World Heritage Site",
+          "Combination of natural beauty and spiritual experience"
+        ],
+        "cons": [
+          "Limited to monsoon season (July-September)",
+          "Rainy weather can be challenging",
+          "Moderate difficulty due to initial steep climb"
+        ],
+        "inclusions": [
+          "Experienced naturalist guides",
+          "Comfortable accommodation in Ghangaria",
+          "Nutritious vegetarian meals",
+          "Permits and entrance fees",
+          "First aid and safety equipment"
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Roopkund Trek",
+        "type": "Trek",
+        "destination": "Uttarakhand",
+        "description": "Famous for its mysterious lake, this trek offers a unique blend of adventure and history.",
+        "location": {
+          "latitude": 30.2624,
+          "longitude": 79.7321
+        },
+        "month": "September",
+        "price": 18500,
+        "duration": { "days": 8, "nights": 7 },
+        "brief_description": "Embark on a thrilling adventure to the mysterious Skeleton Lake with our Roopkund Trek in Uttarakhand. This challenging high-altitude trek takes you to a glacial lake at 16,470 feet, famous for the human skeletal remains found on its shores, dating back to the 9th century CE. The journey begins in the charming town of Lohajung, from where you'll trek through diverse landscapes, including lush forests, rolling meadows, and rocky terrain. As you ascend, you'll be treated to breathtaking views of prominent Himalayan peaks like Trishul and Nanda Ghunti. The trek is known for its varied scenery, from the beautiful oak and rhododendron forests of the lower reaches to the stark alpine zones near the lake. One of the highlights is camping at the Ali Bugyal and Bedni Bugyal, two of the most beautiful high-altitude meadows in India, offering panoramic views of the surrounding peaks. The final ascent to Roopkund is challenging but rewarding, with the ethereal sight of the skeleton-laden lake leaving a lasting impression. Our experienced guides will ensure your safety and share insights about the local legends, geology, and theories surrounding the mysterious skeletons. This trek not only offers a physical challenge but also a journey through history and local folklore. You'll experience the warm hospitality of the local Garhwali people and get a glimpse of their traditional lifestyle. The Roopkund Trek is perfect for adventurers seeking a blend of natural beauty, historical intrigue, and high-altitude challenge. Whether you're drawn by the mystery of the skeleton lake, the allure of the high Himalayas, or the desire to push your limits, this trek promises an unforgettable experience in one of the most fascinating regions of the Indian Himalayas.",
+        "image": "https://example.com/images/roopkund-trek.jpg",
         "season": "Autumn",
-        "rating": 5
-    },
-    {
-        "id": 19,
-        "title": "Ranthambore Tiger Safari",
-        "type": "Adventure",
-        "destination": "Rajasthan",
-        "month": "March",
-        "price": 16000,
-        "duration": { "days": 3, "nights": 2 },
-        "description": "A thrilling safari experience in Ranthambore National Park, home to majestic tigers.",
-        "image": "https://via.placeholder.com/300x200?text=Ranthambore+Safari",
+        "rating": 4,
+        "pros": [
+          "Mysterious Skeleton Lake",
+          "Diverse landscapes and stunning mountain views",
+          "Rich in local legends and folklore"
+        ],
+        "cons": [
+          "Challenging high-altitude trek",
+          "Unpredictable weather conditions",
+          "Requires excellent physical fitness"
+        ],
+        "inclusions": [
+          "Expert high-altitude guides",
+          "Quality camping equipment",
+          "Nutritious meals throughout the trek",
+          "Permits and forest fees",
+          "Emergency oxygen and first aid support"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Sandakphu Trek",
+        "type": "Trek",
+        "destination": "West Bengal",
+         "description": "A challenging trek offering panoramic views of the Everest, Kanchenjunga, and other high peaks of the Himalayas.",
+        "location": {
+          "latitude": 27.1025,
+          "longitude": 88.0070
+        },
+        "month": "April",
+        "price": 14500,
+        "duration": { "days": 7, "nights": 6 },
+        "brief_description": "Embark on an exhilarating journey to the highest peak of West Bengal with our Sandakphu Trek. This remarkable trek offers a unique opportunity to witness breathtaking views of four of the world's five highest peaks - Everest, Kanchenjunga, Lhotse, and Makalu. Starting from the quaint hill station of Darjeeling, the trek takes you through the picturesque Singalila Ridge, straddling the border between India and Nepal. As you ascend through rhododendron forests and alpine meadows, you'll be treated to ever-changing vistas of the mighty Himalayan range. The trail passes through charming mountain villages, offering insights into the local Nepali and Tibetan cultures. Sandakphu, at an altitude of 11,930 feet, is known as the 'Trekkers Wonderland' for its panoramic views of the Sleeping Buddha formation - a series of peaks resembling a sleeping Buddha. The trek also offers stunning views of the Kanchenjunga range, which appears to change colors with the shifting sunlight. Along the way, you'll encounter diverse flora and fauna, including rare orchids and red pandas if you're lucky. Our experienced guides will share fascinating stories about the region's history, ecology, and the communities that call these mountains home. The moderate difficulty of this trek makes it accessible to both beginners and experienced trekkers. You'll stay in a mix of tea houses and camps, allowing you to experience the warm hospitality of the mountain people. Whether you're a photography enthusiast, a nature lover, or someone seeking a cultural experience in the mountains, the Sandakphu Trek offers a perfect blend of adventure, natural beauty, and cultural immersion. Join us for an unforgettable journey to the roof of West Bengal, where the views will leave you speechless and the experience will stay with you for a lifetime.",
+        "image": "https://example.com/images/sandakphu-trek.jpg",
         "season": "Spring",
-        "rating": 4
-    },
-    {
-        "id": 20,
-        "title": "Pushkar Camel Fair",
-        "type": "Cultural",
-        "destination": "Rajasthan",
-        "month": "November",
-        "price": 14000,
-        "duration": { "days": 5, "nights": 4 },
-        "description": "Experience the vibrant Pushkar Camel Fair, a cultural extravaganza with music, dance, and local cuisine.",
-        "image": "https://via.placeholder.com/300x200?text=Pushkar+Camel+Fair",
-        "season": "Autumn",
-        "rating": 5
-    },
-    {
-        "id": 21,
-        "title": "Sikkim Rhododendron Trek",
+        "rating": 4,
+        "pros": [
+          "Views of four of the world's five highest peaks",
+          "Rich biodiversity and chance to spot red pandas",
+          "Cultural experience in Indo-Nepal border villages"
+        ],
+        "cons": [
+          "Unpredictable weather conditions",
+          "Some sections have basic accommodations",
+          "Long driving distances to reach the starting point"
+        ],
+        "inclusions": [
+          "Experienced local guides",
+          "Mix of teahouse and camping accommodations",
+          "All meals during the trek",
+          "Transportation from Darjeeling",
+          "Permits and entry fees"
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Kuari Pass Trek",
+        "type": "Trek",
+        "destination": "Uttarakhand",
+         "description": "A scenic trek in Uttarakhand, offering breathtaking views of Nanda Devi, and other Himalayan peaks. Ideal for both beginners and experienced trekkers.",
+        "location": {
+          "latitude": 30.4099,
+          "longitude": 79.5643
+        },
+        "month": "May",
+        "price": 13999,
+        "duration": { "days": 6, "nights": 5 },
+        "brief_description": "Embark on a journey through the 'Lord Curzon Trail' with our Kuari Pass Trek in Uttarakhand. This classic Himalayan trek, named after Lord Curzon who explored this route in the early 1900s, offers some of the most spectacular mountain views in the Garhwal region. Starting from the holy town of Joshimath, the trek takes you through dense oak and rhododendron forests, across sprawling meadows known as 'bugyals', and finally to the Kuari Pass at an altitude of 12,516 feet. Throughout the journey, you'll be treated to breathtaking panoramic views of prominent Himalayan peaks including Nanda Devi, Dronagiri, Changabang, and the Chaukhamba range. The trek is particularly famous for its beautiful campsites, each offering a unique perspective of the surrounding mountains. As you ascend, you'll witness the landscape transform from lush forests to alpine meadows and finally to the snow-covered pass. The Kuari Pass itself offers a 360-degree view of the Himalayan giants, a sight that will leave you awe-struck. Along the way, you'll pass through remote mountain villages, giving you a glimpse into the traditional Garhwali way of life. Our expert guides will share interesting facts about the local flora, fauna, and the rich cultural heritage of the region. The moderate difficulty of this trek makes it suitable for both beginners and experienced trekkers. You'll camp at scenic locations, allowing you to fully immerse yourself in the serene mountain environment. The Kuari Pass Trek is not just a physical journey but also a spiritual one, as you'll be trekking through a region steeped in mythology and natural beauty. Whether you're seeking adventure, tranquility, or simply a break from the hustle and bustle of daily life, this trek offers an enriching experience that will rejuvenate your body and soul. Join us for an unforgettable adventure in the heart of the Garhwal Himalayas, where every step brings you closer to nature and to yourself.",
+        "image": "https://example.com/images/kuari-pass-trek.jpg",
+        "season": "Spring",
+        "rating": 4,
+        "pros": [
+          "Spectacular views of major Himalayan peaks",
+          "Beautiful campsites in meadows",
+          "Moderate difficulty suitable for beginners"
+        ],
+        "cons": [
+          "Weather can be unpredictable",
+          "Some steep ascents",
+          "Limited network connectivity"
+        ],
+        "inclusions": [
+          "Experienced trekking guides",
+          "Quality camping equipment",
+          "Nutritious meals during the trek",
+          "Transportation from Haridwar",
+          "Permits and forest fees"
+        ]
+      },
+      {
+        "id": 11,
+        "title": "Goechala Trek",
         "type": "Trek",
         "destination": "Sikkim",
+        "description": "A stunning trek in Sikkim, taking you to the base of Kanchenjunga, the third-highest peak in the world.",
+        "location": {
+          "latitude": 27.3644,
+          "longitude": 88.2475
+        },
+        "month": "October",
+        "price": 19500,
+        "duration": { "days": 11, "nights": 10 },
+        "brief_description": "Embark on an awe-inspiring journey to the base of the third highest mountain in the world with our Goechala Trek in Sikkim. This challenging high-altitude trek takes you through the heart of the Kanchenjunga National Park, offering unparalleled views of the mighty Kanchenjunga massif and surrounding peaks. Starting from the charming town of Yuksom, the last royal capital of Sikkim, you'll trek through dense rhododendron forests, across gushing rivers, and past pristine high-altitude lakes. As you ascend, the landscape transforms dramatically, from lush temperate forests to alpine meadows and finally to the rocky moraines near Goechala Pass. The trek is renowned for its diverse flora and fauna, including the possibility of spotting rare Himalayan wildlife such as the red panda and musk deer. One of the highlights of this trek is the sunrise view from Dzongri Top, where you'll witness the first rays of the sun illuminating the golden peaks of Kanchenjunga and its neighboring mountains. The final push to Goechala Pass at 16,207 feet rewards you with a close-up view of the southeast face of Kanchenjunga, a sight that will be etched in your memory forever. Along the way, you'll pass through remote mountain villages and encounter the warm hospitality of the Sikkimese people. Our expert guides will share insights about the unique ecology of the region, local Buddhist culture, and the legends associated with the sacred mountain. The Goechala Trek is physically demanding but immensely rewarding, offering a perfect blend of natural beauty, cultural experiences, and personal challenge. You'll camp at some of the most scenic locations in the Himalayas, including the beautiful Samiti Lake. Whether you're an experienced trekker looking for your next challenge or a mountain enthusiast eager to witness the grandeur of Kanchenjunga up close, the Goechala Trek promises an unforgettable adventure in one of the most beautiful corners of the Indian Himalayas. Join us for a journey that will push your limits, awaken your senses, and leave you with a profound appreciation for the majesty of the mountains.",
+        "image": "https://example.com/images/goechala-trek.jpg",
+        "season": "Autumn",
+        "rating": 5,
+        "pros": [
+          "Close-up views of Kanchenjunga",
+          "Rich biodiversity in Kanchenjunga National Park",
+          "Challenging trek with great sense of accomplishment"
+        ],
+        "cons": [
+          "High altitude trek with risk of AMS",
+          "Long duration may not suit all schedules",
+          "Physically demanding, requires excellent fitness"
+        ],
+        "inclusions": [
+          "Experienced high-altitude guides",
+          "Quality camping and trekking gear",
+          "Nutritious meals throughout the trek",
+          "Transportation from Bagdogra/NJP",
+          "Permits and national park fees"
+        ]
+      },
+      {
+        "id": 12,
+        "title": "Pin Parvati Pass Trek",
+        "type": "Trek",
+        "destination": "Himachal Pradesh",
+        "description": "A difficult and thrilling trek that crosses the Pin Parvati Pass, offering beautiful views ",
+        "location": {
+          "latitude": 31.8924,
+          "longitude": 77.4845
+        },
+        "month": "July",
+        "price": 22500,
+        "duration": { "days": 11, "nights": 10 },
+        "brief_description": "Embark on one of the most challenging and rewarding Himalayan adventures with our Pin Parvati Pass Trek in Himachal Pradesh. This epic journey takes you from the lush green Parvati Valley to the barren landscapes of Spiti, crossing the formidable Pin Parvati Pass at an altitude of 17,450 feet. The trek begins in the hippie haven of Kasol, following the Parvati River upstream through dense forests and charming villages. As you ascend, the landscape gradually changes from verdant meadows to rocky moraines and finally to the snow-covered pass. The crossing of Pin Parvati Pass is the highlight of the trek, offering breathtaking views of the surrounding peaks and glaciers. The descent into the Pin Valley presents a stark contrast, with its desert-like terrain and unique geology characteristic of the Spiti region. Throughout the journey, you'll witness diverse flora and fauna, from alpine flowers to elusive snow leopards if you're lucky. The trek also offers cultural insights, passing through traditional Himalayan villages in both the Parvati and Pin valleys. You'll camp at some of the most scenic locations in the Himalayas, including the beautiful Mantalai Lake. Our experienced guides will ensure your safety through challenging terrains and share fascinating information about the region's geography, ecology, and local traditions. This trek is known for its varied landscapes, offering a unique opportunity to experience two distinct Himalayan regions in one journey. The Pin Parvati Pass Trek is a test of endurance and determination, suitable for experienced trekkers and adventure enthusiasts. It demands excellent physical fitness and mental preparation but rewards you with unparalleled views and a sense of accomplishment. Whether you're drawn by the challenge of high-altitude trekking, the allure of diverse Himalayan landscapes, or the desire to push your limits, this trek promises an extraordinary adventure that will stay with you for a lifetime. Join us for an unforgettable journey across one of the most spectacular passes in the Indian Himalayas."
+        ,"image": "https://example.com/images/pin-parvati-pass-trek.jpg",
+        "season": "Summer",
+        "rating": 5,
+        "pros": [
+          "Diverse landscapes from green valleys to barren mountains",
+          "Challenging high-altitude pass crossing",
+          "Unique cultural experiences in Parvati and Spiti valleys"
+        ],
+        "cons": [
+          "Extremely challenging, requires excellent fitness",
+          "High altitude with risk of AMS",
+          "Long duration and remote locations"
+        ],
+        "inclusions": [
+          "Expert high-altitude guides",
+          "Quality camping and safety equipment",
+          "Nutritious high-energy meals",
+          "Transportation from Manali",
+          "Permits and wildlife sanctuary fees"
+        ]
+      },
+      {
+        "id": 13,
+        "title": "Markha Valley Trek",
+        "type": "Trek",
+        "destination": "Ladakh",
+        "description": "An exciting trek in Ladakh, known for its vibrant landscapes, traditional villages and views of the Karakoram Range.",
+        "location": {
+          "latitude": 33.9962,
+          "longitude": 77.2422
+        },
+        "month": "August",
+        "price": 20500,
+        "duration": { "days": 8, "nights": 7 },
+        "brief_description": "Experience the magic of Ladakh's 'Little Tibet' with our Markha Valley Trek. This classic trek takes you through a stunning landscape of barren mountains, lush valleys, and traditional Ladakhi villages. Starting from Leh, you'll journey through the dramatic gorges of the Markha and Zanskar rivers, crossing high passes that offer panoramic views of the surrounding peaks. The trek is known for its cultural richness, allowing you to experience the unique Buddhist culture of Ladakh. You'll visit ancient monasteries perched on hillsides, encounter friendly locals, and witness the traditional way of life that has remained unchanged for centuries. The highlight of the trek is the ascent to Kongmaru La pass at 17,060 feet, offering breathtaking views of the Karakoram and Zanskar ranges. Throughout the journey, you'll camp in scenic locations and stay in traditional Ladakhi homestays, providing an authentic cultural experience. Our expert guides will share insights about the region's history, Buddhist philosophy, and the unique ecology of this high-altitude desert. The Markha Valley Trek offers a perfect blend of adventure, culture, and stunning landscapes, making it an ideal choice for those seeking to explore the heart of Ladakh.",
+        "image": "https://example.com/images/markha-valley-trek.jpg",
+        "season": "Summer",
+        "rating": 4,
+        "pros": [
+          "Rich cultural experience with monastery visits and homestays",
+          "Diverse landscapes of Ladakh",
+          "Moderate difficulty suitable for most trekkers"
+        ],
+        "cons": [
+          "High altitude requires proper acclimatization",
+          "Basic facilities in remote areas",
+          "Hot days and cold nights"
+        ],
+        "inclusions": [
+          "Experienced local Ladakhi guides",
+          "Mix of camping and homestay accommodations",
+          "All meals during the trek",
+          "Transportation from Leh",
+          "Inner line permits and entry fees"
+        ]
+      },
+      {
+        "id": 14,
+        "title": "Nanda Devi Base Camp Trek",
+        "type": "Trek",
+        "destination": "Uttarakhand",
+         "description": "This trek takes you to the base camp of Nanda Devi, the second-highest mountain in India",
+        "location": {
+          "latitude": 30.3761,
+          "longitude": 79.9714
+        },
+        "month": "June",
+        "price": 23500,
+        "duration": { "days": 10, "nights": 9 },
+        "brief_description": "Embark on an extraordinary journey to the base of India's second-highest peak with our Nanda Devi Base Camp Trek. This challenging expedition takes you deep into the Nanda Devi Sanctuary, a UNESCO World Heritage site known for its unique biodiversity and stunning mountain scenery. The trek begins in the quaint town of Munsiyari, known as the 'Little Kashmir' of Uttarakhand. As you ascend through dense rhododendron and oak forests, you'll be treated to breathtaking views of the Panchchuli peaks and the elusive Nanda Devi. The trail passes through remote villages, offering insights into the traditional Kumaoni culture. The highlight of the trek is reaching the Nanda Devi Base Camp, where you'll be surrounded by a panorama of towering peaks, including Nanda Devi East and Nanda Kot. Throughout the journey, you'll camp at some of the most scenic locations in the Himalayas, including the beautiful Martoli village and the high-altitude meadows of Lwani. Our expert guides will share fascinating information about the region's flora, fauna, and the legendary mountaineering expeditions to Nanda Devi. This trek is physically demanding but immensely rewarding, offering a true wilderness experience in one of the most pristine areas of the Himalayas.",
+        "image": "https://example.com/images/nanda-devi-base-camp-trek.jpg",
+        "season": "Summer",
+        "rating": 5,
+        "pros": [
+          "Access to the restricted Nanda Devi Sanctuary",
+          "Stunning views of Nanda Devi and surrounding peaks",
+          "Rich biodiversity and unique Himalayan ecology"
+        ],
+        "cons": [
+          "Challenging trek requiring excellent fitness",
+          "Remote area with basic facilities",
+          "Unpredictable weather conditions"
+        ],
+        "inclusions": [
+          "Experienced high-altitude guides",
+          "Quality camping equipment",
+          "Nutritious meals throughout the trek",
+          "Transportation from Kathgodam",
+          "Permits and sanctuary fees"
+        ]
+      },
+      {
+        "id": 15,
+        "title": "Rupin Pass Trek",
+        "type": "Trek",
+        "destination": "Himachal Pradesh",
+        "location": {
+          "latitude": 31.1589,
+          "longitude": 78.2595
+        },
+        "month": "June",
+        "price": 16500,
+        "description": "A thrilling and adventurous trek crossing the Rupin Pass in Himachal Pradesh, offering dramatic landscapes, waterfalls, snowfields, and views of the Himalayas.",
+        "duration": { "days": 8, "nights": 7 },
+        "brief_description": "Experience the thrill of crossing a high-altitude pass with our Rupin Pass Trek, a journey that takes you from the lush valleys of Himachal Pradesh to the rugged landscapes of Uttarakhand. This trek is renowned for its diverse scenery, ranging from dense pine forests and cascading waterfalls to snow-covered alpine meadows. The adventure begins in the charming village of Dhaula, following the Rupin River as it meanders through picturesque valleys. As you ascend, you'll witness the dramatic three-stage Rupin waterfall, a highlight of the trek. The trail passes through traditional Himalayan villages, offering glimpses into the local culture and way of life. The challenging climb to Rupin Pass at 15,250 feet rewards you with panoramic views of the snow-capped peaks of Kinnaur. The descent into Sangla Valley in Uttarakhand presents a stark contrast in landscape and culture. Throughout the journey, you'll camp at scenic locations, including the beautiful Jhaka village and the upper waterfall campsite. Our experienced guides will ensure your safety and share insights about the region's geography, flora, and fauna. The Rupin Pass Trek offers a perfect blend of natural beauty, cultural experiences, and adventure, making it an ideal choice for both seasoned trekkers and enthusiastic beginners looking for a challenge.",
+        "image": "https://example.com/images/rupin-pass-trek.jpg",
+        "season": "Summer",
+        "rating": 4,
+        "pros": [
+          "Diverse landscapes and dramatic scenery changes",
+          "Spectacular Rupin waterfall views",
+          "Cultural experience in remote Himalayan villages"
+        ],
+        "cons": [
+          "Challenging high-altitude pass crossing",
+          "Unpredictable weather, especially near the pass",
+          "Some sections require careful navigation"
+        ],
+        "inclusions": [
+          "Expert trekking guides",
+          "Quality camping gear",
+          "Nutritious meals during the trek",
+          "Transportation from Dehradun",
+          "Permits and forest fees"
+        ]
+      },
+      {
+        "id": 16,
+        "title": "Stok Kangri Trek",
+        "type": "Trek",
+        "destination": "Ladakh",
+        "location": {
+          "latitude": 33.9876,
+          "longitude": 77.4405
+        },
+        "month": "July",
+        "price": 21999,
+        "duration": { "days": 9, "nights": 8 },
+        "description": "A challenging trek in Ladakh that takes you to the summit of Stok Kangri, offering a mix of high-altitude trekking, stunning views, and a sense of accomplishment at the summit.",
+        "brief_description": "Conquer one of the highest trekkable summits in India with our Stok Kangri Trek. This challenging expedition takes you to the summit of Stok Kangri at 20,080 feet, offering breathtaking views of the Zanskar and Karakoram ranges. The journey begins in Leh, where you'll acclimatize and explore the rich Ladakhi culture. The trek starts from the picturesque Stok village, ascending through barren landscapes and high-altitude deserts characteristic of Ladakh. As you gain altitude, you'll witness the dramatic transformation of the terrain from arid valleys to snow-covered peaks. The trek involves crossing challenging moraines and glaciers, testing your endurance and mountaineering skills. The final summit push is demanding but incredibly rewarding, offering panoramic views of K2, Karakoram, and the Zanskar ranges. Throughout the journey, you'll camp at scenic locations, including the beautiful Mankorma and Base Camp. Our experienced high-altitude guides will provide comprehensive training in basic mountaineering skills and ensure your safety throughout the expedition. This trek is suitable for fit and adventurous trekkers looking to push their limits and experience the thrill of a Himalayan summit.",
+        "image": "https://example.com/images/stok-kangri-trek.jpg",
+        "season": "Summer",
+        "rating": 5,
+        "pros": [
+          "Summit one of the highest trekkable peaks in India",
+          "Panoramic views of Karakoram and Zanskar ranges",
+          "Experience of high-altitude mountaineering"
+        ],
+        "cons": [
+          "Extremely challenging, requires excellent fitness",
+          "High altitude with significant risk of AMS",
+          "Technical climb requiring basic mountaineering skills"
+        ],
+        "inclusions": [
+          "Certified high-altitude guides",
+          "Quality mountaineering and camping equipment",
+          "Nutritious high-energy meals",
+          "Transportation from Leh",
+          "Permits and peak fees"
+        ]
+      },
+      {
+        "id": 17,
+        "title": "Kang Yatse Trek",
+        "type": "Trek",
+        "destination": "Ladakh",
+        "description": "A moderate to challenging trek in the Markha Valley region of Ladakh, culminating at the summit of Kang Yatse, providing a sense of serenity and unmatched views of the surrounding mountains.",
+        "location": {
+          "latitude": 33.7200,
+          "longitude": 77.5800
+        },
+        "month": "August",
+        "price": 24500,
+        "duration": { "days": 12, "nights": 11 },
+        "brief_description": "Embark on an epic journey to the summit of Kang Yatse, one of the most beautiful peaks in the Markha Valley of Ladakh. This challenging expedition combines the cultural richness of the Markha Valley Trek with the thrill of a high-altitude summit climb. The trek begins in Leh, allowing time for acclimatization and exploration of Ladakhi culture. As you journey through the Markha Valley, you'll visit ancient monasteries, cross high passes, and experience the unique lifestyle of the Ladakhi people. The trail passes through diverse landscapes, from lush green valleys to barren high-altitude deserts. The highlight of the trek is the ascent of Kang Yatse II (6,250m), a technically straightforward but physically demanding climb that offers stunning views of the Zanskar and Karakoram ranges. Throughout the journey, you'll camp in scenic locations, including the beautiful Nimaling Plain. Our experienced mountaineering guides will provide training in basic climbing techniques and ensure your safety during the summit attempt. This trek is perfect for adventurers seeking to combine a cultural trek with a challenging peak climb in the breathtaking landscapes of Ladakh.",
+        "image": "https://example.com/images/kang-yatse-trek.jpg",
+        "season": "Summer",
+        "rating": 5,
+        "pros": [
+          "Combination of cultural trek and peak climb",
+          "Summit one of Ladakh's most beautiful peaks",
+          "Experience the unique landscape and culture of Markha Valley"
+        ],
+        "cons": [
+          "Very challenging, requires excellent fitness and some mountaineering experience",
+          "Extended exposure to high altitude",
+          "Long duration may not suit all schedules"
+        ],
+        "inclusions": [
+          "Professional mountaineering guides",
+          "High-quality climbing and camping gear",
+          "Nutritious meals throughout the expedition",
+          "Transportation from Leh",
+          "Permits and peak fees"
+        ]
+      },
+      {
+        "id": 18,
+        "title": "Bhrigu Lake Trek",
+        "type": "Trek",
+        "destination": "Himachal Pradesh",
+        "description": "A short yet captivating trek near Manali, taking you to the picturesque Bhrigu Lake. The trail offers scenic views of the Pir Panjal and Dhauladhar ranges.",
+        "location": {
+          "latitude": 32.3198,
+          "longitude": 77.1994
+        },
+        "month": "July",
+        "price": 9999,
+        "duration": { "days": 4, "nights": 3 },
+        "brief_description": "Discover the beauty of a high-altitude glacial lake with our Bhrigu Lake Trek, a short but rewarding journey in the Kullu Valley of Himachal Pradesh. This trek is perfect for beginners and those short on time but eager to experience the magic of the Himalayas. Starting from the vibrant town of Manali, the trail ascends through dense forests of cedar and oak, opening up to vast alpine meadows filled with wildflowers in summer. The highlight of the trek is Bhrigu Lake, situated at an altitude of 14,100 feet. According to legend, this is where Sage Bhrigu meditated, and the lake is believed to change colors throughout the day. The trek offers stunning views of prominent peaks in the Pir Panjal and Dhauladhar ranges. Despite its short duration, the Bhrigu Lake Trek provides a diverse Himalayan experience, from lush forests to snow-covered landscapes. You'll camp at scenic locations, including the beautiful Rola Kholi campsite. Our experienced guides will share insights about the local flora, fauna, and the rich mythology associated with the region. This trek is an excellent choice for families, photography enthusiasts, and anyone looking to experience the beauty of the Himalayas in a short timeframe.",
+        "image": "https://example.com/images/bhrigu-lake-trek.jpg",
+        "season": "Summer",
+        "rating": 3,
+        "pros": [
+          "Short duration, suitable for beginners and families",
+          "Beautiful high-altitude lake with changing colors",
+          "Diverse landscapes from forests to alpine meadows"
+        ],
+        "cons": [
+          "Rapid ascent may cause altitude sickness for some",
+          "Limited acclimatization time",
+          "Weather can be unpredictable"
+        ],
+        "inclusions": [
+          "Experienced local guides",
+          "Camping equipment",
+          "Nutritious meals during the trek",
+          "Transportation from Manali",
+          "Permits and forest fees"
+        ]
+      },
+      {
+        "id": 19,
+        "title": "Tarsar Marsar Trek",
+        "type": "Trek",
+        "destination": "Kashmir",
+        "description": "A beautiful trek in Kashmir, known for its serene alpine lakes, lush meadows, and the stunning backdrop of the Himalayas. Ideal for nature lovers and those seeking peace.",
+        "location": {
+          "latitude": 34.1048,
+          "longitude": 75.1531
+        },
+        "month": "August",
+        "price": 17500,
+        "duration": { "days": 7, "nights": 6 },
+        "brief_description": "Experience the pristine beauty of Kashmir's high-altitude lakes with our Tarsar Marsar Trek. This moderate trek takes you through the heart of Kashmir's stunning landscapes, featuring lush meadows, dense pine forests, and crystal-clear alpine lakes. The journey begins in the charming town of Aru, ascending through beautiful valleys and crossing mountain passes. The highlight of the trek is visiting the twin lakes of Tarsar and Marsar, two almond-shaped water bodies known for their deep blue waters surrounded by snow-capped peaks. You'll also visit the beautiful Shekwas and Lidderwat meadows, perfect for camping and stargazing. Throughout the trek, you'll be treated to panoramic views of prominent peaks in the Kolahoi mountain range. The trail passes through remote Gujjar settlements, offering insights into the traditional pastoral life of Kashmir. Our expert guides will share fascinating information about the region's ecology, folklore, and the unique Kashmiri culture. This trek offers a perfect blend of natural beauty, adventure, and cultural experiences, making it an ideal choice for those seeking to explore the lesser-known gems of the Kashmir Himalayas.",
+        "image": "https://example.com/images/tarsar-marsar-trek.jpg",
+        "season": "Summer",
+        "rating": 4,
+        "pros": [
+          "Stunning twin alpine lakes",
+          "Lush meadows and diverse landscapes",
+          "Less crowded than other Kashmir treks"
+        ],
+        "cons": [
+          "Weather can be unpredictable",
+          "Some sections require river crossings",
+          "Limited accommodation options in remote areas"
+        ],
+        "inclusions": [
+          "Experienced Kashmiri guides",
+          "Quality camping equipment",
+          "Nutritious meals during the trek",
+          "Transportation from Srinagar",
+          "Permits and camping fees"
+        ]
+      },
+      {
+        "id": 20,
+        "title": "Annapurna Base Camp Trek",
+        "description": "A classic trek in Nepal that takes you to the base camp of Annapurna, providing a close view of Annapurna South, Hiunchuli, and Machapuchare peaks.",
+        "type": "Trek",
+        "destination": "Nepal",
+        "location": {
+          "latitude": 28.5308,
+          "longitude": 83.8773
+        },
+        "month": "April",
+        "price": 28500,
+        "duration": { "days": 11, "nights": 10 },
+        "brief_description": "Embark on a journey to the heart of the Annapurna range with our Annapurna Base Camp Trek. This classic Himalayan trek takes you through diverse landscapes, from lush subtropical forests to high alpine zones, culminating at the base camp of Annapurna, the 10th highest peak in the world. Starting from the lakeside city of Pokhara, the trail winds through charming Gurung villages, terraced fields, and rhododendron forests. As you ascend, you'll be treated to stunning views of the Annapurna massif, Machapuchare (Fishtail Mountain), and other prominent peaks. The trek offers a perfect blend of natural beauty and cultural experiences, allowing you to interact with local communities and witness their traditional way of life. The highlight of the journey is reaching the Annapurna Base Camp, surrounded by a natural amphitheater of towering peaks. Throughout the trek, you'll stay in comfortable teahouses, experiencing the warm hospitality of the Nepalese people. Our experienced guides will share insights about the region's flora, fauna, and the rich mountaineering history of the Annapurnas. This trek is suitable for fit beginners and experienced trekkers alike, offering a rewarding Himalayan experience without extreme altitudes.",
+        "image": "https://example.com/images/annapurna-base-camp-trek.jpg",
+        "season": "Spring",
+        "rating": 5,
+        "pros": [
+          "Spectacular views of the Annapurna range",
+          "Diverse landscapes and ecosystems",
+          "Rich cultural experiences in Gurung villages"
+        ],
+        "cons": [
+          "Can be crowded during peak seasons",
+          "Some steep ascents and long walking days",
+          "Risk of altitude sickness in higher regions"
+        ],
+        "inclusions": [
+          "Licensed Nepalese trekking guides",
+          "Teahouse accommodations",
+          "All meals during the trek",
+          "Transportation from Kathmandu",
+          "TIMS card and ACAP permits"
+        ]
+      },
+      {
+        "id": 21,
+        "title": "Everest Base Camp Trek",
+        "type": "Trek",
+        "destination": "Nepal",
+        "description": "A world-renowned trek in Nepal that takes you to the base camp of Mount Everest, offering awe-inspiring views of the world's tallest peak and surrounding landscapes.",
+        "location": {
+          "latitude": 28.0020,
+          "longitude": 86.8532
+        },
+        "month": "May",
+        "price": 32500,
+        "duration": { "days": 14, "nights": 13 },
+        "brief_description": "Embark on the ultimate Himalayan adventure with our Everest Base Camp Trek, a journey to the foot of the world's highest peak. This iconic trek takes you through the heart of Sherpa country, offering stunning mountain vistas, rich cultural experiences, and the thrill of walking in the footsteps of legendary mountaineers. The journey begins with a scenic flight to Lukla, known as the gateway to Everest. As you trek through the Khumbu region, you'll visit famous Sherpa villages like Namche Bazaar and Dingboche, acclimatizing as you ascend. The trail offers breathtaking views of Everest, Lhotse, Nuptse, and Ama Dablam, among other Himalayan giants. You'll visit ancient Buddhist monasteries, including the famous Tengboche Monastery, and witness the unique Sherpa culture firsthand. The highlight of the trek is reaching Everest Base Camp at 5,364 meters, where you'll stand in awe of the Khumbu Icefall and the looming presence of Everest. The journey also includes a hike to Kala Patthar, offering the best views of Everest and the surrounding peaks. Throughout the trek, you'll stay in comfortable teahouses, experiencing the legendary hospitality of the Sherpa people. Our experienced guides will ensure your safety, share fascinating stories about Everest expeditions, and provide insights into the local culture and environment. This challenging trek requires good fitness and proper acclimatization but rewards you with unparalleled views and a sense of achievement that will last a lifetime.",
+        "image": "https://example.com/images/everest-base-camp-trek.jpg",
+        "season": "Spring",
+        "rating": 5,
+        "pros": [
+          "Trek to the base of the world's highest mountain",
+          "Rich Sherpa culture and ancient monasteries",
+          "Stunning views of multiple 8000m peaks"
+        ],
+        "cons": [
+          "High altitude trek with risk of AMS",
+          "Can be crowded, especially in peak seasons",
+          "Long duration and physically demanding"
+        ],
+        "inclusions": [
+          "Experienced Everest region guides",
+          "Teahouse accommodations",
+          "All meals during the trek",
+          "Flights to and from Lukla",
+          "Sagarmatha National Park permits"
+        ]
+      },
+      {
+        "id": 22,
+        "title": "Kailash Mansarovar Yatra",
+        "type": "Pilgrimage",
+        "destination": "Tibet",
+        "description": "A sacred pilgrimage journey to Mount Kailash and Lake Mansarovar in Tibet, revered by Hindus, Buddhists, Jains, and Bon followers as a place of spiritual significance.",
+        "location": {
+          "latitude": 31.0672,
+          "longitude": 81.3112
+        },
+        "month": "June",
+        "price": 185000,
+        "duration": { "days": 13, "nights": 12 },
+        "brief_description": "Embark on a spiritual journey of a lifetime with our Kailash Mansarovar Yatra, a pilgrimage to one of the most sacred sites in Asia. This challenging yet deeply rewarding journey takes you to Mount Kailash, revered by Hindus, Buddhists, Jains, and Bon followers as the spiritual center of the universe. The yatra begins with acclimatization in Nepal before crossing into Tibet. As you travel across the Tibetan plateau, you'll witness dramatic landscapes, from arid deserts to snow-capped peaks. The highlight of the journey is the three-day parikrama (circumambulation) of Mount Kailash, a physically demanding but spiritually uplifting experience. You'll also visit the sacred Lake Mansarovar, known for its crystal-clear blue waters and spiritual significance. Throughout the yatra, you'll encounter pilgrims from various cultures, visit ancient monasteries, and immerse yourself in the unique Tibetan Buddhist culture. Our experienced guides will ensure your comfort and safety, sharing insights into the religious and cultural significance of the sites you visit. This journey is not just a trek but a transformative experience, offering a chance for inner reflection and spiritual growth amidst some of the most stunning landscapes on Earth.",
+        "image": "https://example.com/images/kailash-mansarovar-yatra.jpg",
+        "season": "Summer",
+        "rating": 5,
+        "pros": [
+          "Once-in-a-lifetime spiritual experience",
+          "Visit to sacred Mount Kailash and Lake Mansarovar",
+          "Immersion in Tibetan Buddhist culture"
+        ],
+        "cons": [
+          "Extremely challenging due to high altitude and basic facilities",
+          "Long journey with extensive travel",
+          "Strict permit regulations and potential political sensitivities"
+        ],
+        "inclusions": [
+          "Experienced guides and support staff",
+          "Accommodation in hotels and camps",
+          "All meals during the yatra",
+          "Transportation including flights to Nepal",
+          "Permits and visa arrangements"
+        ]
+      },
+      {
+        "id": 23,
+        "title": "Gaumukh Tapovan Trek",
+        "type": "Trek",
+        "destination": "Uttarakhand",
+        "description": "A trek to the origin of the Ganges River, offering breathtaking views of snow-capped peaks, glaciers, and alpine meadows, located in Uttarakhand.",
+        "location": {
+          "latitude": 30.9258,
+          "longitude": 79.0830
+        },
+        "month": "September",
+        "price": 16500,
+        "duration": { "days": 8, "nights": 7 },
+        "brief_description": "Embark on a spiritual and adventurous journey with our Gaumukh Tapovan Trek, a pilgrimage to the source of the holy Ganges River. This challenging trek takes you through the heart of the Garhwal Himalayas, offering stunning views of some of India's most revered peaks. The journey begins in the pilgrimage town of Gangotri, allowing time for acclimatization and spiritual reflection. As you trek along the Bhagirathi River, you'll witness the dramatic transformation of the landscape from dense forests to rocky moraines. The highlight of the trek is reaching Gaumukh, the snout of the Gangotri Glacier and the source of the Ganges. From here, you'll ascend to Tapovan, a high-altitude meadow offering breathtaking views of Mount Shivling, Bhagirathi peaks, and Meru. Throughout the journey, you'll camp at scenic locations, including the beautiful Nandanvan campsite. Our experienced guides will share insights about the region's geology, mythology, and the efforts to preserve this fragile ecosystem. This trek combines natural beauty, adventure, and spiritual significance, making it a truly unique Himalayan experience.",
+        "image": "https://example.com/images/gaumukh-tapovan-trek.jpg",
+        "season": "Autumn",
+        "rating": 4,
+        "pros": [
+          "Visit to the source of the Ganges",
+          "Stunning views of Mount Shivling and Bhagirathi peaks",
+          "Spiritual and adventurous experience"
+        ],
+        "cons": [
+          "Challenging high-altitude trek",
+          "Extreme weather conditions possible",
+          "Basic facilities in remote areas"
+        ],
+        "inclusions": [
+          "Experienced trekking guides",
+          "Quality camping equipment",
+          "Nutritious vegetarian meals",
+          "Transportation from Dehradun",
+          "Permits and forest fees"
+        ]
+      },
+      {
+        "id": 24,
+        "title": "Har Ki Dun Trek",
+        "type": "Trek",
+        "destination": "Uttarakhand",
+        "description": "A scenic trek in Uttarakhand that takes you through picturesque villages, dense forests, and meadows, offering stunning views of snow-clad peaks and valleys.",
+        "location": {
+          "latitude": 31.1144,
+          "longitude": 78.3444
+        },
+        "month": "May",
+        "price": 14500,
+        "duration": { "days": 7, "nights": 6 },
+        "brief_description": "Discover the 'Valley of Gods' with our Har Ki Dun Trek, a journey through one of the most picturesque valleys in the Garhwal Himalayas. This moderate trek takes you to an ancient village with architecture dating back to the Mahabharata era. Starting from the quaint village of Sankri, the trail winds through dense pine forests, terraced fields, and charming Himalayan villages. As you ascend, you'll be treated to stunning views of Swargarohini peaks, Black Peak, and Bandarpoonch. The Har Ki Dun valley, shaped like a cradle, offers a unique landscape with its lush meadows and glacial streams. Throughout the trek, you'll experience the rich culture of the Garhwal region, interacting with friendly locals and witnessing their traditional way of life. The trek also offers opportunities to spot diverse Himalayan flora and fauna. Our expert guides will share fascinating stories about the region's mythology, ecology, and the sustainable practices of the mountain communities. This trek is perfect for nature lovers, photography enthusiasts, and those seeking a blend of cultural immersion and Himalayan adventure.",
+        "image": "https://example.com/images/har-ki-dun-trek.jpg",
+        "season": "Spring",
+        "rating": 4,
+        "pros": [
+          "Picturesque valley with unique crater-like landscape",
+          "Rich cultural experience in ancient Himalayan villages",
+          "Moderate difficulty suitable for beginners"
+        ],
+        "cons": [
+          "Limited network connectivity",
+          "Cold temperatures, especially at night",
+          "Some sections have steep ascents"
+        ],
+        "inclusions": [
+          "Experienced local guides",
+          "Comfortable camping arrangements",
+          "Nutritious meals during the trek",
+          "Transportation from Dehradun",
+          "Permits and forest fees"
+        ]
+      },
+      {
+        "id": 25,
+        "title": "Kheerganga Trek",
+        "type": "Trek",
+        "destination": "Himachal Pradesh",
+        "description": "A short yet adventurous trek in Himachal Pradesh, leading to the hot springs of Kheerganga, surrounded by lush greenery and breathtaking mountain views.",
+        "location": {
+          "latitude": 32.0298,
+          "longitude": 77.4949
+        },
+        "month": "October",
+        "price": 7999,
+        "duration": { "days": 3, "nights": 2 },
+        "brief_description": "Embark on a journey to Kheerganga, a hidden gem nestled in the Parvati Valley of Himachal Pradesh. This short but rewarding trek takes you through lush pine forests, charming villages, and breathtaking mountain scenery. The trail begins in the hippie town of Kasol, known for its vibrant atmosphere and Israeli influence. As you ascend, you'll cross wooden bridges over gushing streams and navigate narrow mountain paths, each turn revealing new vistas of the surrounding peaks. The trek is moderately challenging, suitable for both beginners and experienced hikers, with a gradual ascent that allows for acclimatization. Along the way, you'll pass through the picturesque village of Nakthan, where you can interact with local Himachali people and get a glimpse of their traditional lifestyle. As you climb higher, the landscape transforms, offering panoramic views of the Parvati Valley and distant snow-capped mountains. The final stretch of the trek is a steep climb, but the reward at the end is well worth the effort. Kheerganga, situated at an altitude of about 3,050 meters, is a meadow surrounded by mountains and forests. The highlight of this destination is the natural hot spring, believed to have healing properties. After the challenging trek, soaking in these warm, mineral-rich waters while gazing at the stunning mountain views is an experience like no other. The campsite at Kheerganga offers basic facilities, allowing you to spend the night under a canopy of stars, far from the lights of civilization. The clear mountain air and the sound of the nearby stream create a perfect setting for relaxation and introspection. During your stay, you can explore the surrounding areas, including a small Shiva temple near the hot springs. The sunrise and sunset views from Kheerganga are spectacular, painting the sky in hues of orange and pink. This trek not only offers natural beauty but also a spiritual experience, as Kheerganga is considered sacred in Hindu mythology, believed to be the place where Lord Shiva meditated for thousands of years. The return journey allows you to soak in the beauty of the valley once more, with downhill trails offering a different perspective of the landscape. This Kheerganga trek is more than just a hike; it's a journey that combines adventure, natural beauty, and spiritual significance, leaving you with memories of an authentic Himalayan experience.",
+        "image": "https://example.com/images/kheerganga-trek.jpg",
+        "season": "Autumn",
+        "rating": 4,
+        "pros": [
+          "Natural hot springs at the destination",
+          "Stunning views of Parvati Valley",
+          "Suitable for beginners"
+        ],
+        "cons": [
+          "Basic camping facilities",
+          "Steep final ascent",
+          "Can get crowded during peak season"
+        ],
+        "inclusions": [
+          "Camping equipment",
+          "Meals during the trek",
+          "Experienced guide",
+          "First aid kit",
+          "Bonfire experience"
+        ]
+      },
+      {
+        "id": 26,
+        "title": "Deo Tibba Base Camp Trek",
+        "type": "Trek",
+        "destination": "Himachal Pradesh",
+        "description": "A beautiful trek in Himachal Pradesh offering stunning views of Deo Tibba peak, alpine meadows, and lush forests. A hidden gem for nature lovers.",
+        "location": {
+          "latitude": 32.1921,
+          "longitude": 77.2030
+        },
+        "month": "June",
+        "price": 18500,
+        "duration": { "days": 9, "nights": 8 },
+        "brief_description": "The Deo Tibba Base Camp Trek is an exhilarating journey into the heart of the Pir Panjal range in Himachal Pradesh, offering a less crowded alternative to the popular treks in the region. This expedition takes you through diverse landscapes, from lush green meadows to glacial moraines, with the majestic Deo Tibba peak (6,001m) as your constant companion. The trek begins from the picturesque village of Jagatsukh, near Manali, and gradually ascends through dense forests of pine, oak, and rhododendron. As you gain altitude, the vegetation changes, and you enter the realm of high-altitude meadows, locally known as 'thaches'. These meadows, like the famous Seri and Tainta, are a riot of colors during the summer months, carpeted with alpine flowers and offering panoramic views of the surrounding peaks. The trail takes you past gushing streams, across wooden bridges, and through remote shepherd settlements, providing insight into the traditional Himalayan way of life. One of the highlights of this trek is the crossing of the Chandrakhani Pass, which offers breathtaking views of the Pir Panjal and Dhauladhar ranges. As you approach the Deo Tibba Base Camp, the landscape becomes more rugged, with glacial moraines and snow-capped peaks dominating the horizon. The base camp itself is a spectacular location, surrounded by towering peaks and overlooking the Deo Tibba Glacier. Here, you'll have the opportunity to witness the interplay of light and shadow on the mountain faces as the sun moves across the sky. The challenging terrain and high altitude of this trek make it suitable for experienced trekkers and fit beginners. Along the way, you'll camp at beautiful locations like Chikka, Seri, and Tainta, each offering a unique perspective of the mountains. The trek also includes a visit to the pristine Chandratal Lake, often referred to as the 'Moon Lake' due to its crescent shape. This high-altitude lake, surrounded by scree slopes and snow-capped peaks, is a sight to behold. Throughout the journey, you'll have the chance to spot diverse Himalayan flora and fauna, including rare medicinal herbs, musk deer, and various bird species. The trek not only tests your physical endurance but also offers moments of tranquility and connection with nature. As you stand at the Deo Tibba Base Camp, gazing at the massive peak towering above, you'll feel a sense of accomplishment and awe at the raw beauty of the Himalayas. This trek is more than just a physical journey; it's an opportunity to challenge yourself, disconnect from the world, and immerse yourself in the pristine mountain environment.",
+        "image": "https://example.com/images/deo-tibba-base-camp-trek.jpg",
+        "season": "Summer",
+        "rating": 4,
+        "pros": [
+          "Less crowded than popular treks",
+          "Diverse landscapes and flora",
+          "Challenging for experienced trekkers"
+        ],
+        "cons": [
+          "High altitude requires acclimatization",
+          "Weather can be unpredictable",
+          "Long duration may not suit all schedules"
+        ],
+        "inclusions": [
+          "Experienced mountaineering guide",
+          "Quality camping equipment",
+          "Nutritious meals during the trek",
+          "Permits and forest fees",
+          "Transportation from Manali"
+        ]
+      },
+      {
+        "id": 27,
+        "title": "Indrahar Pass Trek",
+        "type": "Trek",
+        "destination": "Himachal Pradesh",
+         "description": "A moderately difficult trek in Himachal Pradesh, offering panoramic views of the Dhauladhar range and taking you through forests, meadows, and villages.",
+        "location": {
+          "latitude": 32.2526,
+          "longitude": 76.3234
+        },
+        "month": "September",
+        "price": 13500,
+        "duration": { "days": 6, "nights": 5 },
+        "brief_description": "The Indrahar Pass Trek is a challenging and rewarding adventure that takes you through the heart of the Dhauladhar range in Himachal Pradesh. This trek offers a perfect blend of natural beauty, cultural experiences, and physical challenge, making it a favorite among seasoned trekkers. Starting from the charming town of McLeodganj, known for its Tibetan influence and as the residence of the Dalai Lama, the trek ascends through diverse landscapes and ecosystems. The journey begins with a trail through mixed forests of oak, rhododendron, and pine, gradually giving way to alpine meadows and rocky terrain as you gain altitude. One of the first major attractions on this trek is the sacred Dal Lake, surrounded by towering deodars and offering a tranquil spot for reflection. As you continue to ascend, you'll reach Triund, a beautiful meadow offering panoramic views of the Kangra Valley on one side and the Dhauladhar range on the other. Triund serves as an acclimatization point and a base for the more challenging parts of the trek ahead. The next phase of the trek takes you to Laka Got, a rocky glacier that serves as the last source of water before the pass. The landscape here is stark and dramatic, with the mighty Dhauladhar peaks looming close. The final ascent to Indrahar Pass is the most challenging part of the trek, involving a steep climb over rocky and snowy terrain. At 4,342 meters, the pass offers breathtaking 360-degree views of the surrounding peaks, including the Pir Panjal range and the distant peaks of Lahaul and Spiti. The sense of achievement at reaching the pass is unparalleled, as you stand at the border of Kangra and Chamba valleys. The descent from the pass is equally exciting, offering new perspectives of the landscape. You'll pass through the scenic Chata Valley and the shepherd's camp at Chhata Got, where you can interact with Gaddi shepherds and learn about their nomadic lifestyle. Throughout the trek, you'll have opportunities to spot diverse Himalayan wildlife, including Himalayan monals, griffon vultures, and if you're lucky, even snow leopards. The trek also offers insights into the region's rich flora, including medicinal herbs used in traditional Tibetan medicine. One of the unique aspects of this trek is the blend of natural beauty with cultural experiences. You'll pass through small mountain villages, ancient temples, and Buddhist monasteries, offering glimpses into the local culture and spirituality. The trek concludes with a descent back to McLeodganj, where you can relax and reflect on your journey while enjoying the town's vibrant atmosphere and Tibetan cuisine. The Indrahar Pass Trek is not just a physical journey but a holistic experience that challenges you, connects you with nature, and offers insights into the rich cultural tapestry of the Himalayas.",
+        "image": "https://example.com/images/indrahar-pass-trek.jpg",
+        "season": "Autumn",
+        "rating": 4,
+        "pros": [
+          "Stunning views of Dhauladhar range",
+          "Cultural experiences in McLeodganj",
+          "Challenging trek for experienced hikers"
+        ],
+        "cons": [
+          "Steep and difficult sections near the pass",
+          "Unpredictable weather conditions",
+          "High altitude may cause acclimatization issues"
+        ],
+        "inclusions": [
+          "Expert trekking guide",
+          "Quality camping and trekking gear",
+          "Nutritious meals during the trek",
+          "First aid and oxygen support",
+          "Trekking permits and fees"
+        ]
+      },
+      {
+        "id": 28,
+        "title": "Pangarchulla Peak Trek",
+        "type": "Trek",
+        "destination": "Uttarakhand",
+        "description": "A thrilling trek in Uttarakhand, leading to the summit of Pangarchulla Peak, offering stunning 360-degree views of the Garhwal Himalayas.",
+        "location": {
+          "latitude": 30.4341,
+          "longitude": 79.5528
+        },
         "month": "April",
         "price": 15500,
         "duration": { "days": 6, "nights": 5 },
-        "description": "A beautiful trek through the rhododendron forests of Sikkim, showcasing stunning views and diverse flora.",
-        "image": "https://via.placeholder.com/300x200?text=Sikkim+Trek",
+        "brief_description": "The Pangarchulla Peak Trek is an exhilarating high-altitude adventure in the Garhwal Himalayas of Uttarakhand, offering a perfect blend of challenge and breathtaking beauty. This trek is ideal for those looking to push their limits and experience the thrill of a summit climb without technical mountaineering skills. The journey begins from the holy town of Joshimath, known for its spiritual significance and as a gateway to several Himalayan expeditions. As you leave the town behind, you enter a world of pristine forests, rolling meadows, and snow-capped peaks. The trail initially passes through dense oak and rhododendron forests, alive with the sounds of diverse Himalayan birds. As you gain altitude, the landscape transforms into vast alpine meadows, known locally as 'bugyals'. These meadows, like the famous Gorson Bugyal, are a sight to behold, especially in spring when they are carpeted with colorful wildflowers. The trek offers stunning views of some of the most iconic peaks in the Garhwal Himalayas, including Nanda Devi, Chaukhamba, and Dunagiri. Each day of the trek brings new vistas and challenges, from crossing small streams to navigating through snow-covered trails. One of the highlights of this trek is the opportunity to camp at Khullara, a beautiful high-altitude campsite offering panoramic views of the surrounding peaks. The night sky from this location is a spectacle in itself, with countless stars visible in the clear mountain air. The summit attempt of Pangarchulla Peak (4,700 meters) is the most challenging and rewarding part of the trek. Starting in the early hours of the morning, you'll make your way up steep snow slopes, requiring the use of microspikes and sometimes ice axes. The final push to the summit is demanding but the views from the top are unparalleled. On a clear day, you can see a 360-degree panorama of major Himalayan peaks, including a close-up view of the Nanda Devi massif. The sense of achievement upon reaching the summit is indescribable, making all the effort worthwhile. The descent from the peak offers new perspectives of the landscape and a chance to reflect on the journey. You'll pass through the beautiful Kuari Pass, another vantage point offering spectacular mountain views. The trek also provides opportunities to experience the local Garhwali culture, with visits to small mountain villages where you can interact with the friendly locals and learn about their traditional way of life. Throughout the trek, you'll be accompanied by experienced guides who share insights about the region's geography, flora, and fauna. You might spot Himalayan wildlife like musk deer, mountain goats, and various bird species. The Pangarchulla Peak Trek is not just about reaching a summit; it's a journey that tests your limits, connects you with nature, and offers a profound sense of peace and accomplishment. It's an experience that combines the thrill of high-altitude trekking with the serenity of the Himalayas, leaving you with memories that last a lifetime.",
+        "image": "https://example.com/images/pangarchulla-peak-trek.jpg",
         "season": "Spring",
-        "rating": 5
-    },
-    {
-        "id": 22,
-        "title": "Kanha Tiger Safari",
-        "type": "Adventure",
-        "destination": "Madhya Pradesh",
-        "month": "April",
-        "price": 13500,
-        "duration": { "days": 4, "nights": 3 },
-        "description": "An exciting safari in Kanha National Park, known for its rich biodiversity and tiger population.",
-        "image": "https://via.placeholder.com/300x200?text=Tiger+Safari",
-        "season": "Spring",
-        "rating": 5
-    },
-    {
-        "id": 23,
-        "title": "Rajasthan Desert Safari",
-        "type": "Adventure",
-        "destination": "Jaisalmer",
-        "month": "February",
-        "price": 22000,
-        "duration": { "days": 3, "nights": 2 },
-        "description": "Experience the thrill of a desert safari in Jaisalmer, complete with camel rides and cultural performances.",
-        "image": "https://via.placeholder.com/300x200?text=Desert+Safari",
-        "season": "Winter",
-        "rating": 4
-    },
-    {
-        "id": 24,
-        "title": "Auli Skiing Adventure",
-        "type": "Adventure",
-        "destination": "Uttarakhand",
-        "month": "January",
-        "price": 17000,
-        "duration": { "days": 5, "nights": 4 },
-        "description": "Enjoy skiing in the beautiful slopes of Auli, surrounded by stunning views of the Himalayas.",
-        "image": "https://via.placeholder.com/300x200?text=Auli+Skiing",
-        "season": "Winter",
-        "rating": 4
-    },
-    {
-        "id": 25,
-        "title": "Spiti Frozen River Trek",
-        "type": "Trek",
-        "destination": "Spiti",
-        "month": "February",
-        "price": 27000,
-        "duration": { "days": 8, "nights": 7 },
-        "description": "A unique trek on the frozen river of Spiti, offering breathtaking views and an unforgettable experience.",
-        "image": "https://via.placeholder.com/300x200?text=Frozen+River+Trek",
-        "season": "Winter",
-        "rating": 4
-    },
-    {
-        "id": 26,
-        "title": "Shimla Snow Adventure",
-        "type": "Relaxation",
-        "destination": "Shimla",
-        "month": "January",
-        "price": 11000,
-        "duration": { "days": 4, "nights": 3 },
-        "description": "Relax in the snowy landscapes of Shimla, enjoying cozy stays and winter activities.",
-        "image": "https://via.placeholder.com/300x200?text=Shimla+Snow",
-        "season": "Winter",
-        "rating": 4
-    },
-    {
-        "id": 27,
-        "title": "Ziro Valley Music Festival",
-        "type": "Cultural",
-        "destination": "Arunachal Pradesh",
-        "month": "September",
-        "price": 30000,
-        "duration": { "days": 5, "nights": 4 },
-        "description": "Join the vibrant Ziro Valley Music Festival, celebrating local music and culture amidst stunning landscapes.",
-        "image": "https://via.placeholder.com/300x200?text=Ziro+Valley+Festival",
-        "season": "Autumn",
-        "rating": 4
-    },
-    {
-        "id": 28,
-        "title": "Manas Wildlife Safari",
-        "type": "Adventure",
-        "destination": "Assam",
-        "month": "October",
-        "price": 20000,
-        "duration": { "days": 4, "nights": 3 },
-        "description": "Explore the rich wildlife of Manas National Park, a UNESCO World Heritage site.",
-        "image": "https://via.placeholder.com/300x200?text=Manas+Safari",
-        "season": "Autumn",
-        "rating": 4
-    },
-    {
+        "rating": 5,
+        "pros": [
+          "Summit experience without technical climbing",
+          "Stunning views of major Himalayan peaks",
+          "Beautiful spring flowers in meadows"
+        ],
+        "cons": [
+          "Challenging summit day",
+          "Cold temperatures and potential snow",
+          "Requires good physical fitness"
+        ],
+        "inclusions": [
+          "Experienced mountain guide",
+          "High-quality camping equipment",
+          "Nutritious meals throughout the trek",
+          "Safety equipment including microspikes",
+          "Permits and forest fees"
+        ]
+      },
+      {
         "id": 29,
         "title": "Darjeeling Toy Train Experience",
         "type": "Relaxation",
         "destination": "Darjeeling",
+        "description": "A historic ride on the Darjeeling Himalayan Railway, a UNESCO World Heritage Site, offering a scenic journey through lush tea gardens and beautiful hills.",
+        "location": {
+          "latitude": 27.0410,
+          "longitude": 88.2638
+        },
         "month": "November",
         "price": 14000,
         "duration": { "days": 2, "nights": 1 },
-        "description": "Experience the charm of Darjeeling aboard the famous toy train, surrounded by stunning tea gardens.",
-        "image": "https://via.placeholder.com/300x200?text=Darjeeling+Toy+Train",
+        "brief_description": "The Darjeeling Toy Train Experience is a journey into the past, aboard the historic Darjeeling Himalayan Railway (DHR), a UNESCO World Heritage Site. This iconic train ride offers a delightful blend of colonial charm, breathtaking Himalayan views, and serene tea gardens. Departing from New Jalpaiguri or Darjeeling, the narrow-gauge train meanders through quaint mountain villages, dense forests, and steep inclines, providing passengers with a unique perspective of this picturesque region.\n\nOnboard, you’ll feel transported to another era, with vintage carriages and the rhythmic clatter of the train enhancing the nostalgia. The train passes through famous landmarks like the Batasia Loop, where the track spirals around a manicured garden, offering panoramic views of the majestic Kanchenjunga range. The Ghoom station, one of the highest railway stations in India, is another highlight, with its charming museum showcasing the rich history of the railway.\n\nThe journey isn’t just about the train; it’s also a gateway to Darjeeling’s cultural and natural treasures. Passengers can explore the town’s iconic tea estates, where the world-famous Darjeeling tea is cultivated. The aroma of freshly plucked tea leaves mingles with the crisp mountain air, creating an unforgettable sensory experience. Nearby attractions include Tiger Hill, known for its mesmerizing sunrise views, and the bustling Mall Road, a hub of local culture and shopping.\n\nWhether you’re a history buff, a nature lover, or simply seeking a tranquil escape, the Darjeeling Toy Train Experience is a perfect blend of relaxation and discovery. The journey is not just a ride but an invitation to immerse yourself in the timeless beauty of Darjeeling and its surroundings, leaving you with memories to cherish for a lifetime.",
+        "image": "https://example.com/images/darjeeling-toy-train.jpg",
         "season": "Autumn",
-        "rating": 4
+        "rating": 4,
+        "pros": [
+          "Historic UNESCO-listed train journey",
+          "Scenic mountain and tea garden views",
+          "Easy and relaxing pace"
+        ],
+        "cons": [
+          "Short duration",
+          "Potential crowd during peak season"
+        ],
+        "inclusions": [
+          "Toy train ride ticket",
+          "Accommodation in Darjeeling",
+          "Local sightseeing tour"
+        ]
     },
     {
         "id": 30,
         "title": "Majuli Cultural Tour",
         "type": "Cultural",
         "destination": "Assam",
+         "description": "A cultural tour of Majuli, the world’s largest river island in Assam, famous for its vibrant monasteries, Assamese culture, and picturesque surroundings.",
+        "location": {
+          "latitude": 27.0030,
+          "longitude": 94.2246
+        },
         "month": "August",
         "price": 15500,
         "duration": { "days": 5, "nights": 4 },
-        "description": "Explore the unique culture of Majuli, the world's largest river island, known for its vibrant festivals.",
-        "image": "https://via.placeholder.com/300x200?text=Majuli+Tour",
+        "brief_description": "The Majuli Cultural Tour offers an immersive experience on the world's largest river island, situated on the Brahmaputra River in Assam. This enchanting destination is a treasure trove of Assamese culture, history, and natural beauty. As you step onto Majuli, you’re greeted by a serene landscape dotted with traditional stilted houses, lush paddy fields, and tranquil water bodies.\n\nThe island is renowned for its vibrant Satras, which are Vaishnavite monasteries established in the 16th century. These Satras are not just places of worship but also centers of art, music, and literature. Visitors can witness captivating performances of Sattriya dance, a classical dance form that originated in these monasteries. The monks, who dedicate their lives to preserving Assamese traditions, often engage with visitors, offering insights into their spiritual practices and daily routines.\n\nMajuli is also a haven for nature enthusiasts. The island’s wetlands attract a variety of migratory birds, making it a paradise for birdwatchers. The lush greenery and the gentle rhythm of the river create an idyllic setting for relaxation and reflection. During the tour, you’ll explore local villages where artisans craft exquisite pottery, masks, and handloom products. These crafts, made using age-old techniques, reflect the island’s rich cultural heritage.\n\nThe Majuli Cultural Tour is especially vibrant during festivals like Raas Mahotsav, a grand celebration that brings the island alive with colors, music, and drama. Traditional plays depicting the life of Lord Krishna are performed with great fervor, drawing visitors from across the globe.\n\nThis tour is not just about sightseeing; it’s an opportunity to connect with the soul of Assam. The warm hospitality of the locals, the simplicity of life on the island, and the deep-rooted cultural traditions make the Majuli Cultural Tour an unforgettable journey. Whether you’re a culture aficionado, a nature lover, or simply seeking a unique travel experience, Majuli promises to captivate your heart and soul.",
+        "image": "https://example.com/images/majuli-tour.jpg",
         "season": "Monsoon",
-        "rating": 5
+        "rating": 5,
+        "pros": [
+          "Rich cultural heritage",
+          "Unique river island experience",
+          "Local crafts and festivals"
+        ],
+        "cons": [
+          "Accessibility during monsoons",
+          "Limited luxury accommodations"
+        ],
+        "inclusions": [
+          "Guided tour of Satras",
+          "Cultural activities and workshops",
+          "Comfortable accommodation"
+        ]
     },
     {
         "id": 31,
         "title": "Malana Village Trek",
         "type": "Trek",
         "destination": "Himachal Pradesh",
+        "description": "A unique trek to Malana village, known for its distinct culture, isolated lifestyle, and stunning views of the Parvati Valley in Himachal Pradesh.",
+        "location": {
+          "latitude": 32.0592,
+          "longitude": 77.1734
+        },
         "month": "October",
         "price": 13000,
         "duration": { "days": 5, "nights": 4 },
-        "description": "A trek to the ancient village of Malana, known for its unique culture and stunning views.",
-        "image": "https://via.placeholder.com/300x200?text=Malana+Village+Trek",
+        "brief_description": "The Malana Village Trek takes you to one of Himachal Pradesh’s most enigmatic and culturally rich destinations. Nestled in the Parvati Valley, Malana is a quaint village known for its unique traditions, breathtaking landscapes, and ancient history. This trek offers an ideal blend of adventure and cultural exploration, making it a favorite among travelers seeking an offbeat Himalayan experience.\n\nThe journey begins with a scenic drive through the verdant valleys and rugged terrains of Himachal Pradesh, leading to the trailhead. As you ascend, the air becomes crisp, and the surroundings more pristine. The trekking path winds through dense deodar forests, gushing streams, and wildflower meadows, each turn revealing a new facet of nature’s beauty.\n\nArriving at Malana, you’ll be enchanted by its timeless charm. The village, believed to be one of the oldest democracies in the world, has preserved its age-old customs and governance. The locals, known as Malanis, follow a unique lifestyle and have a deep reverence for their deity, Jamlu Devta. Visitors are required to respect the sanctity of the village, observing its distinct rules and customs.\n\nThe trek also offers awe-inspiring views of the surrounding peaks, including the majestic Chandrakhani Pass. Photographers and nature enthusiasts will find ample opportunities to capture the serene beauty of the region. Evenings in the village are magical, with clear skies revealing a dazzling array of stars.\n\nBeyond the village, the trek extends to scenic spots like Rashol Pass and Waichin Valley, where you can camp amidst untouched natural settings. These areas are perfect for unwinding, meditating, or simply soaking in the tranquility of the Himalayas.\n\nThe Malana Village Trek is not just about reaching a destination; it’s about embracing the journey, connecting with nature, and discovering a culture untouched by modernity. It’s a soulful experience that leaves you with memories to cherish and stories to tell.",
+        "image": "https://example.com/images/malana-village-trek.jpg",
         "season": "Autumn",
-        "rating": 5
+        "rating": 5,
+        "pros": [
+          "Unique cultural immersion",
+          "Breathtaking landscapes",
+          "Offbeat trekking experience"
+        ],
+        "cons": [
+          "Remote and isolated village",
+          "Limited connectivity"
+        ],
+        "inclusions": [
+          "Experienced trek guide",
+          "Camping equipment",
+          "Meals during the trek"
+        ]
     },
     {
         "id": 32,
-        "title": "Nagaland Hornbill Festival",
-        "type": "Cultural",
-        "destination": "Nagaland",
-        "month": "December",
+        "title": "Leh Ladakh Adventure",
+        "type": "Adventure",
+        "destination": "Ladakh",
+         "description": "An adventurous journey to the remote region of Leh-Ladakh, famous for its high-altitude desert landscapes, monasteries, and thrilling activities like biking and rafting.",
+        "location": {
+          "latitude": 34.1526,
+          "longitude": 77.5770
+        },
+        "month": "July",
         "price": 25000,
-        "duration": { "days": 6, "nights": 5 },
-        "description": "Experience the vibrant Hornbill Festival, showcasing the rich culture and traditions of Nagaland.",
-        "image": "https://via.placeholder.com/300x200?text=Hornbill+Festival",
-        "season": "Winter",
-        "rating": 5
+        "duration": { "days": 7, "nights": 6 },
+        "brief_description": "The Leh Ladakh Adventure tour is a dream journey for thrill-seekers and nature enthusiasts. This trip offers an exhilarating mix of rugged mountains, high-altitude passes, serene monasteries, and pristine lakes. Witness the beauty of Pangong Lake, explore the magnetic hill, and cross the world-famous Khardung La Pass while immersing yourself in the unique culture of the Ladakhi people. Experience the raw charm of this high-altitude desert and feel the adrenaline rush as you ride through its challenging terrains. The starlit skies at night and the tranquility of the monasteries provide a contrasting yet harmonious balance, making this adventure unforgettable.",
+        "image": "https://example.com/images/leh-ladakh.jpg",
+        "season": "Summer",
+        "rating": 5,
+        "pros": [
+          "Stunning high-altitude landscapes",
+          "Rich cultural experiences",
+          "Exciting road trips"
+        ],
+        "cons": [
+          "High-altitude sickness risks",
+          "Remote access"
+        ],
+        "inclusions": [
+          "Transportation",
+          "Guided tours",
+          "Accommodation"
+        ]
     },
     {
         "id": 33,
-        "title": "Leh Monastery Tour",
-        "type": "Cultural",
-        "destination": "Leh",
-        "month": "June",
+        "title": "Kashmir Valley Escape",
+        "type": "Relaxation",
+        "destination": "Kashmir",
+         "description": "A relaxing trip to Kashmir, known for its serene landscapes, beautiful lakes, houseboats, and stunning views of the Himalayas and the lush valley.",
+        "location": {
+          "latitude": 34.0837,
+          "longitude": 74.7973
+        },
+        "month": "April",
         "price": 18000,
-        "duration": { "days": 7, "nights": 6 },
-        "description": "Visit the ancient monasteries of Leh, exploring the rich Buddhist culture and stunning landscapes.",
-        "image": "https://via.placeholder.com/300x200?text=Leh+Monastery",
-        "season": "Summer",
-        "rating": 4
+        "duration": { "days": 5, "nights": 4 },
+        "brief_description": "The Kashmir Valley Escape takes you to the picturesque landscapes of Srinagar, Gulmarg, and Pahalgam. Stay on a houseboat on Dal Lake, ride a shikara, and explore the Mughal Gardens. This tour is perfect for those seeking tranquility amidst snow-capped peaks and lush meadows. Known as 'Paradise on Earth,' Kashmir offers a serene environment where nature's beauty can be cherished in its purest form. The experience of waking up to the calm waters of Dal Lake and exploring the vibrant bazaars of Srinagar will stay with you forever. Adventure enthusiasts can also indulge in pony rides and short treks around Pahalgam.",
+        "image": "https://example.com/images/kashmir-valley.jpg",
+        "season": "Spring",
+        "rating": 4,
+        "pros": [
+          "Beautiful natural scenery",
+          "Relaxing experience",
+          "Rich heritage sites"
+        ],
+        "cons": [
+          "Potential weather disruptions",
+          "Crowded during peak season"
+        ],
+        "inclusions": [
+          "Shikara ride",
+          "Hotel stay",
+          "Local sightseeing"
+        ]
     },
     {
         "id": 34,
-        "title": "Pangong Lake Camping",
-        "type": "Adventure",
-        "destination": "Ladakh",
-        "month": "July",
-        "price": 22000,
-        "duration": { "days": 4, "nights": 3 },
-        "description": "Camp by the stunning Pangong Lake, known for its mesmerizing blue waters and breathtaking views.",
-        "image": "https://via.placeholder.com/300x200?text=Pangong+Camping",
-        "season": "Monsoon",
-        "rating": 5
+        "title": "Shimla Manali Holiday",
+        "type": "Family",
+        "destination": "Himachal Pradesh",
+        "description": "A classic holiday package to the hill stations of Shimla and Manali, offering scenic views, adventure activities, and a refreshing escape into the mountains.",
+        "location": {
+          "latitude": 31.1048,
+          "longitude": 77.1734
+        },
+        "month": "December",
+        "price": 20000,
+        "duration": { "days": 6, "nights": 5 },
+        "brief_description": "The Shimla Manali Holiday is a delightful blend of adventure and relaxation. Explore Shimla's colonial charm, stroll along Mall Road, and visit Kufri. In Manali, enjoy activities like paragliding, skiing, and sightseeing at Solang Valley and Rohtang Pass. This family-friendly getaway offers a mix of urban comforts and natural wonders. The crisp mountain air, scenic beauty, and variety of leisure activities make it ideal for all age groups. Whether it’s shopping in Shimla's markets or enjoying snow activities in Manali, this vacation guarantees cherished memories.",
+        "image": "https://example.com/images/shimla-manali.jpg",
+        "season": "Winter",
+        "rating": 4,
+        "pros": [
+          "Family-friendly destinations",
+          "Variety of activities",
+          "Easy accessibility"
+        ],
+        "cons": [
+          "Crowded tourist spots",
+          "Cold weather during winter"
+        ],
+        "inclusions": [
+          "Transportation",
+          "Hotel stays",
+          "Adventure activities"
+        ]
     },
     {
         "id": 35,
-        "title": "Hampi Ruins Exploration",
-        "type": "Cultural",
-        "destination": "Hampi",
-        "month": "December",
-        "price": 14000,
-        "duration": { "days": 5, "nights": 4 },
-        "description": "Explore the ancient ruins of Hampi, a UNESCO World Heritage site filled with history and architecture.",
-        "image": "https://via.placeholder.com/300x200?text=Hampi+Ruins",
-        "season": "Winter",
-        "rating": 5
+        "title": "Dalhousie Retreat",
+        "type": "Relaxation",
+        "destination": "Himachal Pradesh",
+        "description": "A peaceful retreat in Dalhousie, Himachal Pradesh, offering a blend of nature, history, and stunning views of the Dhauladhar range and surrounding valleys.",
+        "location": {
+          "latitude": 32.5373,
+          "longitude": 75.9713
+        },
+        "month": "October",
+        "price": 15000,
+        "duration": { "days": 4, "nights": 3 },
+        "brief_description": "Dalhousie Retreat offers a serene escape into the lap of nature with its colonial charm and panoramic views of the Dhauladhar range. Perfect for rejuvenating your senses, this tour allows you to explore verdant valleys, pine-clad hills, and tranquil waterfalls. Stroll through the meadows of Khajjiar, often referred to as the 'Mini Switzerland of India,' and bask in the serene ambiance of this hill station. Enjoy leisurely walks, warm hospitality, and the old-world charm of Dalhousie, making it an idyllic destination for a peaceful getaway.",
+        "image": "https://example.com/images/dalhousie.jpg",
+        "season": "Autumn",
+        "rating": 4.5,
+        "pros": [
+          "Calm and peaceful environment",
+          "Rich colonial architecture",
+          "Scenic beauty"
+        ],
+        "cons": [
+          "Limited adventure activities",
+          "Restricted nightlife options"
+        ],
+        "inclusions": [
+          "Local sightseeing",
+          "Hotel accommodation",
+          "Breakfast"
+        ]
     },
     {
         "id": 36,
-        "title": "Rishikesh Rafting Expedition",
+        "title": "Spiti Valley Adventure",
         "type": "Adventure",
-        "destination": "Rishikesh",
-        "month": "May",
-        "price": 14500,
-        "duration": { "days": 3, "nights": 2 },
-        "description": "Experience the thrill of white-water rafting in the Ganges, surrounded by the beauty of Rishikesh.",
-        "image": "https://via.placeholder.com/300x200?text=Rafting+Expedition",
+        "destination": "Himachal Pradesh",
+        "location": {
+          "latitude": 32.2444,
+          "longitude": 78.0170
+        },
+        "month": "June",
+        "price": 28000,
+        "duration": { "days": 8, "nights": 7 },
+        "description": "A thrilling adventure in Spiti Valley, offering remote landscapes, ancient monasteries, and picturesque villages in the rugged terrain of Himachal Pradesh.",
+        "brief_description": "The Spiti Valley Adventure tour is a thrilling journey into the heart of the cold desert region of Himachal Pradesh. Experience the stark yet stunning landscapes, ancient monasteries, and vibrant culture of this Himalayan region. Highlights include visits to the Tabo Monastery, Key Monastery, and Chandratal Lake. This expedition is ideal for adventure enthusiasts and those looking to experience solitude amidst nature's grandeur. With winding roads, quaint villages, and breathtaking views, Spiti promises an unmatched experience.",
+        "image": "https://example.com/images/spiti-valley.jpg",
         "season": "Summer",
-        "rating": 5
+        "rating": 5,
+        "pros": [
+          "Unique high-altitude desert experience",
+          "Cultural immersion",
+          "Spectacular scenery"
+        ],
+        "cons": [
+          "Remote location",
+          "Challenging road conditions"
+        ],
+        "inclusions": [
+          "Transport",
+          "Accommodation",
+          "Guided tours"
+        ]
     },
     {
         "id": 37,
-        "title": "Zanskar River Rafting",
-        "type": "Adventure",
-        "destination": "Ladakh",
-        "month": "August",
-        "price": 34000,
-        "duration": { "days": 7, "nights": 6 },
-        "description": "An exhilarating rafting experience on the Zanskar River, surrounded by stunning landscapes.",
-        "image": "https://via.placeholder.com/300x200?text=Zanskar+Rafting",
-        "season": "Monsoon",
-        "rating": 5
+        "title": "Amritsar Heritage Tour",
+        "type": "Cultural",
+        "destination": "Punjab",
+        "description": "A cultural and historical tour of Amritsar, home to the Golden Temple, offering a glimpse into the rich heritage, history, and spiritual significance of the region.",
+        "location": {
+          "latitude": 31.6340,
+          "longitude": 74.8723
+        },
+        "month": "February",
+        "price": 12000,
+        "duration": { "days": 3, "nights": 2 },
+        "brief_description": "The Amritsar Heritage Tour is a cultural immersion into the vibrant history and traditions of Punjab. Visit the iconic Golden Temple, witness the Wagah Border ceremony, and explore the historic Jallianwala Bagh. This short yet enriching journey offers a glimpse into the warm hospitality and culinary delights of the region. From savoring traditional Punjabi cuisine to experiencing the serene spirituality of the Harmandir Sahib, this tour is a perfect blend of history, culture, and gastronomy.",
+        "image": "https://example.com/images/amritsar.jpg",
+        "season": "Winter",
+        "rating": 4.7,
+        "pros": [
+          "Rich cultural experience",
+          "Delicious local cuisine",
+          "Historical landmarks"
+        ],
+        "cons": [
+          "Short duration",
+          "Crowded during peak hours"
+        ],
+        "inclusions": [
+          "Sightseeing",
+          "Hotel stay",
+          "Meals"
+        ]
     }
-]
+]  
