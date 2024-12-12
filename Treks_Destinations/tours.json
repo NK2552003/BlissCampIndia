@@ -114,8 +114,8 @@
           "longitude": 77.1774
         },
         "month": "July",
-        "price": 15500,
-        "duration": { "days": 5, "nights": 4 },
+        "price": 10000,
+        "duration": { "days": 6, "nights": 5 },
         "brief_description": "Embark on an unforgettable adventure with our Hampta Pass Trek in Himachal Pradesh. This moderate-difficulty trek offers a diverse range of landscapes, taking you from the lush green valleys of Kullu to the barren, moon-like terrain of Lahaul. The Hampta Pass, situated at an altitude of 14,100 feet, serves as a gateway between these two starkly different worlds. As you begin your journey from Manali, you'll traverse through dense pine forests, cross gushing rivers, and ascend through beautiful meadows adorned with wildflowers. The trek offers breathtaking views of the Dhauladhar and Pir Panjal ranges, with snow-capped peaks dominating the horizon. One of the highlights of this trek is camping beside the pristine Chandratal Lake, also known as the Moon Lake, which reflects the surrounding mountains like a mirror. Throughout the journey, you'll experience rapid changes in landscape, flora, and climate, making it a photographer's paradise and a nature lover's delight. Our experienced guides will share insights about the local ecology, mountain lore, and survival techniques. You'll also get a chance to interact with local shepherds and experience their unique way of life. The Hampta Pass Trek is known for its perfect balance of challenge and accessibility, making it ideal for both beginners and experienced trekkers. Whether you're seeking adventure, natural beauty, or a test of your limits, this trek promises an enriching experience that will leave you with memories to cherish for a lifetime.",
         "image": "./tour_images/hampta-pass-trek.avif",
         "season": "Summer",
@@ -150,7 +150,7 @@
           "longitude": 78.2432
         },
         "month": "December",
-        "price": 8999,
+        "price": 7500,
         "duration": { "days": 6, "nights": 5 },
         "brief_description": "Experience the magic of a winter wonderland with our Kedarkantha Trek in Uttarakhand. This popular trek offers a perfect blend of adventure and scenic beauty, making it an ideal choice for both beginners and experienced trekkers. Situated in the Govind Wildlife Sanctuary, Kedarkantha peak stands at an elevation of 12,500 feet, offering panoramic views of some of the most prominent Himalayan peaks. The journey begins in the charming village of Sankri, where you'll get a glimpse of the traditional Garhwali lifestyle. As you ascend through dense pine and oak forests, you'll be treated to the sight of snow-covered trails and frozen streams. The trek is particularly famous for its beautiful campsites, each offering a unique perspective of the surrounding snow-clad mountains. The highlight of the trek is the summit climb, which rewards you with a 360-degree view of majestic peaks like Swargarohini, Bandarpoonch, and Kalanag. During winter, the entire landscape is transformed into a white paradise, with snow-covered meadows and forests creating a magical atmosphere. Our experienced guides will ensure your safety and comfort, sharing interesting facts about the local flora, fauna, and mountain ecology. You'll also have the opportunity to experience the warm hospitality of the local villagers and taste traditional Garhwali cuisine. The Kedarkantha Trek is known for its gradual ascent, making it accessible to fitness enthusiasts of all levels. Whether you're looking for a thrilling snow trek, breathtaking views, or a peaceful escape into nature, the Kedarkantha Trek promises an unforgettable adventure in the heart of the Himalayas.",
         "image": "./tour_images/kedarkantha-trek.jpg",
@@ -220,7 +220,7 @@
         },
         "month": "August",
         "description": "A UNESCO World Heritage site, known for its meadows of endemic alpine flowers.",
-        "price": 12500,
+        "price": 7500,
         "duration": { "days": 6, "nights": 5 },
         "brief_description": "Embark on a mesmerizing journey through nature's own paradise with our Valley of Flowers Trek in Uttarakhand. This enchanting trek takes you through a UNESCO World Heritage Site, famous for its vibrant alpine meadows filled with hundreds of species of wildflowers. The valley, nestled high in the West Himalayan region, comes alive with a riot of colors during the monsoon season, creating a spectacle that seems almost surreal. As you trek through this floral wonderland, you'll be surrounded by towering snow-capped peaks, cascading waterfalls, and pristine streams. The journey begins in the pilgrimage town of Govindghat, from where you'll trek to the quaint village of Ghangaria, your base camp for exploring the valley. Each day brings new discoveries as you wander through meadows carpeted with primulas, poppies, daisies, and many rare and endangered species. The trek also includes a visit to the holy Hemkund Sahib, a revered Sikh shrine set against the backdrop of stunning mountain scenery. Our expert guides will share insights about the unique ecosystem, the medicinal properties of various plants, and the efforts to preserve this fragile environment. You'll camp in scenic locations, allowing you to fully immerse yourself in the tranquil beauty of the Himalayas. This moderate trek is suitable for nature lovers, photographers, and anyone seeking a peaceful retreat in the mountains. Whether you're captivated by the botanical diversity, the spiritual atmosphere, or simply the breathtaking landscapes, the Valley of Flowers Trek offers a truly magical experience that will leave you with memories to cherish for a lifetime.",
         "image": "./tour_images/valley-of-flowers-trek.webp",
@@ -255,7 +255,7 @@
           "longitude": 79.7321
         },
         "month": "September",
-        "price": 18500,
+        "price": 12500,
         "duration": { "days": 8, "nights": 7 },
         "brief_description": "Embark on a thrilling adventure to the mysterious Skeleton Lake with our Roopkund Trek in Uttarakhand. This challenging high-altitude trek takes you to a glacial lake at 16,470 feet, famous for the human skeletal remains found on its shores, dating back to the 9th century CE. The journey begins in the charming town of Lohajung, from where you'll trek through diverse landscapes, including lush forests, rolling meadows, and rocky terrain. As you ascend, you'll be treated to breathtaking views of prominent Himalayan peaks like Trishul and Nanda Ghunti. The trek is known for its varied scenery, from the beautiful oak and rhododendron forests of the lower reaches to the stark alpine zones near the lake. One of the highlights is camping at the Ali Bugyal and Bedni Bugyal, two of the most beautiful high-altitude meadows in India, offering panoramic views of the surrounding peaks. The final ascent to Roopkund is challenging but rewarding, with the ethereal sight of the skeleton-laden lake leaving a lasting impression. Our experienced guides will ensure your safety and share insights about the local legends, geology, and theories surrounding the mysterious skeletons. This trek not only offers a physical challenge but also a journey through history and local folklore. You'll experience the warm hospitality of the local Garhwali people and get a glimpse of their traditional lifestyle. The Roopkund Trek is perfect for adventurers seeking a blend of natural beauty, historical intrigue, and high-altitude challenge. Whether you're drawn by the mystery of the skeleton lake, the allure of the high Himalayas, or the desire to push your limits, this trek promises an unforgettable experience in one of the most fascinating regions of the Indian Himalayas.",
         "image": "./tour_images/roopkund-trek.jpg",
@@ -780,8 +780,8 @@
           "longitude": 79.0830
         },
         "month": "September",
-        "price": 16500,
-        "duration": { "days": 8, "nights": 7 },
+        "price": 15500,
+        "duration": { "days": 5, "nights": 4 },
         "brief_description": "Embark on a spiritual and adventurous journey with our Gaumukh Tapovan Trek, a pilgrimage to the source of the holy Ganges River. This challenging trek takes you through the heart of the Garhwal Himalayas, offering stunning views of some of India's most revered peaks. The journey begins in the pilgrimage town of Gangotri, allowing time for acclimatization and spiritual reflection. As you trek along the Bhagirathi River, you'll witness the dramatic transformation of the landscape from dense forests to rocky moraines. The highlight of the trek is reaching Gaumukh, the snout of the Gangotri Glacier and the source of the Ganges. From here, you'll ascend to Tapovan, a high-altitude meadow offering breathtaking views of Mount Shivling, Bhagirathi peaks, and Meru. Throughout the journey, you'll camp at scenic locations, including the beautiful Nandanvan campsite. Our experienced guides will share insights about the region's geology, mythology, and the efforts to preserve this fragile ecosystem. This trek combines natural beauty, adventure, and spiritual significance, making it a truly unique Himalayan experience.",
         "image": "./tour_images/gomukh-tapovan-trek.png",
         "season": "Autumn",
@@ -815,7 +815,7 @@
           "longitude": 78.3444
         },
         "month": "May",
-        "price": 14500,
+        "price": 9500,
         "duration": { "days": 7, "nights": 6 },
         "brief_description": "Discover the 'Valley of Gods' with our Har Ki Dun Trek, a journey through one of the most picturesque valleys in the Garhwal Himalayas. This moderate trek takes you to an ancient village with architecture dating back to the Mahabharata era. Starting from the quaint village of Sankri, the trail winds through dense pine forests, terraced fields, and charming Himalayan villages. As you ascend, you'll be treated to stunning views of Swargarohini peaks, Black Peak, and Bandarpoonch. The Har Ki Dun valley, shaped like a cradle, offers a unique landscape with its lush meadows and glacial streams. Throughout the trek, you'll experience the rich culture of the Garhwal region, interacting with friendly locals and witnessing their traditional way of life. The trek also offers opportunities to spot diverse Himalayan flora and fauna. Our expert guides will share fascinating stories about the region's mythology, ecology, and the sustainable practices of the mountain communities. This trek is perfect for nature lovers, photography enthusiasts, and those seeking a blend of cultural immersion and Himalayan adventure.",
         "image": "./tour_images/har-ki-dun-trek.jpg",
@@ -1086,7 +1086,7 @@
           "longitude": 77.5770
         },
         "month": "July",
-        "price": 25000,
+        "price": 12000,
         "duration": { "days": 7, "nights": 6 },
         "brief_description": "The Leh Ladakh Adventure tour is a dream journey for thrill-seekers and nature enthusiasts. This trip offers an exhilarating mix of rugged mountains, high-altitude passes, serene monasteries, and pristine lakes. Witness the beauty of Pangong Lake, explore the magnetic hill, and cross the world-famous Khardung La Pass while immersing yourself in the unique culture of the Ladakhi people. Experience the raw charm of this high-altitude desert and feel the adrenaline rush as you ride through its challenging terrains. The starlit skies at night and the tranquility of the monasteries provide a contrasting yet harmonious balance, making this adventure unforgettable.",
         "image": "./tour_images/leh-ladakh.jpg",
@@ -1141,7 +1141,7 @@
     },
     {
         "id": 34,
-        "title": "Shimla Manali Holiday",
+        "title": "Manali Adventure",
         "type": "Family",
         "destination": "Himachal Pradesh",
         "description": "A classic holiday package to the hill stations of Shimla and Manali, offering scenic views, adventure activities, and a refreshing escape into the mountains.",
@@ -1150,8 +1150,8 @@
           "longitude": 77.1734
         },
         "month": "December",
-        "price": 20000,
-        "duration": { "days": 6, "nights": 5 },
+        "price": 6500,
+        "duration": { "days": 5, "nights": 4 },
         "brief_description": "The Shimla Manali Holiday is a delightful blend of adventure and relaxation. Explore Shimla's colonial charm, stroll along Mall Road, and visit Kufri. In Manali, enjoy activities like paragliding, skiing, and sightseeing at Solang Valley and Rohtang Pass. This family-friendly getaway offers a mix of urban comforts and natural wonders. The crisp mountain air, scenic beauty, and variety of leisure activities make it ideal for all age groups. Whether it’s shopping in Shimla's markets or enjoying snow activities in Manali, this vacation guarantees cherished memories.",
         "image": "./tour_images/shimla-manali.jpg",
         "season": "Winter",
@@ -1278,8 +1278,8 @@
         "longitude": 77.1452
       },
       "month": "May",
-      "price": 9500,
-      "duration": { "days": 5, "nights": 4 },
+      "price": 9000,
+      "duration": { "days": 4, "nights": 3 },
       "brief_description": "The Beas Kund Trek is a fantastic journey through the picturesque Kullu Valley. The trek takes you through lush forests, alpine meadows, and rocky paths, with the final destination being Beas Kund, the sacred source of the Beas River. It's a perfect trek for those who wish to experience the raw beauty of the Himalayas and connect with nature.",
       "image": "../images/Beas-Kund-Trek.jpg",
       "season": "Summer",
@@ -1310,8 +1310,8 @@
         "longitude": 78.3025
       },
       "month": "October",
-      "price": 11200,
-      "duration": { "days": 4, "nights": 3 },
+      "price": 8500,
+      "duration": { "days": 5, "nights": 4 },
       "brief_description": "The Phulara Ridge Trek is a relatively easy trek that offers breathtaking views of the snow-capped peaks of the Himalayas. As you walk through lush forests, meadows, and small villages, you get a chance to immerse yourself in the beauty and serenity of nature. It's a great trek for those looking to experience the Himalayan wilderness without going on a strenuous journey.",
       "image": "../images/phulara-ridge.jpg",
       "season": "Autumn",
@@ -1342,8 +1342,8 @@
         "longitude": 74.124
       },
       "month": "December",
-      "price": 18000,
-      "duration": { "days": 6, "nights": 5 },
+      "price": 5000,
+      "duration": { "days": 4, "nights": 3 },
       "brief_description": "The Goa Beach Escape offers a combination of leisure and exploration. Spend your days lounging on pristine beaches, enjoy water sports, and explore the historic churches, markets, and vibrant nightlife of Goa. Whether you want to relax or indulge in some fun activities, Goa has something for everyone.",
       "image": "../images/goa-beach.jpg",
       "season": "Winter",
@@ -1360,6 +1360,135 @@
       "inclusions": [
         "Hotel stay",
         "Sightseeing",
+        "Meals"
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Rajmachi Trek",
+      "type": "Adventure",
+      "destination": "Maharashtra",
+      "description": "The Rajmachi Trek is a popular trek located in the Sahyadri range, offering a challenging yet rewarding experience. The trek leads to the Rajmachi Fort, which offers panoramic views of the surrounding valleys and mountains.",
+      "location": {
+        "latitude": 18.7435,
+        "longitude": 73.4186
+      },
+      "month": "June",
+      "price": 6999,
+      "duration": { "days": 2, "nights": 1 },
+      "brief_description": "Rajmachi Trek is a short yet adventurous trek that takes you through dense forests, streams, and steep ascents. The trek is best known for its historical fort and the magnificent views it offers. Ideal for beginners and experienced trekkers alike, this trek provides an opportunity to connect with nature and history.",
+      "image": "../images/Rajmachi-Trek.jpg",
+      "season": "Monsoon",
+      "rating": 4.3,
+      "pros": [
+        "Rich historical heritage",
+        "Scenic mountain views",
+        "Ideal for beginners"
+      ],
+      "cons": [
+        "Challenging during the monsoon",
+        "Limited infrastructure"
+      ],
+      "inclusions": [
+        "Trekking",
+        "Guide",
+        "Meals"
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Kudremukh Trek",
+      "type": "Adventure",
+      "destination": "Karnataka",
+      "description": "The Kudremukh Trek is one of the most popular treks in Karnataka, offering a blend of adventure and nature. The trek leads to the Kudremukh peak, which offers breathtaking views of the Western Ghats.",
+      "location": {
+        "latitude": 13.2154,
+        "longitude": 75.2928
+      },
+      "month": "January",
+      "price": 8200,
+      "duration": { "days": 3, "nights": 2 },
+      "brief_description": "Kudremukh Trek is a challenging yet scenic trek that takes you through lush forests, streams, and grasslands. The summit offers a stunning view of the Western Ghats and the surrounding valleys. It is a perfect trek for nature lovers and adventure seekers.",
+      "image": "../images/Kudremukh-Trek.png",
+      "season": "Winter",
+      "rating": 4.7,
+      "pros": [
+        "Breathtaking views",
+        "Lush forests and grasslands",
+        "Great for adventure lovers"
+      ],
+      "cons": [
+        "Difficult terrain",
+        "Requires good physical fitness"
+      ],
+      "inclusions": [
+        "Trekking",
+        "Guide",
+        "Meals"
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Hampi Heritage Tour",
+      "type": "Cultural",
+      "destination": "Karnataka",
+      "description": "Hampi is an ancient city and a UNESCO World Heritage Site, known for its magnificent ruins and temples. The Hampi Heritage Tour takes you through the historic and spiritual landmarks of the Vijayanagara Empire.",
+      "location": {
+        "latitude": 15.3350,
+        "longitude": 76.4600
+      },
+      "month": "October",
+      "price": 8000,
+      "duration": { "days": 2, "nights": 1 },
+      "brief_description": "Explore the rich history and architecture of Hampi, from the iconic Virupaksha Temple to the stunning Vittala Temple. The tour offers a mix of cultural exploration and scenic beauty amidst the ancient ruins. Ideal for history and photography enthusiasts.",
+      "image": "../destination/Hampi/3.png",
+      "season": "Autumn",
+      "rating": 4.5,
+      "pros": [
+        "Rich historical and cultural heritage",
+        "Unique ruins and architecture",
+        "Perfect for photography"
+      ],
+      "cons": [
+        "Hot weather during summer",
+        "Limited modern amenities"
+      ],
+      "inclusions": [
+        "Sightseeing",
+        "Hotel stay",
+        "Meals"
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Rishikesh Adventure and Spiritual Tour",
+      "type": "Adventure",
+      "destination": "Uttarakhand",
+      "description": "Rishikesh is known as the 'Yoga Capital of the World' and is a hub for spiritual seekers and adventure enthusiasts. The Rishikesh Adventure and Spiritual Tour offers a perfect mix of yoga, rafting, and exploring the sacred Ganges river.",
+      "location": {
+        "latitude": 30.1043,
+        "longitude": 78.2982
+      },
+      "month": "November",
+      "price": 7500,
+      "duration": { "days": 3, "nights": 2 },
+      "brief_description": "Experience the serenity of the Ganges and participate in a spiritual yoga session, followed by an adventurous rafting experience. This tour is ideal for people seeking peace, adventure, and the beauty of the Himalayan foothills.",
+      "image": "../images/rishikesh.jpg",
+      "season": "Autumn",
+      "rating": 4.6,
+      "pros": [
+        "Spiritual and peaceful atmosphere",
+        "Rafting and adventure activities",
+        "Yoga and wellness experience"
+      ],
+      "cons": [
+        "Can get crowded during peak seasons",
+        "Requires some physical fitness for adventure activities"
+      ],
+      "inclusions": [
+        "Rafting",
+        "Yoga sessions",
+        "Hotel stay",
         "Meals"
       ]
     }
