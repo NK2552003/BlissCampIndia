@@ -6,44 +6,6 @@
     <title>Tour Details</title>
     <link rel="stylesheet" href="./treks_style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <style>
-        .tour-details {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .tour-image {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        .tour-title {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .tour-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .tour-description {
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .back-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #0095ff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .back-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 <body>
     <div class="tour-details" id="tourDetails">
@@ -65,9 +27,14 @@
                     <p><i class="fas fa-cloud-sun"></i> ${params.get('season')}</p>
                     <p><i class="fas fa-star"></i> ${params.get('rating')}</p>
                 </div>
-                <p class="tour-description">${params.get('description')}</p>
+                <p class="tour-description">${params.get('brief_description')}</p>
+                <p class="tour-description">pros: ${params.get('pros')}</p>
+                <p class="tour-description">cons: ${params.get('cons')}</p>
+                <p class="tour-description">inclusions: ${params.get('inclusions')}</p>
                 <p><strong>Duration:</strong> ${params.get('days')} days, ${params.get('nights')} nights</p>
                 <p><strong>Price:</strong> ₹${parseInt(params.get('price')).toLocaleString()}</p>
+                <p><strong>Latitude:</strong>${parseInt(params.get('longitude'))}</p>
+                <p><strong>Longitude:</strong>${parseInt(params.get('latitude'))}</p>
                 <a href="index.html" class="back-button">Back to Tours</a>
             `;
 

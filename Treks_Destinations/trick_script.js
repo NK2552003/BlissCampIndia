@@ -67,7 +67,7 @@ function populateTours(data) {
           id: tour.id,
           title: tour.title,
           price: tour.price,
-          description: tour.description,
+          brief_description: tour.brief_description,
           destination: tour.destination,
           month: tour.month,
           season: tour.season,
@@ -75,6 +75,11 @@ function populateTours(data) {
           image: tour.image,
           days: tour.duration.days,
           nights: tour.duration.nights,
+          pros: tour.pros,
+          cons: tour.cons,
+          inclusions: tour.inclusions,
+          latitude: tour.location.latitude,
+          longitude: tour.location.longitude,
         });
         window.location.href = `details.html?${params.toString()}`;
       }
