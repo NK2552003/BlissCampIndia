@@ -219,7 +219,7 @@
 
 .dst-facilities-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -530,6 +530,9 @@
   .pkg-grid {
     grid-template-columns: 1fr;
   }
+  .dst-container {
+    display: block;
+  }
 }
 
 /* Mobile Responsive Styles */
@@ -689,4 +692,32 @@
     font-size: 0.8rem;
     padding: 5px 10px;
   }
+}
+.dst-faqs {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.faq-item {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.faq-answer {
+  margin-left: 15px;
+  color: #555;
+  font-size: 14px;
+}
+
+.dst-faqs p {
+  margin: 10px 0;
+}
+
+.dst-heading {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 15px;
+  text-align: left;
 }

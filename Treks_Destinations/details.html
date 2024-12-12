@@ -3,43 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour Details</title>
-    <link rel="stylesheet" href="./treks_style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Destination Details</title>
+    <link rel="stylesheet" href="./details_css.css">
 </head>
 <body>
-    <div class="tour-details" id="tourDetails">
-        <!-- Tour details will be populated here -->
+    <div class="rgf-container">
+        <div class="rgf-header">
+            <div class="rgf-title-section">
+                <h1 class="rgf-title" id="rgf-title"></h1>
+                <div id="rgf-meta" class="rgf-meta">
+                </div>
+            </div>
+            <div class="rgf-actions">
+                <button class="rgf-action-btn" aria-label="Bookmark">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </button>
+                <button class="rgf-action-btn" aria-label="Share">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="18" cy="5" r="3"/>
+                        <circle cx="6" cy="12" r="3"/>
+                        <circle cx="18" cy="19" r="3"/>
+                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="rgf-gallery">
+            <div class="rgf-image-wrapper rgf-main-image">
+                <img src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&h=800&w=1200" 
+                     alt="Harbor view with mountains" class="rgf-image">
+            </div>
+            <div class="rgf-gallery-right">
+                <div class="rgf-image-wrapper">
+                    <img src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&h=300&w=400" 
+                         alt="Mountain peak" class="rgf-image">
+                </div>
+                <div class="rgf-image-wrapper">
+                    <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&h=300&w=400" 
+                         alt="Mountain marker" class="rgf-image">
+                </div>
+                <div class="rgf-image-wrapper">
+                    <img src="https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&h=300&w=400" 
+                         alt="Mountain view" class="rgf-image">
+                </div>
+                <div class="rgf-image-wrapper">
+                    <img src="https://images.pexels.com/photos/1433050/pexels-photo-1433050.jpeg?auto=compress&cs=tinysrgb&h=300&w=400" 
+                         alt="Mountain landscape" class="rgf-image">
+                    <div class="rgf-more-photos">+12</div>
+                </div>
+            </div>
+        </div>
+              
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const params = new URLSearchParams(window.location.search);
-            const tourDetails = document.getElementById('tourDetails');
+    <div class="dst-container">
+        <nav class="dst-nav">
+            <ul class="dst-nav-list">
+                <li class="dst-nav-item active tab-button" data-tab="overview">Overview</li>
+                <li class="dst-nav-item tab-button" data-tab="pros">Pros</li>
+                <li class="dst-nav-item tab-button" data-tab="cons">Cons</li>
+                <li class="dst-nav-item tab-button" data-tab="inclusions">What's included</li>
+                <li class="dst-nav-item tab-button" data-tab="availability">Availability</li>
+                <li class="dst-nav-item tab-button" data-tab="faqs">FAQs</li>
+                <li class="dst-nav-item tab-button" data-tab="faqs">Policy</li>
+            </ul>
+        </nav>
 
-            // Create HTML content for tour details
-            const detailsHTML = `
-                <img src="${params.get('image')}" alt="${params.get('title')}" class="tour-image">
-                <h1 class="tour-title">${params.get('title')}</h1>
-                <div class="tour-info">
-                    <p><i class="fas fa-map-marker-alt"></i> ${params.get('destination')}</p>
-                    <p><i class="fas fa-calendar-alt"></i> ${params.get('month')}</p>
-                    <p><i class="fas fa-cloud-sun"></i> ${params.get('season')}</p>
-                    <p><i class="fas fa-star"></i> ${params.get('rating')}</p>
-                </div>
-                <p class="tour-description">${params.get('brief_description')}</p>
-                <p class="tour-description">pros: ${params.get('pros')}</p>
-                <p class="tour-description">cons: ${params.get('cons')}</p>
-                <p class="tour-description">inclusions: ${params.get('inclusions')}</p>
-                <p><strong>Duration:</strong> ${params.get('days')} days, ${params.get('nights')} nights</p>
-                <p><strong>Price:</strong> ₹${parseInt(params.get('price')).toLocaleString()}</p>
-                <p><strong>Latitude:</strong>${parseInt(params.get('longitude'))}</p>
-                <p><strong>Longitude:</strong>${parseInt(params.get('latitude'))}</p>
-                <a href="index.html" class="back-button">Back to Tours</a>
-            `;
+        <div class="dst-content">
+            <div id="overview" class="tab-content active">
+                <p id="overview-text"></p>
+            </div>
+            <div id="pros" class="tab-content">
+                <p id="pros-text"></p>
+            </div>
+            <div id="cons" class="tab-content">
+                <p id="cons-text"></p>
+            </div>
+            <div id="inclusions" class="tab-content">
+                <p id="inclusions-text"></p>
+            </div>
+            <div id="availability" class="tab-content">
+                <p>Availability information goes here.</p>
+            </div>
+            <div id="faqs" class="tab-content">
+                <p>FAQs go here.</p>
+            </div>
+            <div id="policy" class="tab-content">
+                <p>Policies goes here</p>
+            </div>
+        </div>
 
-            tourDetails.innerHTML = detailsHTML;
-        });
-    </script>
+        <div class="dst-booking">
+            <div class="dst-price">
+                Rs. <span id="price"></span> <span class="dst-price-unit">per person</span>
+            </div>
+        
+            <div class="dst-date-picker">
+                <label class="dst-date-label">Month</label>
+                <select id="month" class="dst-date-select">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+        
+                <label class="dst-date-label">Season</label>
+                <select id="season" class="dst-date-select">
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Autumn">Autumn</option>
+                    <option value="Winter">Winter</option>
+                    <option value="Monsoon">Monsoon</option>
+                </select>
+        
+                <label class="dst-date-label">Persons</label>
+                <select id="persons" class="dst-guest-select">
+                    <option value="1">1 Person</option>
+                    <option value="2">2 Persons</option>
+                    <option value="3">3 Persons</option>
+                    <option value="4">4 Persons</option>
+                </select>
+            </div>
+        
+            <div class="dst-total">
+                <span class="dst-total-label">Duration</span>
+                <span id="duration" class="dst-total-amount"></span>
+            </div>
+        
+            <!-- Total Price Section -->
+            <div class="dst-total-price" style="padding-top:10px;padding-bottom:20px;">
+                <span class="dst-total-price-label">Total Price:</span>
+                Rs. <span id="totalPrice">0</span>
+            </div>
+        
+            <button id="bookNow" class="dst-book-button">Book Now</button>
+            <a href="#" class="dst-ask-manager">Ask a Question</a>
+        </div>
+    </div>
+    <div class="loc-container">
+        <h2 class="loc-heading">Location</h2>
+        <div class="loc-map-container">
+            <div id="loc-map" class="loc-map"></div>
+            <div id="loc-loading" class="loc-loading">Loading map...</div>
+        </div>
+        <div id="loc-error" class="loc-error">
+            Unable to load the map. Please try again later.
+        </div>
+        <div>
+            <p>Latitude: <span id="latitude"></span></p>
+            <p>Longitude: <span id="longitude"></span></p>
+        </div>
+    </div>
+
+    <script src="details_script.js"></script>   
 </body>
 </html>
+
