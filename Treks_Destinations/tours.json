@@ -1266,5 +1266,101 @@
           "Hotel stay",
           "Meals"
         ]
+    },
+    {
+      "id": 38,
+      "title": "Beas Kund Trek",
+      "type": "Adventure",
+      "destination": "Himachal Pradesh",
+      "description": "The Beas Kund Trek is a popular and moderate trek located in the Kullu Valley of Himachal Pradesh. The trek offers stunning views of the Pir Panjal Range and takes you to the Beas Kund, the source of the Beas River.",
+      "location": {
+        "latitude": 32.0264,
+        "longitude": 77.1452
+      },
+      "month": "May",
+      "price": 9500,
+      "duration": { "days": 5, "nights": 4 },
+      "brief_description": "The Beas Kund Trek is a fantastic journey through the picturesque Kullu Valley. The trek takes you through lush forests, alpine meadows, and rocky paths, with the final destination being Beas Kund, the sacred source of the Beas River. It's a perfect trek for those who wish to experience the raw beauty of the Himalayas and connect with nature.",
+      "image": "../images/Beas-Kund-Trek.jpg",
+      "season": "Summer",
+      "rating": 4.8,
+      "pros": [
+        "Stunning Himalayan views",
+        "Beautiful alpine meadows",
+        "Perfect for nature lovers"
+      ],
+      "cons": [
+        "Challenging terrain",
+        "Limited infrastructure"
+      ],
+      "inclusions": [
+        "Camping",
+        "Guide",
+        "Meals"
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Phulara Ridge Trek",
+      "type": "Adventure",
+      "destination": "Uttarakhand",
+      "description": "The Phulara Ridge Trek offers panoramic views of the surrounding peaks, making it a must-do trek for adventure enthusiasts. Located in the Garhwal Himalayas, this trek provides a chance to explore the untouched natural beauty of Uttarakhand.",
+      "location": {
+        "latitude": 30.7594,
+        "longitude": 78.3025
+      },
+      "month": "October",
+      "price": 11200,
+      "duration": { "days": 4, "nights": 3 },
+      "brief_description": "The Phulara Ridge Trek is a relatively easy trek that offers breathtaking views of the snow-capped peaks of the Himalayas. As you walk through lush forests, meadows, and small villages, you get a chance to immerse yourself in the beauty and serenity of nature. It's a great trek for those looking to experience the Himalayan wilderness without going on a strenuous journey.",
+      "image": "../images/phulara-ridge.jpg",
+      "season": "Autumn",
+      "rating": 4.6,
+      "pros": [
+        "Panoramic mountain views",
+        "Easy to moderate difficulty",
+        "Cultural exposure"
+      ],
+      "cons": [
+        "Weather can be unpredictable",
+        "Basic camping facilities"
+      ],
+      "inclusions": [
+        "Trekking",
+        "Guide",
+        "Meals"
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Goa Beach Escape",
+      "type": "Leisure",
+      "destination": "Goa",
+      "description": "Goa Beach Escape is the ultimate beach holiday for those looking to relax and unwind. Explore the beautiful beaches, vibrant nightlife, and rich cultural heritage of Goa. This tour is perfect for those seeking a mix of relaxation and adventure.",
+      "location": {
+        "latitude": 15.2993,
+        "longitude": 74.124
+      },
+      "month": "December",
+      "price": 18000,
+      "duration": { "days": 6, "nights": 5 },
+      "brief_description": "The Goa Beach Escape offers a combination of leisure and exploration. Spend your days lounging on pristine beaches, enjoy water sports, and explore the historic churches, markets, and vibrant nightlife of Goa. Whether you want to relax or indulge in some fun activities, Goa has something for everyone.",
+      "image": "../images/goa-beach.jpg",
+      "season": "Winter",
+      "rating": 4.5,
+      "pros": [
+        "Beautiful beaches",
+        "Vibrant nightlife",
+        "Rich cultural heritage"
+      ],
+      "cons": [
+        "Can be crowded during peak season",
+        "Expensive accommodations near the beach"
+      ],
+      "inclusions": [
+        "Hotel stay",
+        "Sightseeing",
+        "Meals"
+      ]
     }
 ]  
