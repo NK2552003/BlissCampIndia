@@ -64,7 +64,7 @@
           </select>
         </div>
         <div class="input-group">
-          <label for="destination">Destination</label>
+          <label for="destinationFilter">Destination</label>
           <select id="destinationFilter">
             <option value="">All Destinations</option>
             <option value="Manali">Manali</option>
@@ -143,7 +143,7 @@
               </div>
             </div>
             <div class="card">
-              <p class="moreT"><a href="#">More about tours</a> </p>
+              <p class="moreT"><a href="./Treks_Destinations/treks.html">More about tours</a> </p>
               <div class="card-inner">
                 <div class="box">
                   <div class="imgBox">
@@ -151,7 +151,7 @@
                   </div>
         
                   <div class="more">
-                    <a href="#" class="arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <a href="./Treks_Destinations/treks.html" class="arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                       </svg></a>
         
@@ -571,6 +571,25 @@
     </footer>
     
     <script src="./scripts.js"></script>
+    <script>
+      document.querySelector(".search-btn").addEventListener("click", function () {
+  // Get values from the inputs
+  const location = document.getElementById("location").value;
+  const tourType = document.getElementById("tour_type").value;
+  const destination = document.getElementById("destinationFilter").value;
+
+  // Create query parameters
+  const queryParams = new URLSearchParams({
+    location: location,
+    tourType: tourType,
+    destination: destination,
+  });
+
+  // Redirect to the new page with query parameters
+  window.location.href = `./Treks_Destinations/treks.html?${queryParams.toString()}`;
+});
+
+    </script>
     <script>
       // Initialize odometers
       const customersOdometer = new Odometer({

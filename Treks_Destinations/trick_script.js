@@ -127,7 +127,21 @@ fetch("./tours.json")
   .then((response) => response.json())
   .then((data) => {
     tours = data; // Store the fetched data in the global tours variable
-    populateTours(tours); // Populate the tours on initial load
+
+    // Parse query parameters from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const search = urlParams.get("location");
+    const tourType = urlParams.get("tourType");
+    const destination = urlParams.get("destination");
+
+    // Set the values in the respective input fields
+    if (search) document.getElementById("searchKeyword").value = search;
+    if (tourType) document.getElementById("seasonFilter").value = tourType;
+    if (destination)
+      document.getElementById("destinationFilter").value = destination;
+
+    // Apply filters based on the fetched query parameters
+    filterTours();
 
     // Add event listeners for filtering and sorting
     document
@@ -141,7 +155,7 @@ fetch("./tours.json")
       .getElementById("monthFilter")
       .addEventListener("change", filterTours);
     document
-      .getElementById("seasonFilter") // Add event listener for season filter
+      .getElementById("seasonFilter")
       .addEventListener("change", filterTours);
     document
       .getElementById("sortOptions")

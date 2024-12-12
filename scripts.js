@@ -64,3 +64,9 @@ document.querySelectorAll(".trek-btn").forEach((btn) => {
     alert("More details coming soon!");
   });
 });
+
+document
+  .querySelector(".book-now-button")
+  .addEventListener("click", function () {
+    window.location.href = "Treks_Destinations/treks.html"; // Redirect to index.html
+  });

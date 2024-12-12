@@ -1631,3 +1631,7 @@ main .video {
 .nav-links.mobile-hidden {
   z-index: 100;
 }
+.search-btn {
+  position: relative;
+  z-index: 100;
+}
