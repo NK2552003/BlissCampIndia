@@ -7,6 +7,7 @@ const trekData = [
     altText: "Valley of Flowers Trek",
     title: "Valley of Flowers Trek",
     duration: { days: 6, nights: 5 },
+    season: "Monsoon",
     brief_description:
       "Embark on a mesmerizing journey through nature's own paradise with our Valley of Flowers Trek in Uttarakhand. This enchanting trek takes you through a UNESCO World Heritage Site, famous for its vibrant alpine meadows filled with hundreds of species of wildflowers. The valley, nestled high in the West Himalayan region, comes alive with a riot of colors during the monsoon season, creating a spectacle that seems almost surreal. As you trek through this floral wonderland, you'll be surrounded by towering snow-capped peaks, cascading waterfalls, and pristine streams. The journey begins in the pilgrimage town of Govindghat, from where you'll trek to the quaint village of Ghangaria, your base camp for exploring the valley. Each day brings new discoveries as you wander through meadows carpeted with primulas, poppies, daisies, and many rare and endangered species. The trek also includes a visit to the holy Hemkund Sahib, a revered Sikh shrine set against the backdrop of stunning mountain scenery. Our expert guides will share insights about the unique ecosystem, the medicinal properties of various plants, and the efforts to preserve this fragile environment. You'll camp in scenic locations, allowing you to fully immerse yourself in the tranquil beauty of the Himalayas. This moderate trek is suitable for nature lovers, photographers, and anyone seeking a peaceful retreat in the mountains. Whether you're captivated by the botanical diversity, the spiritual atmosphere, or simply the breathtaking landscapes, the Valley of Flowers Trek offers a truly magical experience that will leave you with memories to cherish for a lifetime.",
     description:
@@ -43,6 +44,7 @@ const trekData = [
     imgSrc: "./images/Rajmachi-Trek.jpg",
     altText: "Rajmachi Trek",
     title: "Rajmachi Trek",
+    season: "Monsoon",
     duration: { days: 2, nights: 1 },
     brief_description:
       "Escape into the heart of Maharashtra's Sahyadri range with our Rajmachi Trek. This monsoon favorite offers a perfect blend of history, adventure, and natural beauty. The trek takes you to the twin forts of Shrivardhan and Manaranjan, offering panoramic views of lush green valleys, cascading waterfalls, and mist-covered landscapes. Starting from the base village of Lonavala, the trail winds through dense forests, scenic plateaus, and rustic villages, giving trekkers a taste of the region's rich biodiversity. On this easy-to-moderate trek, you'll be surrounded by the soothing sound of rain, chirping birds, and the mesmerizing smell of wet earth. Rajmachi Fort, steeped in Maratha history, is a testament to the glory of the bygone era and is a delight for history buffs and photographers. The trek concludes with an overnight stay in a homestay or a campsite, allowing you to soak in the tranquility of this enchanting destination. Perfect for beginners and seasoned trekkers alike, the Rajmachi Trek is a rejuvenating getaway during the monsoon season.",
@@ -80,6 +82,7 @@ const trekData = [
     imgSrc: "./images/Kudremukh-Trek.png",
     altText: "Kudremukh Trek",
     title: "Kudremukh Trek",
+    season: "Monsoon",
     duration: { days: 3, nights: 2 },
     brief_description:
       "Immerse yourself in the captivating beauty of Karnataka's Western Ghats with our Kudremukh Trek. Known for its horse-face-shaped peak, Kudremukh offers breathtaking landscapes dotted with rolling hills, sparkling waterfalls, and verdant grasslands. Starting from Mullodi village, the trail takes you through dense forests, glistening streams, and serene meadows, making every step a photographer's dream. Along the way, you'll encounter unique flora and fauna, as the region is part of the Kudremukh National Park, a biodiversity hotspot. The highlight of the trek is reaching the summit, which provides awe-inspiring views of the surrounding hills and valleys. With expert guides, you'll also learn about the park's conservation efforts and local traditions. This moderately challenging trek is ideal for adventure enthusiasts and nature lovers looking to escape into the wild. The trek includes camping in picturesque locations, giving you a chance to unwind under the starry sky.",
@@ -141,7 +144,7 @@ const createMonsoonTreksSection = () => {
     // Price badge
     const priceBadge = document.createElement("div");
     priceBadge.classList.add("price-badge");
-    priceBadge.textContent = trek.price;
+    priceBadge.textContent = `₹${trek.price}`;
     trekCard.appendChild(priceBadge);
 
     // Image
@@ -197,6 +200,7 @@ const createMonsoonTreksSection = () => {
         inclusions: trek.inclusions,
         latitude: trek.location.latitude,
         longitude: trek.location.longitude,
+        season: trek.season,
       });
       window.location.href = `./Treks_Destinations/details.html?${params.toString()}`;
     });
