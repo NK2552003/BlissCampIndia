@@ -359,6 +359,7 @@
 
   // Redirect to the new page with query parameters
   window.location.href = `./Treks_Destinations/treks.html?${queryParams.toString()}`;
+
 });
 
 document
@@ -366,7 +367,11 @@ document
   .addEventListener("click", function () {
     window.location.href = "./Treks_Destinations/treks.html"; // Redirect to index.html
   });
-
+  document
+  .querySelector(".promo-btn")
+  .addEventListener("click", function () {
+    window.location.href = "./Treks_Destinations/treks.html"; // Redirect to index.html
+  });
     </script>
     <script>
       // Initialize odometers
