@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   tourInfo.innerHTML = `
      <div class="rgf-rating">
           <span class="rgf-star">★</span>
-          <span>${params.get("rating").length}</span>
+          <span>${params.get("rating")}</span>
           <span class="rgf-reviews">(234 Reviews)</span>
       </div>
       <div class="rgf-location">

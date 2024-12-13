@@ -151,10 +151,10 @@ summerTreksData.forEach((trek) => {
       destination: trek.destination,
       month: trek.month,
       rating: trek.rating,
-      image: `${trek.imgSrc}`, // Adjust image path for the URL
+      image: `${trek.imgSrc}`,
       days: trek.duration.days,
       nights: trek.duration.nights,
-      pros: trek.pros, // Convert array to comma-separated string
+      pros: trek.pros,
       cons: trek.cons,
       inclusions: trek.inclusions.join(","),
       latitude: trek.location.latitude,
