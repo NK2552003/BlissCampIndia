@@ -192,7 +192,7 @@ const createMonsoonTreksSection = () => {
         destination: trek.destination,
         month: trek.month,
         rating: trek.rating,
-        image: `.${trek.imgSrc}`, // Add ../ to the image path in URL params
+        image: `.${trek.imgSrc}`,
         days: trek.duration.days,
         nights: trek.duration.nights,
         pros: trek.pros,

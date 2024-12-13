@@ -274,7 +274,7 @@ function createDestinationHTML(destination) {
                           <img src="${destination.images.extra2}" alt="">
                       </div>
                       <div class="Six">
-                          <p><a href="#">${destination.linkText}</a></p>
+                          <p><a href="../Treks_Destinations/treks.html">${destination.linkText}</a></p>
                       </div>
                   </div>
               </div>
