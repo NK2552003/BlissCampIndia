@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const params = new URLSearchParams(window.location.search);
-
+  // console.log(params);
   // Populate tour details
   document.getElementById("rgf-title").textContent = params.get("title");
 
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   tourInfo.innerHTML = `
      <div class="rgf-rating">
           <span class="rgf-star">★</span>
-          <span>${params.get("rating")}</span>
+          <span>${params.get("rating").length}</span>
           <span class="rgf-reviews">(234 Reviews)</span>
       </div>
       <div class="rgf-location">
