@@ -172,7 +172,18 @@ winterTreksData.forEach((trek) => {
 winterTreksSection.appendChild(treksContainer);
 
 const viewMoreButton = document.createElement("button");
-viewMoreButton.classList.add("book-now-button", "viewBtn");
+viewMoreButton.classList.add("book-now-button", "viewBtn", "winter-btn");
 viewMoreButton.textContent = "View More";
 
+// Add the button to the DOM
 winterTreksSection.appendChild(viewMoreButton);
+
+// Ensure the event listener is added after the button is in the DOM
+viewMoreButton.addEventListener("click", function () {
+  const queryParams = new URLSearchParams({
+    tourType: "Winter",
+  });
+
+  // Redirect to the new page with query parameters
+  window.location.href = `./Treks_Destinations/treks.html?${queryParams.toString()}`;
+});

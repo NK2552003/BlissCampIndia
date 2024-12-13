@@ -156,7 +156,7 @@ summerTreksData.forEach((trek) => {
       nights: trek.duration.nights,
       pros: trek.pros,
       cons: trek.cons,
-      inclusions: trek.inclusions.join(","),
+      inclusions: trek.inclusions,
       latitude: trek.location.latitude,
       longitude: trek.location.longitude,
       season: "Summer",
@@ -170,10 +170,19 @@ summerTreksData.forEach((trek) => {
 // Append the container to the section
 summerTreksSection.appendChild(summerTreksContainer);
 
-// Add "View More" button at the end of the section
-const viewMoreButtonSummer = document.createElement("button");
-viewMoreButtonSummer.classList.add("book-now-button", "viewBtn");
-viewMoreButtonSummer.textContent = "View More";
+const viewMoreButton1 = document.createElement("button");
+viewMoreButton1.classList.add("book-now-button", "viewBtn", "summer-btn");
+viewMoreButton1.textContent = "View More";
 
-// Append the "View More" button to the section
-summerTreksSection.appendChild(viewMoreButtonSummer);
+// Add the button to the DOM
+summerTreksSection.appendChild(viewMoreButton1);
+
+// Ensure the event listener is added after the button is in the DOM
+viewMoreButton1.addEventListener("click", function () {
+  const queryParams = new URLSearchParams({
+    tourType: "Summer",
+  });
+
+  // Redirect to the new page with query parameters
+  window.location.href = `./Treks_Destinations/treks.html?${queryParams.toString()}`;
+});

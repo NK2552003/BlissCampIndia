@@ -220,11 +220,24 @@ const createMonsoonTreksSection = () => {
   section.appendChild(treksContainer);
 
   // Add view more button
-  const viewMoreButton = document.createElement("button");
-  viewMoreButton.classList.add("book-now-button", "viewBtn");
-  viewMoreButton.textContent = "View More";
+  const viewMoreButton2 = document.createElement("button");
+  viewMoreButton2.classList.add("book-now-button", "viewBtn", "monsoon-btn");
+  viewMoreButton2.textContent = "View More";
 
-  section.appendChild(viewMoreButton);
+  // Add the button to the DOM
+  summerTreksSection.appendChild(viewMoreButton2);
+
+  // Ensure the event listener is added after the button is in the DOM
+  viewMoreButton2.addEventListener("click", function () {
+    const queryParams = new URLSearchParams({
+      tourType: "Monsoon",
+    });
+
+    // Redirect to the new page with query parameters
+    window.location.href = `./Treks_Destinations/treks.html?${queryParams.toString()}`;
+  });
+
+  section.appendChild(viewMoreButton2);
 
   return section;
 };
