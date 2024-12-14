@@ -40,7 +40,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(0%, -30%);
+  transform: translate(0%, -10%);
   /* width: 100vw;
   height: 100vh; */
   object-fit: cover;
