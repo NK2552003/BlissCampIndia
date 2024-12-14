@@ -52,7 +52,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
-  backdrop-filter: blur(10px); /* Apply blur effect */
+  backdrop-filter: blur(3px); /* Apply blur effect */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
