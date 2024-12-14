@@ -3,6 +3,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family: "Moderustic";
 }
 body {
   font-family: "Moderustic", "Poppins", sans-serif;
@@ -145,7 +146,7 @@ body {
   z-index: 100;
   height: 25%;
   padding: 10px;
-  font-size: 9rem;
+  font-size: 7rem;
 }
 .heading p {
   z-index: 100;
