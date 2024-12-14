@@ -765,3 +765,6 @@ body {
   font-weight: bold;
   letter-spacing: 1.5px;
 }
+.loc-long-lat {
+  display: flex;
+}

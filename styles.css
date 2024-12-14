@@ -1606,6 +1606,9 @@ main .video {
   .col12 {
     flex-direction: column;
   }
+  .deals-section {
+    padding: 50px 20px;
+  }
 }
 .travel-footer-social-links {
   padding: 10px;
