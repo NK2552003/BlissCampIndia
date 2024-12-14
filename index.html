@@ -16,6 +16,8 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+
+  
   <section class="hero-section">
     <video class="hero-video" autoplay muted loop>
       <source src="./videos/v_1.mp4" type="video/mp4" />
@@ -49,6 +51,22 @@
       <div class="hero-content" id="hero-content">
         <h1>Discover Your Next Great Adventure</h1>
         <p>Immerse yourself in the extraordinary with us, uncovering the world's hidden gems.</p>
+        <div class="floating-buttons">
+          <!-- WhatsApp Button -->
+          <button class="floating-btn" id="whatsapp-btn" title="WhatsApp">
+            <i class="fab fa-whatsapp" style="font-size: 24px;"></i>
+          </button>
+          
+          <!-- Contact Us Button -->
+          <button class="floating-btn" id="contact-btn" title="Contact Us">
+            <i class="fa fa-address-book" style="font-size: 24px;"></i>
+          </button>
+          
+          <!-- Additional Button -->
+          <button class="floating-btn" id="info-btn" title="More Info">
+            <i class="fa fa-info" style="font-size: 24px;"></i>
+          </button>
+        </div>
       </div>
       
       <!-- Search Bar -->
@@ -370,6 +388,25 @@ document
   .addEventListener("click", function () {
     window.location.href = "./Treks_Destinations/treks.html"; // Redirect to index.html
   });
+
+  // WhatsApp Button Functionality
+document.getElementById("whatsapp-btn").addEventListener("click", function () {
+  const whatsappNumber = "+919991330533"; // Replace WhatsApp number
+  const message = encodeURIComponent("Hello! I need some assistance regarding the treks on BlissCampIndia");
+  window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+});
+
+// Contact Us Button Functionality
+document.getElementById("contact-btn").addEventListener("click", function () {
+  alert("Redirecting to the Contact Us page...");
+  window.location.href = "./contact_us/contact.html"; // Replace with your contact page URL
+});
+
+// Info Button Functionality
+document.getElementById("info-btn").addEventListener("click", function () {
+  window.location.href = "./About_Us/about_us.html"; 
+});
+
     </script>
     <script>
       // Initialize odometers

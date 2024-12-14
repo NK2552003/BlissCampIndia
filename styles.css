@@ -16,6 +16,46 @@ body {
   align-items: center;
 }
 
+.floating-buttons {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* position: fixed; */
+  /* top: 10%;
+  right: 20px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 200;
+}
+
+.floating-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffffbe; /* Purple background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.floating-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.floating-btn:hover {
+  background-color: #3071bc;
+  transform: scale(1.1);
+}
+
+.floating-btn:active {
+  background-color: #29036d;
+}
+
 /* Hero Section Container */
 .hero-section {
   position: relative;
@@ -1653,4 +1693,16 @@ main .video {
 .search-btn {
   position: relative;
   z-index: 100;
+}
+.floating-buttons {
+  /* display: flex
+; */
+  /* flex-direction: column; */
+  /* position: fixed; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+  z-index: 200;
 }
