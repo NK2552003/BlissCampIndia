@@ -151,7 +151,7 @@ summerTreksData.forEach((trek) => {
       destination: trek.destination,
       month: trek.month,
       rating: trek.rating,
-      image: `${trek.imgSrc}`,
+      image: `.${trek.imgSrc}`,
       days: trek.duration.days,
       nights: trek.duration.nights,
       pros: trek.pros,
