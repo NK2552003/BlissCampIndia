@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destination Details</title>
     <link rel="stylesheet" href="./details_css.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
     <div class="rgf-container">
@@ -153,9 +155,10 @@
         </div>
     </div>
     <div class="loc-container">
+        
         <h2 class="loc-heading">Location</h2>
         <div class="loc-map-container">
-            <div id="loc-map" class="loc-map"></div>
+            <div id="map" class="loc-map"></div>
             <div id="loc-loading" class="loc-loading">Loading map...</div>
         </div>
         <div id="loc-error" class="loc-error">
@@ -166,7 +169,7 @@
             <p>Longitude: <span id="longitude"></span></p>
         </div>
     </div>
-
+    <script src="./map.js"></script>
     <script src="details_script.js"></script>   
 </body>
 </html>

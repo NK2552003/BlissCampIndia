@@ -13,8 +13,8 @@ const dealsData = [
     type: "Trek",
     destination: "Uttarakhand",
     location: {
-      latitude: 31.0298,
-      longitude: 78.2432,
+      latitude: 31.0275, // Kedarkantha Peak
+      longitude: 78.195,
     },
     month: "December",
     price: 7500,
@@ -62,8 +62,8 @@ const dealsData = [
     duration: { days: 5, nights: 4 },
     month: "December",
     location: {
-      latitude: 31.1048,
-      longitude: 77.1734,
+      latitude: 32.2396, // Mall Road, Manali
+      longitude: 77.1887,
     },
     rating: 4,
     type: "Family",
@@ -92,8 +92,8 @@ const dealsData = [
     duration: { days: 4, nights: 3 },
     month: "November",
     location: {
-      latitude: 15.2993,
-      longitude: 74.124,
+      latitude: 15.2993, // Baga Beach, Goa
+      longitude: 73.9116,
     },
     price: 5000,
     duration: { days: 4, nights: 3 },
@@ -126,8 +126,8 @@ const dealsData = [
     month: "July",
     price: 12000,
     location: {
-      latitude: 34.1526,
-      longitude: 77.577,
+      latitude: 34.1526, // Leh City
+      longitude: 77.5771,
     },
     brief_description:
       "The Leh Ladakh Adventure tour is a dream journey for thrill-seekers and nature enthusiasts. This trip offers an exhilarating mix of rugged mountains, high-altitude passes, serene monasteries, and pristine lakes. Witness the beauty of Pangong Lake, explore the magnetic hill, and cross the world-famous Khardung La Pass while immersing yourself in the unique culture of the Ladakhi people. Experience the raw charm of this high-altitude desert and feel the adrenaline rush as you ride through its challenging terrains. The starlit skies at night and the tranquility of the monasteries provide a contrasting yet harmonious balance, making this adventure unforgettable.",
