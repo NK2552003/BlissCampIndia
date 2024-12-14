@@ -2,7 +2,7 @@ const summerTreksData = [
   {
     id: 1,
     price: 10000,
-    imgSrc: "../images/Hampta-Pass-Trek.jpg",
+    imgSrc: "./images/Hampta-Pass-Trek.jpg",
     altText: "Hampta Pass Trek",
     title: "Hampta Pass Trek",
     duration: { days: 6, nights: 5 },
@@ -39,7 +39,7 @@ const summerTreksData = [
   {
     id: 2,
     price: 12500,
-    imgSrc: "../images/Roopkund-Trek.jpg",
+    imgSrc: "./images/Roopkund-Trek.jpg",
     altText: "Roopkund Trek",
     title: "Roopkund Trek",
     duration: { days: 8, nights: 7 },
@@ -76,7 +76,7 @@ const summerTreksData = [
   {
     id: 3,
     price: 9000,
-    imgSrc: "../images/Beas-Kund-Trek.jpg",
+    imgSrc: "./images/Beas-Kund-Trek.jpg",
     altText: "Beas Kund Trek",
     title: "Beas Kund Trek",
     duration: { days: 4, nights: 3 },
