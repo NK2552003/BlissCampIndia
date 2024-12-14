@@ -150,7 +150,7 @@ const createMonsoonTreksSection = () => {
     // Image
     const img = document.createElement("img");
     img.classList.add("trek-image");
-    img.src = trek.imgSrc.replace("./", "../"); // Add ../ to the image path
+    img.src = trek.imgSrc; // Add ../ to the image path
     img.alt = trek.altText;
     trekCard.appendChild(img);
 
