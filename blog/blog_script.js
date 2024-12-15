@@ -126,61 +126,69 @@ function renderPosts(posts) {
   container.innerHTML = posts
     .map(
       (post) => `
-          <div class="post" ondblclick="toggleDeleteButton('${post.id}')">
-            <div class="post-header">
-              <img src="${
-                post.profilePhoto
-              }" alt="Profile Photo" class="avatar" onerror="this.src='https://via.placeholder.com/80'">
-              <div>
-                <h3>${post.name}</h3>
-                <small>${post.title}</small>
-              </div>
+        <div class="post" id="post-${post.id}">
+          <div class="post-header">
+            <img src="${post.profilePhoto}" alt="Profile Photo" class="avatar">
+            <div>
+              <h3>${post.name}</h3>
+              <small>${post.title}</small>
             </div>
-            <p>${post.content}</p>
-            <img src="${
-              post.postImage
-            }" alt="Post Image" class="post-image" onerror="this.style.display='none'">
-            <small class="post-date">Uploaded on: ${post.date}</small>
-            <div class="actions">
-              <button class="like-button" onclick="likePost('${post.id}', ${
+          </div>
+          <p>${post.content}</p>
+          <img src="${post.postImage}" alt="Post Image" class="post-image">
+          <small class="post-date">Uploaded on: ${post.date}</small>
+          <div class="actions">
+            <button class="like-button" onclick="likePost('${post.id}', ${
         post.likes
       })">
-                👍 Like (<span>${post.likes}</span>)
-              </button>
-              <button class="share-button like-button" onclick="sharePost('${
-                post.id
-              }')">
-                📤 Share
-              </button>
-            </div>
-            <div class="comment-section">
-              <h4>Comments:</h4>
-              <ul>
-                ${post.comments
-                  .map(
-                    (comment) =>
-                      `<li>${comment.text} <small>(${new Date(
-                        comment.timestamp
-                      ).toLocaleString()})</small></li>`
-                  )
-                  .join("")}
-              </ul>
-              <input type="text" id="commentInput-${
-                post.id
-              }" placeholder="Add a comment...">
-              <button onclick="addComment('${post.id}')">Post</button>
-            </div>
-            <button class="delete-button hidden" id="deleteButton-${
+              👍 Like (<span>${post.likes}</span>)
+            </button>
+            <button class="share-button like-button" onclick="sharePost('${
               post.id
-            }" onclick="deletePost('${post.id}')">Delete</button>
-          </div>`
+            }')">
+              📤 Share
+            </button>
+          </div>
+          <div class="comment-section">
+            <h4>Comments:</h4>
+            <ul>
+              ${post.comments
+                .map(
+                  (comment) =>
+                    `<li>${comment.text} <small>(${new Date(
+                      comment.timestamp
+                    ).toLocaleString()})</small></li>`
+                )
+                .join("")}
+            </ul>
+            <input type="text" id="commentInput-${
+              post.id
+            }" placeholder="Add a comment...">
+            <button onclick="addComment('${post.id}')">Post</button>
+          </div>
+          <button class="delete-button hidden" id="deleteButton-${
+            post.id
+          }" onclick="deletePost('${post.id}')">Delete</button>
+        </div>`
     )
     .join("");
+
+  // Add the event listener for double-click to toggle delete button
+  posts.forEach((post) => {
+    const postElement = document.getElementById(`post-${post.id}`);
+    if (postElement) {
+      postElement.addEventListener("dblclick", () =>
+        toggleDeleteButton(post.id)
+      );
+    }
+  });
 }
 
 function toggleDeleteButton(postId) {
   const deleteButton = document.getElementById(`deleteButton-${postId}`);
-  deleteButton.classList.toggle("hidden");
+  if (deleteButton) {
+    deleteButton.classList.toggle("hidden");
+  }
 }
 
 async function deletePost(postId) {
