@@ -23,9 +23,13 @@
         <div class="create-post-container">
             <div class="create-post">
                 <h3>Create a New Post</h3>
-                <div class="profile-photo">
-                    <img id="profilePhotoPreview" src="https://via.placeholder.com/80" alt="Profile Photo">
-                    <input type="file" id="profilePhotoInput" onchange="previewProfilePhoto(event)">
+                <div class="profile-photo" style="display:flex; justify-content: center; align-items: center;">
+                    <img id="profilePhotoPreview" src="https://via.placeholder.com/100" alt="Profile Photo">
+                    <div style="display: flex;flex-direction: column;">
+                      <input type="text" name="name" id="userName" placeholder="Enter your Name Here">
+                      <input type="file" id="profilePhotoInput" onchange="previewProfilePhoto(event)">
+                    </div>
+    
                 </div>
                 <input type="text" id="postTitle" placeholder="Post Title" required>
                 <textarea id="postContent" placeholder="Share your travel story..." rows="3"></textarea>

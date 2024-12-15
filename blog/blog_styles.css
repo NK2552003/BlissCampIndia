@@ -545,3 +545,7 @@ body {
 .social-div {
   padding: 20px 36px;
 }
+.create-post-container .profile-photo img {
+  width: 100px;
+  height: 100px;
+}

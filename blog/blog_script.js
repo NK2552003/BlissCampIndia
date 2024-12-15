@@ -36,12 +36,14 @@ async function fetchPosts() {
 async function addPost() {
   const title = document.getElementById("postTitle").value.trim();
   const content = document.getElementById("postContent").value.trim();
+  const name = document.getElementById("userName").value.trim();
   const profilePhotoInput = document.getElementById("profilePhotoInput");
   const postImageInput = document.getElementById("postImageInput");
 
   if (
     title &&
     content &&
+    name &&
     profilePhotoInput.files.length > 0 &&
     postImageInput.files.length > 0
   ) {
@@ -63,11 +65,12 @@ async function addPost() {
         const newPost = {
           title,
           content,
+          name,
           profilePhoto: profileReader.result,
           postImage: postImageReader.result,
           likes: 0,
           comments: [],
-          date: new Date().toLocaleString(), // Add date
+          date: new Date().toLocaleString(),
         };
 
         try {
@@ -89,6 +92,7 @@ async function addPost() {
 function resetForm() {
   document.getElementById("postTitle").value = "";
   document.getElementById("postContent").value = "";
+  document.getElementById("userName").value = "";
   document.getElementById("profilePhotoInput").value = "";
   document.getElementById("profilePhotoPreview").src =
     "https://via.placeholder.com/80";
@@ -119,7 +123,10 @@ function renderPosts(posts) {
               <img src="${
                 post.profilePhoto
               }" alt="Profile Photo" class="avatar" onerror="this.src='https://via.placeholder.com/80'">
-              <h3>${post.title}</h3>
+              <div>
+                <h3>${post.name}</h3>
+                <small>${post.title}</small>
+              </div>
             </div>
             <p>${post.content}</p>
             <img src="${
@@ -131,6 +138,11 @@ function renderPosts(posts) {
         post.likes
       })">
                 👍 Like (<span>${post.likes}</span>)
+              </button>
+              <button class="share-button like-button" onclick="sharePost('${
+                post.id
+              }')">
+                📤 Share
               </button>
             </div>
             <div class="comment-section">
@@ -214,6 +226,36 @@ async function addComment(postId) {
   }
 }
 
+async function sharePost(postId) {
+  try {
+    const postRef = doc(db, "posts", postId);
+    const postDoc = await getDoc(postRef);
+
+    if (postDoc.exists()) {
+      const postData = postDoc.data();
+      const shareTitle = `${postData.name}'s Post`;
+      const shareText = `Check out this post by ${postData.name}: "${postData.title}"\n\n${postData.content}`;
+      const shareUrl = `${window.location.origin}/post/${postId}`;
+
+      if (navigator.share) {
+        await navigator.share({
+          title: shareTitle,
+          text: shareText,
+          url: shareUrl,
+        });
+      } else {
+        // Fallback for browsers that don't support the Web Share API
+        const fallbackText = `${shareTitle}\n\n${shareText}\n\nLink: ${shareUrl}`;
+        prompt("Copy this information to share:", fallbackText);
+      }
+    } else {
+      console.error("Post not found");
+    }
+  } catch (error) {
+    console.error("Error sharing post:", error);
+  }
+}
+
 fetchPosts();
 
 // Make functions globally accessible
@@ -223,3 +265,4 @@ window.toggleDeleteButton = toggleDeleteButton;
 window.deletePost = deletePost;
 window.likePost = likePost;
 window.addComment = addComment;
+window.sharePost = sharePost;
