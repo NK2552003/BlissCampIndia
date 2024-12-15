@@ -7,6 +7,7 @@
     <link rel="icon" href="../images/logo.png" type="image/png">
     <link rel="stylesheet" href="./blog_styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <div class="overlay">
@@ -24,11 +25,15 @@
                 <h3>Create a New Post</h3>
                 <div class="profile-photo">
                     <img id="profilePhotoPreview" src="https://via.placeholder.com/80" alt="Profile Photo">
-                    <input type="file" id="profilePhotoInput" accept="image/*" onchange="previewProfilePhoto()">
+                    <input type="file" id="profilePhotoInput" onchange="previewProfilePhoto(event)">
                 </div>
                 <input type="text" id="postTitle" placeholder="Post Title" required>
                 <textarea id="postContent" placeholder="Share your travel story..." rows="3"></textarea>
-                <input type="file" id="postImages" multiple accept="image/*">
+                <div>
+                  <label for="postImageInput">Post Image (Max 1MB):</label>
+                  <input type="file" id="postImageInput" accept="image/*">
+                </div>
+                
                 <button onclick="addPost()">Submit Post</button>
             </div>
         </div>
@@ -78,7 +83,6 @@
               </div>
         </div>
     </footer>
-    
-    <script src="./blog_script.js"></script>
+    <script src="./blog_script.js" type="module"></script>
 </body>
 </html>

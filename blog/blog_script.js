@@ -1,189 +1,225 @@
-// Initialize the posts array
-let posts = JSON.parse(localStorage.getItem("posts"));
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  addDoc,
+  updateDoc,
+  deleteDoc,
+  doc,
+  getDoc,
+} from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
 
-if (!posts || posts.length === 0) {
-  // If no posts are found in localStorage, preload default posts
-  posts = [
-    {
-      title: "Exploring the Himalayas",
-      content:
-        "A breathtaking journey through the majestic Himalayan mountains!",
-      images: ["../images/1.jpg", "../images/2.jpg", "../images/3.jpg"],
-      likes: 10,
-      comments: ["Amazing!", "Would love to visit!", "Beautiful pictures!"],
-      profilePhoto: "../images/aditya.png",
-    },
-    {
-      title: "Winter Adventures",
-      content:
-        "Relaxing on the serene Himachal, Uttrakhand and many more places. A true paradise!",
-      images: ["../images/4.jpg", "../images/5.jpg", "../images/dark.jpg"],
-      likes: 8,
-      comments: ["Looks so peaceful!", "Great post!"],
-      profilePhoto: "../images/nitin.png",
-    },
-    {
-      title: "Manali: A Winter Wonderland",
-      content:
-        "Snow-capped peaks and pine forests await you in the enchanting Manali!",
-      images: [
-        "../destination/Manali/2.png",
-        "../destination/Manali/3.png",
-        "../destination/Manali/1.png",
-      ],
-      likes: 12,
-      comments: [
-        "So picturesque!",
-        "Manali is on my bucket list!",
-        "The snow looks amazing!",
-      ],
-      profilePhoto: "../images/nitish.png",
-    },
-    {
-      title: "Kullu Valley: The Heart of Himachal",
-      content:
-        "A peaceful retreat surrounded by lush green valleys and snow-covered peaks.",
-      images: [
-        "../destination/Himachal/1.png",
-        "../destination/Himachal/3.png",
-        "../destination/Himachal/2.png",
-      ],
-      likes: 14,
-      comments: [
-        "Breathtaking views!",
-        "I could spend hours here!",
-        "The perfect escape!",
-      ],
-      profilePhoto: "../images/gaureesh.png",
-    },
-  ];
-  // Save preloaded posts into localStorage
-  localStorage.setItem("posts", JSON.stringify(posts));
+const firebaseConfig = {
+  apiKey: "AIzaSyBz1ATsvAjHchK0PtD2Gm_SURQv3OgHZ6Q",
+  authDomain: "blisscampindia-ec9c0.firebaseapp.com",
+  projectId: "blisscampindia-ec9c0",
+  storageBucket: "blisscampindia-ec9c0.appspot.com",
+  messagingSenderId: "671615465152",
+  appId: "1:671615465152:web:3bc8edff86220845afdf25",
+  measurementId: "G-YN13PCFC5E",
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+async function fetchPosts() {
+  try {
+    const snapshot = await getDocs(collection(db, "posts"));
+    const posts = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+    renderPosts(posts);
+  } catch (error) {
+    console.error("Error fetching posts:", error);
+  }
 }
 
-function renderPosts() {
-  const container = document.getElementById("postsContainer");
-  container.innerHTML = ""; // Clear the container first
-  posts.forEach((post, index) => {
-    const postDiv = document.createElement("div");
-    postDiv.className = "post";
-    postDiv.ondblclick = () => toggleDeleteOption(index);
-    postDiv.innerHTML = `
-                    <div class="post-header">
-                        <img src="${
-                          post.profilePhoto
-                        }" alt="Profile Photo" class="avatar" onerror="this.src='https://via.placeholder.com/80'">
-                        <h3>${post.title}</h3>
-                    </div>
-                    <p>${post.content}</p>
-                    <div class="grid-images">
-                        ${post.images
-                          .map(
-                            (img, imgIndex) =>
-                              `<img src="${img}" alt="Post Image" onerror="handleImageError(this, ${imgIndex})">`
-                          )
-                          .join("")}
-                    </div>
-                    <div class="actions">
-                        <button class="like-button" onclick="likePost(${index})">
-                            <span>&#128077;</span> Like (<span>${
-                              post.likes
-                            }</span>)
-                        </button>
-                    </div>
-                    <div class="comment-section">
-                        <h4>Comments:</h4>
-                        <ul>
-                            ${post.comments
-                              .map((comment) => `<li>${comment}</li>`)
-                              .join("")}
-                        </ul>
-                        <input type="text" id="commentInput-${index}" placeholder="Add a comment...">
-                        <button onclick="addComment(${index})">Post</button>
-                    </div>
-                    <button class="delete-button" id="deleteButton-${index}" onclick="deletePost(${index})">Delete</button>
-                `;
-    container.appendChild(postDiv);
-  });
-}
-
-function handleImageError(imgElement, imgIndex) {
-  imgElement.style.display = "none"; // Hide the image if it fails to load
-}
-
-function toggleDeleteOption(index) {
-  const deleteButton = document.getElementById(`deleteButton-${index}`);
-  deleteButton.style.display =
-    deleteButton.style.display === "block" ? "none" : "block";
-}
-
-function addPost() {
-  const title = document.getElementById("postTitle").value;
-  const content = document.getElementById("postContent").value;
-  const images = Array.from(document.getElementById("postImages").files).map(
-    (file) => URL.createObjectURL(file)
-  );
+async function addPost() {
+  const title = document.getElementById("postTitle").value.trim();
+  const content = document.getElementById("postContent").value.trim();
   const profilePhotoInput = document.getElementById("profilePhotoInput");
+  const postImageInput = document.getElementById("postImageInput");
 
-  if (title && content && profilePhotoInput.files.length > 0) {
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      const profilePhoto = e.target.result;
-      posts.push({
-        title,
-        content,
-        images,
-        likes: 0,
-        comments: [],
-        profilePhoto,
-      });
-      localStorage.setItem("posts", JSON.stringify(posts));
-      renderPosts();
-      document.getElementById("postTitle").value = "";
-      document.getElementById("postContent").value = "";
-      document.getElementById("postImages").value = "";
-      profilePhotoInput.value = "";
+  if (
+    title &&
+    content &&
+    profilePhotoInput.files.length > 0 &&
+    postImageInput.files.length > 0
+  ) {
+    const profilePhoto = profilePhotoInput.files[0];
+    const postImage = postImageInput.files[0];
+
+    // Validate postImage size
+    if (postImage.size > 1024 * 1024) {
+      // 1 MB size limit
+      alert("Post image size should not exceed 1 MB!");
+      return;
+    }
+
+    const profileReader = new FileReader();
+    const postImageReader = new FileReader();
+
+    profileReader.onload = () => {
+      postImageReader.onload = async () => {
+        const newPost = {
+          title,
+          content,
+          profilePhoto: profileReader.result,
+          postImage: postImageReader.result,
+          likes: 0,
+          comments: [],
+          date: new Date().toLocaleString(), // Add date
+        };
+
+        try {
+          await addDoc(collection(db, "posts"), newPost);
+          fetchPosts();
+          resetForm();
+        } catch (error) {
+          console.error("Error adding post:", error);
+        }
+      };
+      postImageReader.readAsDataURL(postImage);
     };
-    reader.readAsDataURL(profilePhotoInput.files[0]);
+    profileReader.readAsDataURL(profilePhoto);
   } else {
-    alert("Please fill in all fields and upload a profile photo!");
+    alert("Please complete all fields and ensure both images are uploaded!");
   }
 }
 
-function likePost(index) {
-  posts[index].likes++;
-  localStorage.setItem("posts", JSON.stringify(posts));
-  renderPosts();
+function resetForm() {
+  document.getElementById("postTitle").value = "";
+  document.getElementById("postContent").value = "";
+  document.getElementById("profilePhotoInput").value = "";
+  document.getElementById("profilePhotoPreview").src =
+    "https://via.placeholder.com/80";
 }
 
-function addComment(index) {
-  const commentInput = document.getElementById(`commentInput-${index}`);
-  const comment = commentInput.value;
-  if (comment) {
-    posts[index].comments.push(comment);
-    localStorage.setItem("posts", JSON.stringify(posts));
-    renderPosts();
-  }
-}
-
-function deletePost(index) {
-  posts.splice(index, 1);
-  localStorage.setItem("posts", JSON.stringify(posts));
-  renderPosts();
-}
-
-function previewProfilePhoto() {
-  const fileInput = document.getElementById("profilePhotoInput");
+function previewProfilePhoto(event) {
   const preview = document.getElementById("profilePhotoPreview");
+  const file = event.target.files[0];
 
-  if (fileInput.files && fileInput.files[0]) {
+  if (file) {
     const reader = new FileReader();
-    reader.onload = (e) => {
-      preview.src = e.target.result;
+    reader.onload = () => {
+      preview.src = reader.result;
     };
-    reader.readAsDataURL(fileInput.files[0]);
+    reader.readAsDataURL(file);
+  } else {
+    preview.src = "https://via.placeholder.com/80";
   }
 }
 
-// Initial render
-renderPosts();
+function renderPosts(posts) {
+  const container = document.getElementById("postsContainer");
+  container.innerHTML = posts
+    .map(
+      (post) => `
+          <div class="post" ondblclick="toggleDeleteButton('${post.id}')">
+            <div class="post-header">
+              <img src="${
+                post.profilePhoto
+              }" alt="Profile Photo" class="avatar" onerror="this.src='https://via.placeholder.com/80'">
+              <h3>${post.title}</h3>
+            </div>
+            <p>${post.content}</p>
+            <img src="${
+              post.postImage
+            }" alt="Post Image" class="post-image" onerror="this.style.display='none'">
+            <small class="post-date">Uploaded on: ${post.date}</small>
+            <div class="actions">
+              <button class="like-button" onclick="likePost('${post.id}', ${
+        post.likes
+      })">
+                👍 Like (<span>${post.likes}</span>)
+              </button>
+            </div>
+            <div class="comment-section">
+              <h4>Comments:</h4>
+              <ul>
+                ${post.comments
+                  .map(
+                    (comment) =>
+                      `<li>${comment.text} <small>(${new Date(
+                        comment.timestamp
+                      ).toLocaleString()})</small></li>`
+                  )
+                  .join("")}
+              </ul>
+              <input type="text" id="commentInput-${
+                post.id
+              }" placeholder="Add a comment...">
+              <button onclick="addComment('${post.id}')">Post</button>
+            </div>
+            <button class="delete-button hidden" id="deleteButton-${
+              post.id
+            }" onclick="deletePost('${post.id}')">Delete</button>
+          </div>`
+    )
+    .join("");
+}
+
+function toggleDeleteButton(postId) {
+  const deleteButton = document.getElementById(`deleteButton-${postId}`);
+  deleteButton.classList.toggle("hidden");
+}
+
+async function deletePost(postId) {
+  try {
+    await deleteDoc(doc(db, "posts", postId));
+    fetchPosts();
+  } catch (error) {
+    console.error("Error deleting post:", error);
+  }
+}
+
+async function likePost(postId, currentLikes) {
+  try {
+    const postRef = doc(db, "posts", postId);
+    await updateDoc(postRef, {
+      likes: currentLikes + 1,
+    });
+    fetchPosts(); // Refresh the posts to show updated like count
+  } catch (error) {
+    console.error("Error updating likes:", error);
+  }
+}
+
+async function addComment(postId) {
+  const commentInput = document.getElementById(`commentInput-${postId}`);
+  const comment = commentInput.value.trim();
+
+  if (comment) {
+    try {
+      const postRef = doc(db, "posts", postId);
+      const postDoc = await getDoc(postRef);
+
+      if (postDoc.exists()) {
+        const currentComments = postDoc.data().comments || [];
+
+        await updateDoc(postRef, {
+          comments: [
+            ...currentComments,
+            { text: comment, timestamp: Date.now() },
+          ],
+        });
+
+        commentInput.value = ""; // Clear the input field
+        fetchPosts(); // Refresh the posts to show the new comment
+      } else {
+        console.error("Post not found");
+      }
+    } catch (error) {
+      console.error("Error adding comment:", error);
+    }
+  }
+}
+
+fetchPosts();
+
+// Make functions globally accessible
+window.addPost = addPost;
+window.previewProfilePhoto = previewProfilePhoto;
+window.toggleDeleteButton = toggleDeleteButton;
+window.deletePost = deletePost;
+window.likePost = likePost;
+window.addComment = addComment;

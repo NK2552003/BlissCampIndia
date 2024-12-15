@@ -1,0 +1,5 @@
+connectorId: default
+generate:
+  javascriptSdk:
+    outputDir: ../../generated/javascript/default
+    package: "@firebasegen/default"
