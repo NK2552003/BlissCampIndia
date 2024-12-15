@@ -23,12 +23,29 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+function showLoading() {
+  const loadingElement = document.createElement("p");
+  loadingElement.id = "loading";
+  loadingElement.textContent = "Loading posts...";
+  document.body.appendChild(loadingElement);
+}
+
+function hideLoading() {
+  const loadingElement = document.getElementById("loading");
+  if (loadingElement) {
+    loadingElement.remove();
+  }
+}
+
 async function fetchPosts() {
+  showLoading();
   try {
     const snapshot = await getDocs(collection(db, "posts"));
     const posts = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+    hideLoading();
     renderPosts(posts);
   } catch (error) {
+    hideLoading();
     console.error("Error fetching posts:", error);
   }
 }
@@ -39,54 +56,62 @@ async function addPost() {
   const name = document.getElementById("userName").value.trim();
   const profilePhotoInput = document.getElementById("profilePhotoInput");
   const postImageInput = document.getElementById("postImageInput");
+  const statusMessage = document.getElementById("statusMessage");
+
+  statusMessage.textContent = ""; // Clear any previous messages
 
   if (
-    title &&
-    content &&
-    name &&
-    profilePhotoInput.files.length > 0 &&
-    postImageInput.files.length > 0
+    !title ||
+    !content ||
+    !name ||
+    profilePhotoInput.files.length === 0 ||
+    postImageInput.files.length === 0
   ) {
-    const profilePhoto = profilePhotoInput.files[0];
-    const postImage = postImageInput.files[0];
-
-    // Validate postImage size
-    if (postImage.size > 1024 * 1024) {
-      // 1 MB size limit
-      alert("Post image size should not exceed 1 MB!");
-      return;
-    }
-
-    const profileReader = new FileReader();
-    const postImageReader = new FileReader();
-
-    profileReader.onload = () => {
-      postImageReader.onload = async () => {
-        const newPost = {
-          title,
-          content,
-          name,
-          profilePhoto: profileReader.result,
-          postImage: postImageReader.result,
-          likes: 0,
-          comments: [],
-          date: new Date().toLocaleString(),
-        };
-
-        try {
-          await addDoc(collection(db, "posts"), newPost);
-          fetchPosts();
-          resetForm();
-        } catch (error) {
-          console.error("Error adding post:", error);
-        }
-      };
-      postImageReader.readAsDataURL(postImage);
-    };
-    profileReader.readAsDataURL(profilePhoto);
-  } else {
-    alert("Please complete all fields and ensure both images are uploaded!");
+    statusMessage.textContent =
+      "Please complete all fields and ensure both images are uploaded!";
+    return;
   }
+
+  const profilePhoto = profilePhotoInput.files[0];
+  const postImage = postImageInput.files[0];
+
+  // Validate postImage size
+  if (postImage.size > 1024 * 1024) {
+    statusMessage.textContent = "Post image size should not exceed 1 MB!";
+    return;
+  }
+
+  statusMessage.textContent = "Processing submission...";
+
+  const profileReader = new FileReader();
+  const postImageReader = new FileReader();
+
+  profileReader.onload = () => {
+    postImageReader.onload = async () => {
+      const newPost = {
+        title,
+        content,
+        name,
+        profilePhoto: profileReader.result,
+        postImage: postImageReader.result,
+        likes: 0,
+        comments: [],
+        date: new Date().toLocaleString(),
+      };
+
+      try {
+        await addDoc(collection(db, "posts"), newPost);
+        statusMessage.textContent = "Post submitted successfully!";
+        fetchPosts();
+        resetForm();
+      } catch (error) {
+        console.error("Error adding post:", error);
+        statusMessage.textContent = "Error submitting post. Please try again.";
+      }
+    };
+    postImageReader.readAsDataURL(postImage);
+  };
+  profileReader.readAsDataURL(profilePhoto);
 }
 
 function resetForm() {
