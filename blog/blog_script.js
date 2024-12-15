@@ -23,29 +23,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-function showLoading() {
-  const loadingElement = document.createElement("p");
-  loadingElement.id = "loading";
-  loadingElement.textContent = "Loading posts...";
-  document.body.appendChild(loadingElement);
-}
-
-function hideLoading() {
-  const loadingElement = document.getElementById("loading");
-  if (loadingElement) {
-    loadingElement.remove();
-  }
-}
-
 async function fetchPosts() {
-  showLoading();
   try {
     const snapshot = await getDocs(collection(db, "posts"));
     const posts = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-    hideLoading();
     renderPosts(posts);
   } catch (error) {
-    hideLoading();
     console.error("Error fetching posts:", error);
   }
 }
