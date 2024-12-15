@@ -1706,3 +1706,186 @@ main .video {
   gap: 10px;
   z-index: 200;
 }
+:root {
+  --hue: 223;
+  --sat: 10%;
+  --gray0: hsl(0, 0%, 100%);
+  --gray1: hsl(var(--hue), var(--sat), 90%);
+  --gray2: hsl(var(--hue), var(--sat), 80%);
+  --gray3: hsl(var(--hue), var(--sat), 70%);
+  --gray4: hsl(var(--hue), var(--sat), 60%);
+  --gray5: hsl(var(--hue), var(--sat), 50%);
+  --gray6: hsl(var(--hue), var(--sat), 40%);
+  --gray7: hsl(var(--hue), var(--sat), 30%);
+  --gray8: hsl(var(--hue), var(--sat), 20%);
+  --gray9: hsl(var(--hue), var(--sat), 10%);
+  --trans-dur: 0.3s;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+
+.loader {
+  background-color: var(--gray0);
+  color: var(--gray9);
+  display: flex;
+  font: 1em/1.5 sans-serif;
+  height: 100vh;
+  transition: background-color var(--trans-dur), color var(--trans-dur);
+}
+/* body {
+  background-color: var(--gray0);
+  color: var(--gray9);
+  display: flex;
+  font: 1em/1.5 sans-serif;
+  height: 100vh;
+  transition: background-color var(--trans-dur), color var(--trans-dur);
+} */
+
+.hand {
+  --anim-dur: 1s;
+  --anim-timing: cubic-bezier(0.65, 0, 0.35, 1);
+  display: block;
+  margin: auto;
+  width: 9.6em;
+  height: auto;
+}
+.hand__finger,
+.hand__finger-inner {
+  animation-duration: var(--anim-dur);
+  animation-timing-function: var(--anim-timing);
+  animation-iteration-count: infinite;
+}
+.hand__finger-inner {
+  animation-name: finger-inner;
+  fill: var(--gray4);
+}
+.hand__finger--pinky {
+  animation-name: pinky;
+}
+.hand__finger--pinky,
+.hand__finger--pinky .hand__finger-inner {
+  animation-delay: calc(var(--anim-dur) * 0.16);
+}
+.hand__finger--ring {
+  animation-name: ring;
+}
+.hand__finger--ring,
+.hand__finger--ring .hand__finger-inner {
+  animation-delay: calc(var(--anim-dur) * 0.12);
+}
+.hand__finger--middle .hand__finger-inner {
+  animation-delay: calc(var(--anim-dur) * 0.08);
+}
+.hand__finger--index {
+  animation-name: index;
+}
+.hand__finger--index,
+.hand__finger--index .hand__finger-inner {
+  animation-delay: calc(var(--anim-dur) * 0.04);
+}
+.hand__finger--thumb .hand__finger-inner {
+  animation-name: thumb-inner;
+}
+.hand__finger-inner,
+.hand__nail,
+.hand__skin {
+  transition: fill var(--trans-dur);
+}
+.hand__nail {
+  fill: var(--gray0);
+}
+.hand__skin {
+  fill: var(--gray2);
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--gray9);
+    color: var(--gray1);
+  }
+
+  .hand__finger-inner {
+    fill: var(--gray9);
+  }
+  .hand__nail {
+    fill: var(--gray5);
+  }
+  .hand__skin {
+    fill: var(--gray7);
+  }
+}
+/* Animations */
+@keyframes finger-inner {
+  from,
+  80%,
+  to {
+    transform: translate(0, 0);
+  }
+  40% {
+    animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0);
+    transform: translate(0, -3px);
+  }
+}
+@keyframes thumb-inner {
+  from,
+  80%,
+  to {
+    transform: translate(0, 0) skewY(0);
+  }
+  40% {
+    animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0);
+    transform: translate(-0.5px, -3px) skewY(-15deg);
+  }
+}
+@keyframes pinky {
+  from,
+  80%,
+  to {
+    transform: translate(0, 3.5px);
+  }
+  40% {
+    animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0);
+    transform: translate(0, 1.2px);
+  }
+}
+@keyframes ring {
+  from,
+  80%,
+  to {
+    transform: translate(6.5px, 1.8px);
+  }
+  40% {
+    animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0);
+    transform: translate(6.5px, 0.5px);
+  }
+}
+@keyframes index {
+  from,
+  80%,
+  to {
+    transform: translate(19.5px, 2.5px);
+  }
+  40% {
+    animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0);
+    transform: translate(19.5px, 1.2px);
+  }
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9; /* Background color for loader */
+  z-index: 1000; /* Ensure it's above other content */
+  transition: transform 1s ease, opacity 1s ease; /* Smooth animation */
+}
+
+/* Move loader up off-screen */
+.loader.hidden {
+  transform: translateY(-100%); /* Moves the loader out of view */
+  opacity: 0; /* Fade out */
+}
