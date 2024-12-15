@@ -1806,23 +1806,6 @@ main .video {
   fill: var(--gray2);
 }
 
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--gray9);
-    color: var(--gray1);
-  }
-
-  .hand__finger-inner {
-    fill: var(--gray9);
-  }
-  .hand__nail {
-    fill: var(--gray5);
-  }
-  .hand__skin {
-    fill: var(--gray7);
-  }
-}
 /* Animations */
 @keyframes finger-inner {
   from,
