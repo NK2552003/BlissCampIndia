@@ -1881,3 +1881,13 @@ main .video {
   transform: translateY(-100%); /* Moves the loader out of view */
   opacity: 0; /* Fade out */
 }
+.nav-links {
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: rgba(245, 245, 245, 0.138);
+  position: sticky;
+}
+.nav-links a:hover {
+  color: #14a1ff;
+}
