@@ -415,12 +415,25 @@
     <script src="./monsoon_treks.js"></script>
     <script src="./scripts.js"></script>
     <script>
-        window.onload = function () {
-      const loader = document.querySelector('.loader');
-        setTimeout(()=>{
+      // Loader animation with scroll disable
+      window.onload = function () {
+        const loader = document.querySelector('.loader');
+        const body = document.querySelector('body');
+
+        // Disable scrolling while loader is active
+        body.style.overflow = 'hidden';
+
+        setTimeout(() => {
+          // Add hidden class to loader for the animation
           loader.classList.add('hidden');
-        },4000);
-    };
+
+          // Re-enable scrolling after loader disappears
+          setTimeout(() => {
+            body.style.overflow = 'auto';
+          }, 1000); // Wait for the loader animation to complete
+        }, 4000); // Keep loader active for 4 seconds
+      };
+
       document.querySelector(".search-btn").addEventListener("click", function () {
         // Get values from the inputs
         const location = document.getElementById("location").value;
