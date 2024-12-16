@@ -227,3 +227,6 @@ a:hover {
     flex-direction: column;
   }
 }
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Webkit browsers */
+}

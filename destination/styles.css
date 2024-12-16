@@ -490,3 +490,6 @@ section:nth-child(odd) {
 .social-div {
   padding: 20px 36px;
 }
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Webkit browsers */
+}

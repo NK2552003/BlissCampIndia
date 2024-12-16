@@ -528,3 +528,6 @@ body {
     width: 70%;
   }
 }
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Webkit browsers */
+}

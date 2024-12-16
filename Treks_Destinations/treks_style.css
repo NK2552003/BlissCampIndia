@@ -552,3 +552,6 @@ body {
 .trek-image {
   height: 200px;
 }
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Webkit browsers */
+}

@@ -552,3 +552,6 @@ body {
 .hidden {
   display: none;
 }
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Webkit browsers */
+}
