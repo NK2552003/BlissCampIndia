@@ -1031,3 +1031,9 @@ body::-webkit-scrollbar {
     width: 85%;
   }
 }
+
+@media screen and (min-width: 769px) {
+  .unique-modal-content {
+    top: 40px;
+  }
+}
