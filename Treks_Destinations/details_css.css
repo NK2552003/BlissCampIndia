@@ -768,3 +768,137 @@ body {
 .loc-long-lat {
   display: flex;
 }
+
+/* Section Styles */
+.winter-treks {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title-underline {
+  width: 100px;
+  height: 4px;
+  background-color: #0066ff;
+  margin: 0 auto 30px;
+  border-radius: 2px;
+}
+
+/* Trek Cards */
+.treks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.trek-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trek-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.price-badge {
+  background: #ff6200;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 5px;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.trek-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.trek-details {
+  padding: 15px;
+}
+
+.trek-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.trek-duration {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.trek-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.trek-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trek-rating {
+  font-size: 16px;
+  color: #ffb400;
+}
+
+.trek-btn {
+  background: #007bff;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.trek-btn:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .treks-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rgf-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.section-title {
+  margin-top: 60px;
+}
+.title-underline {
+  margin-bottom: 80px;
+}
+.viewBtn {
+  display: none;
+}
+.trek-image {
+  display: none;
+}
