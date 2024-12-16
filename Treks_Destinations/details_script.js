@@ -1,55 +1,63 @@
+(function () {
+  emailjs.init({
+    publicKey: "AzMrMsnkyCSZfajgB",
+  });
+})();
+
 document.addEventListener("DOMContentLoaded", function () {
   const params = new URLSearchParams(window.location.search);
-  // console.log(params);
-  // Populate tour details
-  document.getElementById("rgf-title").textContent = params.get("title");
+
+  function getParam(name, defaultValue) {
+    return params.get(name) || defaultValue;
+  }
+
+  function safeGetListParam(paramName, defaultValue = "") {
+    const value = params.get(paramName);
+    return value ? value.split(",") : defaultValue;
+  }
+
+  document.getElementById("rgf-title").textContent = getParam(
+    "title",
+    "Default Tour"
+  );
 
   const tourInfo = document.getElementById("rgf-meta");
   tourInfo.innerHTML = `
-     <div class="rgf-rating">
-          <span class="rgf-star">★</span>
-          <span>${params.get("rating")}</span>
-          <span class="rgf-reviews">(234 Reviews)</span>
-      </div>
-      <div class="rgf-location">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-          </svg>
-          <span>${params.get("destination")}</span>
-      </div>
-      `;
-  //   document.getElementById("overview-text").textContent =
-  //     params.get("brief_description");
-  //   document.getElementById("pros-text").textContent = params.get("pros");
-  //   document.getElementById("cons-text").textContent = params.get("cons");
-  //   document.getElementById("inclusions-text").textContent =
-  //     params.get("inclusions");
-  const navItems = document.querySelectorAll(".dst-nav-item");
-  const contentDiv = document.querySelector(".dst-content");
+    <div class="rgf-rating">
+      <span class="rgf-star">★</span>
+      <span>${getParam("rating", "0")}</span>
+      <span class="rgf-reviews">(234 Reviews)</span>
+    </div>
+    <div class="rgf-location">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+      <span>${getParam("destination", "Unknown Location")}</span>
+    </div>
+  `;
 
   const imageElement = document.querySelector(".rgf-image");
-  const imageUrl = params.get("image") || "default.jpg";
-
   if (imageElement) {
-    imageElement.src = imageUrl;
-    imageElement.alt = params.get("title") || "Tour Image";
+    imageElement.src = getParam("image", "./default.jpg");
+    imageElement.alt = getParam("title", "Tour Image");
   }
 
   const sectionData = {
     Overview: `
               <h1 class="dst-heading">About The Destination</h1>
               <p class="dst-description">
-                  ${params.get("brief_description").substring(0, 400)}...
+                  ${getParam(
+                    "brief_description",
+                    "No description available"
+                  ).substring(0, 400)}...
                   <a href="#" class="dst-read-more" id="readMoreLink">Read More</a>
               </p>
           `,
     Pros: `
           <h2 class="dst-heading">Pros</h2>
           <div class="dst-facilities-grid">
-              ${params
-                .get("pros")
-                .split(",")
+              ${safeGetListParam("pros")
                 .map(
                   (pro) => `<div class="dst-facility"><span>${pro}</span></div>`
                 )
@@ -59,9 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     Cons: `
         <h2 class="dst-heading">Cons</h2>
           <div class="dst-facilities-grid">
-              ${params
-                .get("cons")
-                .split(",")
+              ${safeGetListParam("cons")
                 .map(
                   (con) => `<div class="dst-facility"><span>${con}</span></div>`
                 )
@@ -72,9 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "What's included": `
  <h2 class="dst-heading">What's Included</h2>
           <div class="dst-facilities-grid">
-              ${params
-                .get("inclusions")
-                .split(",")
+              ${safeGetListParam("inclusions")
                 .map(
                   (item) =>
                     `<div class="dst-facility"><span>${item}</span></div>`
@@ -92,31 +96,22 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="dst-faqs">
               <p class="faq-item"><strong>Q1:</strong> What is the best time to go on this trek?</p>
               <p class="faq-answer">The best time for this trek is between March and June or September to November for favorable weather conditions.</p>
-      
               <p class="faq-item"><strong>Q2:</strong> How difficult is this trek?</p>
               <p class="faq-answer">This trek is moderate to difficult and suitable for trekkers with some prior experience.</p>
-      
               <p class="faq-item"><strong>Q3:</strong> What should I pack for the trek?</p>
               <p class="faq-answer">Pack essentials like trekking shoes, warm clothes, a raincoat, a first-aid kit, and sufficient water.</p>
-      
               <p class="faq-item"><strong>Q4:</strong> Are guides available during the trek?</p>
               <p class="faq-answer">Yes, professional guides are available to assist you throughout the trek.</p>
-      
               <p class="faq-item"><strong>Q5:</strong> Is it safe for solo travelers?</p>
               <p class="faq-answer">Yes, the trek is safe for solo travelers, but it’s recommended to inform someone about your plans.</p>
-      
               <p class="faq-item"><strong>Q6:</strong> Are meals provided during the trek?</p>
               <p class="faq-answer">Yes, meals are included in the package and provided at designated stops.</p>
-      
               <p class="faq-item"><strong>Q7:</strong> What kind of fitness level is required?</p>
               <p class="faq-answer">You need to be moderately fit and capable of walking 6-8 hours a day on uneven terrain.</p>
-      
               <p class="faq-item"><strong>Q8:</strong> Are there any age restrictions?</p>
               <p class="faq-answer">The trek is suitable for ages 12 and above, depending on fitness levels.</p>
-      
               <p class="faq-item"><strong>Q9:</strong> Will there be network connectivity?</p>
               <p class="faq-answer">Network connectivity is limited, so it's better to inform your contacts in advance.</p>
-      
               <p class="faq-item"><strong>Q10:</strong> What happens in case of an emergency?</p>
               <p class="faq-answer">Emergency evacuation arrangements are available, and the guides are trained in first aid.</p>
           </div>
@@ -137,117 +132,190 @@ document.addEventListener("DOMContentLoaded", function () {
       `,
   };
 
-  // Load "Overview" section by default
+  const navItems = document.querySelectorAll(".dst-nav-item");
+  const contentDiv = document.querySelector(".dst-content");
+
   contentDiv.innerHTML = sectionData["Overview"];
   navItems[0].classList.add("active");
 
-  // Function to handle "Read More" expansion
   function handleReadMore() {
     const readMoreLink = document.getElementById("readMoreLink");
     if (readMoreLink) {
       readMoreLink.addEventListener("click", (e) => {
         e.preventDefault();
-        const fullContent = `
-                 ${params.get("brief_description")}
-              `;
-        readMoreLink.parentElement.innerHTML = fullContent;
+        readMoreLink.parentElement.innerHTML = getParam(
+          "brief_description",
+          "No description available"
+        );
       });
     }
   }
 
-  // Add event listeners for navigation items
-  navItems.forEach((item) => {
-    item.addEventListener("click", () => {
-      // Remove 'active' class from all nav items
-      navItems.forEach((nav) => nav.classList.remove("active"));
-
-      // Add 'active' class to clicked item
-      item.classList.add("active");
-
-      // Update content
-      const sectionName = item.textContent.trim();
-      contentDiv.innerHTML =
-        sectionData[sectionName] || "<p>Content not available</p>";
-
-      // Add "Read More" functionality for Overview section
-      if (sectionName === "Overview") {
-        handleReadMore();
-      }
+  if (navItems.length > 0) {
+    navItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        navItems.forEach((nav) => nav.classList.remove("active"));
+        item.classList.add("active");
+        const sectionName = item.textContent.trim();
+        contentDiv.innerHTML =
+          sectionData[sectionName] || "<p>Content not available</p>";
+        if (sectionName === "Overview") {
+          handleReadMore();
+        }
+      });
     });
-  });
+  }
 
-  document.getElementById("month").value = params.get("month");
-  document.getElementById("season").value = params.get("season");
-  document.getElementById("price").textContent = parseInt(
-    params.get("price")
-  ).toLocaleString();
-  document.getElementById("duration").textContent = `${params.get(
-    "days"
-  )} days, ${params.get("nights")} nights`;
-  document.getElementById("latitude").textContent = params.get("latitude");
-  document.getElementById("longitude").textContent = params.get("longitude");
+  document.getElementById("month").value = getParam("month", "");
+  document.getElementById("season").value = getParam("season", "");
+  const price = parseInt(getParam("price", "0"));
+  document.getElementById("price").textContent = price.toLocaleString();
+  document.getElementById("duration").textContent = `${getParam(
+    "days",
+    "0"
+  )} days, ${getParam("nights", "0")} nights`;
+  document.getElementById("latitude").textContent = getParam("latitude", "N/A");
+  document.getElementById("longitude").textContent = getParam(
+    "longitude",
+    "N/A"
+  );
 
-  // Tab functionality
   const tabButtons = document.querySelectorAll(".tab-button");
   const tabContents = document.querySelectorAll(".tab-content");
 
   tabButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const tabId = button.getAttribute("data-tab");
-
-      // Remove 'active' class from all buttons and contents
       tabButtons.forEach((btn) => {
         btn.classList.remove("active");
         btn.setAttribute("aria-selected", "false");
       });
       tabContents.forEach((content) => content.classList.remove("active"));
-
-      // Add 'active' class to the clicked button and corresponding content
       button.classList.add("active");
       button.setAttribute("aria-selected", "true");
       document.getElementById(tabId).classList.add("active");
     });
   });
 
-  // Optional: Set the first tab as active by default
   if (tabButtons.length > 0) {
     tabButtons[0].click();
   }
-  // Book Now button functionality
-  document.getElementById("bookNow").addEventListener("click", () => {
-    const persons = document.getElementById("persons").value;
-    alert(`Booking for ${persons} person(s) is confirmed!`);
-  });
 
-  // Set the price per person from the URL or use a default value
-  const pricePerPerson = parseInt(params.get("price")) || 1000; // Use 1000 as default if not provided
-  document.getElementById("price").textContent =
-    pricePerPerson.toLocaleString(); // Display per person price
-
-  // Set the duration
-  document.getElementById("duration").textContent = `${params.get(
-    "days"
-  )} days, ${params.get("nights")} nights`;
-
-  // Function to update the total price
   function updateTotalPrice() {
-    const persons = parseInt(document.getElementById("persons").value);
-    const totalPrice = persons * pricePerPerson;
-    document.getElementById("totalPrice").textContent =
-      totalPrice.toLocaleString(); // Display total price
+    const modalPersons = document.getElementById("modalPersons");
+    const persons = parseInt(modalPersons?.value || "1");
+    const totalPrice = persons * price;
+
+    const modalTotalPrice = document.getElementById("modalTotalPrice");
+    const totalDisplay = document.getElementById("totalDisplay");
+
+    if (modalTotalPrice) {
+      modalTotalPrice.textContent = totalPrice.toLocaleString();
+    }
+    if (totalDisplay) {
+      totalDisplay.textContent = `${totalPrice.toLocaleString()}`;
+    }
   }
 
-  // Event listener for the 'persons' select dropdown to update the total price
-  document
-    .getElementById("persons")
-    .addEventListener("change", updateTotalPrice);
+  const modalPersons = document.getElementById("modalPersons");
+  if (modalPersons) {
+    modalPersons.addEventListener("change", updateTotalPrice);
+  }
 
-  // Initial total price calculation
   updateTotalPrice();
 
-  // Book Now button functionality
-  document.getElementById("bookNow").addEventListener("click", () => {
-    const persons = document.getElementById("persons").value;
-    alert(`Booking for ${persons} person(s) is confirmed!`);
+  const modal = document.getElementById("bookingModal");
+  const closeModal = document.querySelector(".close");
+  const bookNowButton = document.getElementById("bookNow");
+
+  bookNowButton.addEventListener(
+    "click",
+    () => (modal.style.display = "block")
+  );
+  closeModal.addEventListener("click", () => (modal.style.display = "none"));
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
   });
+
+  document
+    .getElementById("confirmBooking")
+    .addEventListener("click", function () {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const address = document.getElementById("address").value.trim();
+      const contact = document.getElementById("contact").value.trim();
+      const persons =
+        parseInt(document.getElementById("modalPersons").value) || 1;
+      const totalPrice = persons * price;
+
+      if (!name || !email || !address || !contact) {
+        alert("Please fill in all the required details.");
+        return;
+      }
+
+      function validateContact(contact) {
+        return /^[0-9]{10}$/.test(contact);
+      }
+
+      if (!validateContact(contact)) {
+        alert("Please enter a valid 10-digit contact number.");
+        return;
+      }
+
+      function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+      }
+
+      if (!validateEmail(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+
+      const emailData = {
+        name,
+        email,
+        address,
+        contact,
+        persons,
+        totalPrice,
+        title: getParam("title", "Default Tour"),
+        destination: getParam("destination", "Unknown Destination"),
+        month: getParam("month", "TBA"),
+      };
+
+      emailjs
+        .send("service_c512tmj", "template_dek2xnq", {
+          user_name: emailData.name,
+          user_email: emailData.email,
+          user_address: emailData.address,
+          user_contact: emailData.contact,
+          trek_title: emailData.title,
+          trek_destination: emailData.destination,
+          trek_month: emailData.month,
+          trek_persons: emailData.persons,
+          trek_total_price: emailData.totalPrice,
+        })
+        .then(
+          (response) => {
+            console.log(
+              "Email sent successfully!",
+              response.status,
+              response.text
+            );
+            alert("Booking confirmation has been sent to your email.");
+            modal.style.display = "none";
+          },
+          (error) => {
+            console.error("Failed to send email.", error);
+            alert(
+              "There was an error sending the booking confirmation. Please try again."
+            );
+          }
+        );
+    });
+
+  console.log("Tour booking script loaded successfully.");
 });

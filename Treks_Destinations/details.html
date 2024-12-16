@@ -8,6 +8,7 @@
     <link rel="icon" href="../images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <div class="overlay">
@@ -61,11 +62,13 @@
                     <img src="./tour_images/group_3.webp" 
                          alt="Mountain view" class="rgf-image">
                 </div>
-                <div class="rgf-image-wrapper">
-                    <img src="../images/hiking.jpg" 
-                         alt="Mountain landscape" class="rgf-image">
-                    <div class="rgf-more-photos">+12</div>
-                </div>
+                <a href="../Gallery/index.html">
+                    <div class="rgf-image-wrapper">
+                        <img src="../images/hiking.jpg" 
+                             alt="Mountain landscape" class="rgf-image">
+                        <div class="rgf-more-photos">+12</div>
+                    </div>
+                </a>
             </div>
         </div>
               
@@ -80,7 +83,7 @@
                 <li class="dst-nav-item tab-button" data-tab="inclusions">What's included</li>
                 <li class="dst-nav-item tab-button" data-tab="availability">Availability</li>
                 <li class="dst-nav-item tab-button" data-tab="faqs">FAQs</li>
-                <li class="dst-nav-item tab-button" data-tab="faqs">Policy</li>
+                <li class="dst-nav-item tab-button" data-tab="policy">Policy</li>
             </ul>
         </nav>
 
@@ -104,7 +107,7 @@
                 <p>FAQs go here.</p>
             </div>
             <div id="policy" class="tab-content">
-                <p>Policies goes here</p>
+                <p>Policies go here</p>
             </div>
         </div>
 
@@ -140,7 +143,7 @@
                 </select>
         
                 <label class="dst-date-label">Persons</label>
-                <select id="persons" class="dst-guest-select">
+                <select id="modalPersons" class="dst-guest-select">
                     <option value="1">1 Person</option>
                     <option value="2">2 Persons</option>
                     <option value="3">3 Persons</option>
@@ -156,7 +159,7 @@
             <!-- Total Price Section -->
             <div class="dst-total-price" style="padding-top:10px;padding-bottom:20px;">
                 <span class="dst-total-price-label">Total Price:</span>
-                Rs. <span id="totalPrice">0</span>
+                Rs. <span id="totalDisplay">0</span>
             </div>
         
             <button id="bookNow" class="dst-book-button">Book Now</button>
@@ -181,8 +184,43 @@
     <section class="winter-treks summer-treks monsoon-treks">
            
     </section>
+    <!-- Book Now Modal -->
+<div id="bookingModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Fill Your Booking Details</h2>
+      <form id="bookingForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+  
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+  
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address" required />
+  
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required />
+  
+        <!-- <label for="persons">Number of Persons:</label> -->
+        <!-- <select id="modalPersons" name="persons">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select> -->
+  
+        <div>
+          <p>Total Price: <span id="modalTotalPrice">0</span></p>
+        </div>
+  
+        <button type="button" id="confirmBooking">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+ 
     <script src="./map.js"></script>
     <script src="details_script.js"></script>   
 </body>
 </html>
-
