@@ -27,12 +27,12 @@
                 </div>
             </div>
             <div class="rgf-actions">
-                <button class="rgf-action-btn" aria-label="Bookmark">
+                <button class="rgf-action-btn" aria-label="Bookmark" id="bookmark-btn">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
                     </svg>
                 </button>
-                <button class="rgf-action-btn" aria-label="Share">
+                <button class="rgf-action-btn" aria-label="Share" id="share-btn">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="18" cy="5" r="3"/>
                         <circle cx="6" cy="12" r="3"/>
@@ -219,7 +219,43 @@
       </form>
     </div>
   </div>
- 
+  <script>
+            // Select buttons
+        const bookmarkBtn = document.getElementById('bookmark-btn');
+        const shareBtn = document.getElementById('share-btn');
+
+        // Bookmark functionality
+        bookmarkBtn.addEventListener('click', () => {
+            let isBookmarked = bookmarkBtn.classList.toggle('bookmarked'); // Toggle bookmarked state
+            if (isBookmarked) {
+                alert('Added to Bookmarks!');
+                bookmarkBtn.style.color = '#f39c12'; // Example: Change icon color
+            } else {
+                alert('Removed from Bookmarks!');
+                bookmarkBtn.style.color = 'inherit'; // Reset to default color
+            }
+        });
+
+        // Share functionality
+        shareBtn.addEventListener('click', async () => {
+            const shareData = {
+                title: 'Example Page',
+                text: 'Check out this amazing page!',
+                url: window.location.href, // Current page URL
+            };
+
+            if (navigator.share) {
+                try {
+                    await navigator.share(shareData);
+                    alert('Thanks for sharing!');
+                } catch (err) {
+                    console.error('Error sharing:', err);
+                }
+            } else {
+                alert('Share API not supported on this browser. Copy the link instead: ' + shareData.url);
+            }
+        });
+  </script>
     <script src="./map.js"></script>
     <script src="details_script.js"></script>   
 </body>
