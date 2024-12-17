@@ -1,8 +1,19 @@
 # BlissCamp India 🌄  
 
-**BlissCamp India** is a vibrant and informative website showcasing breathtaking trekking destinations, insightful blogs, and key details about the treks we offer. The website emphasizes adventure, connection with nature, and providing visitors with all the necessary information about trekking experiences.  
+**BlissCamp India** is a vibrant and informative website showcasing breathtaking trekking destinations, insightful blogs, and key details about the treks we offer. The website emphasizes adventure, exploration, and connecting with nature.
 
 [Visit the website](https://nk2552003.github.io/BlissCampIndia/)  
+
+---
+
+## 📋 Table of Contents
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [How to Use](#-how-to-use)
+- [Local Development](#-local-development)
+- [Contribution](#-contribution)
+- [License](#-license)
+- [Acknowledgements](#-acknowledgements)
 
 ---
 
@@ -41,42 +52,43 @@ The BlissCamp India website is crafted using the following tools and technologie
 To run this project locally:  
 
 1. Clone the repository:  
-   ```bash
-   git clone https://github.com/nk2552003/BlissCampIndia.git
+    ```bash
+    git clone https://github.com/nk2552003/BlissCampIndia.git
+    ```
+2. Open the `index.html` file in your browser.
 
-2. Open the index.html file in your browser.
+### Dependencies
 
+- Ensure you have a modern web browser installed.
+- No additional dependencies are required since this project is built using HTML, CSS, and JavaScript.
 
+---
 
 ## 🎨 Contribution
 
 Contributions are welcome!
 
 1. Fork the repository.
-
-
 2. Create a new branch:
-
     ```bash
     git checkout -b feature-branch-name
-
-
+    ```
 3. Commit your changes:
-
     ```bash
     git commit -m "Add a meaningful message"
-
-
+    ```
 4. Push the branch:
-
-   ```bash
-   git push origin feature-branch-name
-
-
+    ```bash
+    git push origin feature-branch-name
+    ```
 5. Create a Pull Request.
 
+### Guidelines
 
-
+- Ensure your code follows the existing style.
+- Write clear, concise commit messages.
+- Include screenshots or screen recordings if your changes include UI updates.
+- Be respectful in your communication and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 
@@ -84,12 +96,10 @@ Contributions are welcome!
 
 This project is licensed under the MIT License.
 
-
 ---
 
 ## ✨ Acknowledgements
 
-The trekking community for inspiration.
-
-EmailJS for simplifying form handling.
-
+- The trekking community for inspiration.
+- EmailJS for simplifying form handling.
+- Contributors and users of BlissCamp India for their support and feedback.
