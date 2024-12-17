@@ -1856,7 +1856,7 @@ main .video {
 }
 
 .trek-details {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   border-radius: 8px;
   padding: 12px;
   margin-bottom: 15px;
@@ -1869,7 +1869,7 @@ main .video {
 }
 
 .trek-details p::before {
-  content: "•";
+  content: "";
   color: #dc2828;
   font-size: 18px;
   margin-right: 8px;
