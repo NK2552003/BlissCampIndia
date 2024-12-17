@@ -1885,3 +1885,157 @@ main .video {
 .nav-links a:hover {
   color: #14a1ff;
 }
+
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  display: none;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.popup:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #1a1a1a;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.popup p {
+  color: #4a4a4a;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.trek-details {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.trek-details p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.trek-details p::before {
+  content: "•";
+  color: #dc2828;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  display: none;
+  z-index: 1000;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #1a1a1a;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.popup p {
+  color: #4a4a4a;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.trek-details {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.trek-details p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.trek-details p::before {
+  content: "•";
+  color: #dc2828;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.popup button {
+  background-color: #dc2828;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.popup button:hover {
+  background-color: #c51f1f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(220, 40, 40, 0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #dc2828;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popup.show {
+  display: block;
+  animation: fadeIn 0.5s ease-out;
+}

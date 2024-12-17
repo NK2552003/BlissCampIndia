@@ -72,6 +72,12 @@
       </g>
     </svg>
   </section>
+  <div class="popup" id="trekPopup">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h2>Kedarkantha Trek is ON!</h2>
+    <p>Experience the breathtaking beauty of the Himalayas on our Kedarkantha trek. Limited spots available!</p>
+    <button class="PBook_Now">Book Now</button>
+</div>
     <section class="BodySection">
       <section class="hero-section">
         <video class="hero-video" autoplay muted loop>
@@ -478,11 +484,21 @@
         window.location.href = "./contact_us/contact.html"; // Replace with your contact page URL
       });
 
-      // Info Button Functionality
-      document.getElementById("info-btn").addEventListener("click", function () {
-        window.location.href = "./About_Us/about_us.html"; 
-      });
+      function showPopup() {
+            const popup = document.getElementById("trekPopup");
+            popup.classList.add("show");
+        }
 
+        function closePopup() {
+            const popup = document.getElementById("trekPopup");
+            popup.classList.remove("show");
+        }
+
+        // Show popup after 3 seconds
+        setTimeout(showPopup, 3000);
+
+        document.querySelector('.PBook_Now').addEventListener("click", function () {
+          window.location.href = "./Treks_Destinations/treks.html";});
     </script>
     <script>
       // Initialize odometers
