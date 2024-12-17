@@ -1739,6 +1739,7 @@ main .video {
   font: 1em/1.5 sans-serif;
   height: 100vh;
   transition: background-color var(--trans-dur), color var(--trans-dur);
+  z-index:10000;
 }
 /* body {
   background-color: var(--gray0);
