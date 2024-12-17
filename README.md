@@ -25,6 +25,11 @@
 - **Blogs**: Read insightful articles and travel stories to enhance your trekking experience.  
 - **Contact Us**: Reach out to us through an interactive contact form powered by **EmailJS**.  
 - **Modern Design**: Attractive and responsive front page with seamless navigation.  
+- **Gallery**: Stunning images from various trekking destinations.  
+- **Testimonials**: Real feedback from trekkers who have experienced BlissCamp India's services.  
+- **FAQs**: Frequently asked questions to help users with common queries.  
+- **Booking System**: Integrated booking system for planning and reserving treks.  
+- **Social Media Integration**: Links and feeds from social media platforms to connect with users.  
 
 ---
 
