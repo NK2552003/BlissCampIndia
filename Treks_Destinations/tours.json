@@ -1491,5 +1491,104 @@
         "Hotel stay",
         "Meals"
       ]
+    },
+    {
+      "id": 45,
+      "title": "Chopta Mini Switzerland ",
+      "type": "Trek",
+      "destination": "Uttarakhand",
+      "description": "Chopta, also known as the 'Mini Switzerland of India,' is a picturesque hill station offering stunning views of snow-clad peaks and lush meadows. This tour provides an escape into nature and an opportunity to explore untouched landscapes.",
+      "location": {
+        "latitude": 30.3470,
+        "longitude": 79.0248
+      },
+      "month": "March",
+      "price": 6500,
+      "duration": { "days": 3, "nights": 2 },
+      "brief_description": "Discover the beauty of Chopta with serene hikes, breathtaking sunrises, and a tranquil stay amidst nature. Perfect for nature lovers and photography enthusiasts.",
+      "image": "./tour_images/chopta.jpg",
+      "season": "Spring",
+      "rating": 4.8,
+      "pros": [
+        "Breathtaking mountain views",
+        "Peaceful and serene environment",
+        "Great for trekking enthusiasts"
+      ],
+      "cons": [
+        "Limited amenities in remote areas",
+        "Cold weather can be challenging"
+      ],
+      "inclusions": [
+        "Trekking guide",
+        "Camping equipment",
+        "Meals",
+        "Local sightseeing"
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Tungnath Trek and Chandrashila Summit",
+      "type": "Trek",
+      "destination": "Uttarakhand",
+      "description": "Tungnath is the highest Shiva temple in the world and part of the Panch Kedar pilgrimage. This trek combines spiritual exploration with the thrill of reaching the Chandrashila summit for panoramic Himalayan views.",
+      "location": {
+        "latitude": 30.4904,
+        "longitude": 79.2161
+      },
+      "month": "April",
+      "price": 7000,
+      "duration": { "days": 4, "nights": 3 },
+      "brief_description": "Embark on a spiritual journey to Tungnath and conquer the Chandrashila summit, offering unmatched Himalayan vistas and a sense of accomplishment.",
+      "image": "./tour_images/tungnath.jpg",
+      "season": "Spring",
+      "rating": 4.7,
+      "pros": [
+        "Rich spiritual and cultural significance",
+        "Spectacular views from Chandrashila",
+        "Moderate trekking suitable for beginners"
+      ],
+      "cons": [
+        "Weather can be unpredictable",
+        "Requires moderate physical fitness"
+      ],
+      "inclusions": [
+        "Trekking guide",
+        "Meals",
+        "Camping arrangements",
+        "Local transfers"
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Dayara Bugyal Trek",
+      "type": "Trek",
+      "destination": "Uttarakhand",
+      "description": "Dayara Bugyal is one of the most beautiful alpine meadows in India, offering stunning views of the Himalayas and lush green pastures. This trek is perfect for beginners and nature enthusiasts.",
+      "location": {
+        "latitude": 30.8327,
+        "longitude": 78.5783
+      },
+      "month": "May",
+      "price": 6800,
+      "duration": { "days": 4, "nights": 3 },
+      "brief_description": "Trek through lush meadows and dense forests to experience the breathtaking beauty of Dayara Bugyal, with panoramic views of the Himalayan ranges.",
+      "image": "./tour_images/dayara.jpg",
+      "season": "Summer",
+      "rating": 4.9,
+      "pros": [
+        "Ideal for beginners",
+        "Breathtaking meadow landscapes",
+        "Perfect for photography enthusiasts"
+      ],
+      "cons": [
+        "Basic amenities during the trek",
+        "Weather can be unpredictable at high altitudes"
+      ],
+      "inclusions": [
+        "Trekking guide",
+        "Meals",
+        "Camping arrangements",
+        "Local transfers"
+      ]
     }
 ]  
