@@ -42,7 +42,7 @@ To run this project locally:
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/nk2552003/BlissCampIndia.git```
+   git clone https://github.com/nk2552003/BlissCampIndia.git
 
 2. Open the index.html file in your browser.
 
@@ -57,17 +57,20 @@ Contributions are welcome!
 
 2. Create a new branch:
 
-git checkout -b feature-branch-name
+    ```bash
+    git checkout -b feature-branch-name
 
 
 3. Commit your changes:
 
-git commit -m "Add a meaningful message"
+    ```bash
+    git commit -m "Add a meaningful message"
 
 
 4. Push the branch:
 
-git push origin feature-branch-name
+   ```bash
+   git push origin feature-branch-name
 
 
 5. Create a Pull Request.
@@ -77,28 +80,16 @@ git push origin feature-branch-name
 
 ---
 
-📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
 
 
 ---
 
-✨ Acknowledgements
+## ✨ Acknowledgements
 
 The trekking community for inspiration.
 
 EmailJS for simplifying form handling.
 
-
-
----
-
-BlissCamp India – Where Adventure Meets Serenity!
-
-### Steps to Add:  
-1. Save the content above as `README.md`.  
-2. Add it to your GitHub repository's root folder.  
-3. Commit and push to update the repository.  
-
-Let me know if you need additional customizations!
