@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <p><strong>5. Liability:</strong> BlissCampIndia is not responsible for delays, accidents, or unforeseen circumstances during the trek. Safety precautions will always be followed.</p>
         <p><strong>6. Cookies:</strong> Our website uses cookies to improve user experience. By using our website, you agree to our cookie policy.</p>
         <p><strong>7. Changes to Policy:</strong> BlissCampIndia reserves the right to update its privacy policy at any time. Users will be notified of significant changes via email or the website.</p>
-        <p><strong>8. Contact Us:</strong> For any concerns or questions, please email us at <a href="mailto:info@blisscampindia.com">info@blisscampindia.com</a>.</p>
+        <p><strong>8. Contact Us:</strong> For any concerns or questions, please email us at <a href="mailto:blisscampIndia@gmail.com">blisscampIndia@gmail.com</a>.</p>
     </div>
       `,
   };
