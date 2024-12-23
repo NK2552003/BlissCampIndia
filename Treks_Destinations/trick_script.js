@@ -99,7 +99,7 @@ function filterTours() {
       (keyword === "" || tour.title.toLowerCase().includes(keyword)) &&
       (type === "" || tour.type === type) &&
       (destination === "" || tour.destination === destination) &&
-      (month === "" || tour.month === month) &&
+      (month === "" || tour.id === 5 || tour.month === month) && 
       (season === "" || tour.season === season) // Filter by season
     );
   });

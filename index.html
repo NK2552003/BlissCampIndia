@@ -458,8 +458,42 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show popup after 3 seconds
         setTimeout(showPopup, 3000);
 
-        document.querySelector('.PBook_Now').addEventListener("click", function () {
-          window.location.href = "./Treks_Destinations/treks.html";});
+        document.querySelector('.PBook_Now').addEventListener("click", () => {
+            const params = new URLSearchParams({
+              id: "1",
+              title: "Kedarkantha Trek",
+              price: 7500,
+              brief_description: "Experience the magic of a winter wonderland with our Kedarkantha Trek in Uttarakhand. This popular trek offers a perfect blend of adventure and scenic beauty, making it an ideal choice for both beginners and experienced trekkers. Situated in the Govind Wildlife Sanctuary, Kedarkantha peak stands at an elevation of 12,500 feet, offering panoramic views of some of the most prominent Himalayan peaks. The journey begins in the charming village of Sankri, where you'll get a glimpse of the traditional Garhwali lifestyle. As you ascend through dense pine and oak forests, you'll be treated to the sight of snow-covered trails and frozen streams. The trek is particularly famous for its beautiful campsites, each offering a unique perspective of the surrounding snow-clad mountains. The highlight of the trek is the summit climb, which rewards you with a 360-degree view of majestic peaks like Swargarohini, Bandarpoonch, and Kalanag. During winter, the entire landscape is transformed into a white paradise, with snow-covered meadows and forests creating a magical atmosphere. Our experienced guides will ensure your safety and comfort, sharing interesting facts about the local flora, fauna, and mountain ecology. You'll also have the opportunity to experience the warm hospitality of the local villagers and taste traditional Garhwali cuisine. The Kedarkantha Trek is known for its gradual ascent, making it accessible to fitness enthusiasts of all levels. Whether you're looking for a thrilling snow trek, breathtaking views, or a peaceful escape into nature, the Kedarkantha Trek promises an unforgettable adventure in the heart of the Himalayas.",
+              destination: "Uttarakhand",
+              month: "December",
+              rating: 5,
+              image: "../images/kedarkantha-trek.jpg",
+              days: 6,
+              nights: 5,
+              pros: [
+                    "Spectacular snow-covered landscapes",
+                    "Suitable for beginners and families",
+                    "Beautiful campsites with panoramic views",
+                  ],
+              cons: [
+                    "Very cold temperatures in winter",
+                    "Requires proper winter gear",
+                    "Possible altitude sickness for some",
+                  ],
+              inclusions: [
+                    "Experienced winter trek guides",
+                    "Warm camping equipment",
+                    "Hot nutritious meals",
+                    "Transportation from Dehradun",
+                    "Forest permits and fees",
+                  ],
+              latitude: 31.0275,
+              longitude: 78.195,
+              season: "Winter",
+          });
+          window.location.href = `./Treks_Destinations/details.html?${params.toString()}`;
+        });
+
     </script>
     <script>
       // Initialize odometers
