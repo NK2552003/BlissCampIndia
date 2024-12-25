@@ -100,7 +100,7 @@ Contributions are welcome!
 ## 📄 License
 
 This project is licensed under the MIT License.
-(PLease do not copy it, make sure to do some changes when you use this project)
+
 ---
 
 ## ✨ Acknowledgements
