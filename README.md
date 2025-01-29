@@ -58,7 +58,3 @@ Have questions or want to collaborate? Open an issue or reach out to the maintai
 ---
 
 **Happy Camping!** 🌄
-
----
-
-This description provides a clear and engaging overview of your repository. You can further customize it based on the specific features and goals of your project. If your repository includes code, tools, or APIs, you can add sections to explain their functionality and usage.
