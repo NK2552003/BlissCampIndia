@@ -1,6 +1,3 @@
-Below is a **repository description** tailored for your GitHub repository, [BlissCampIndia](https://github.com/NK2552003/BlissCampIndia). This description provides an overview of the project, its purpose, and key features. You can customize it further based on your specific goals.
-
----
 
 # BlissCampIndia
 
